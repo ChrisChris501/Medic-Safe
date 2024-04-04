@@ -1,0 +1,64 @@
+.Footer{
+    background-color: #007D79;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    gap: 30px;
+    height: 40vh;
+    padding: 60px 30px 10px 80px;
+    margin-top: 50px;
+}
+
+.FooterLogo img{
+    width: 15vw;
+    height: 7vh;
+    margin: 10px;
+}
+
+.SocialIcons img{
+    height: 3vh;
+    padding: 5px 5px 5px 10px;
+}
+
+.FooterText{
+    font-weight: 100;
+    margin: 10px ;
+}
+
+.Footer h5, .Footer a{
+    color: #ffffff;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.Footer a{
+    text-decoration: none;
+}
+
+.Footer a:hover{
+    background-color: white;
+    color: #000;
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .Footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 40px;
+        height: 70vh;
+    }
+
+    .FooterLogo img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .SocialIcons,
+    .FooterText {
+        margin: 0; 
+    }
+}

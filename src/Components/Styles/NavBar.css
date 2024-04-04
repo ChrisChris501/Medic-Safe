@@ -1,0 +1,135 @@
+/** The Navigation Menu**/
+
+.navigation {
+    display: grid;
+    grid-template-columns: 42% 55%;
+    grid-template-rows: 1fr;
+    padding: 5px;
+    margin: 5px 2px -5px 5px;
+    height: 15%;
+  }
+  
+  @media (max-width: 900px) {
+    .navigation {
+      height: 20%;
+      margin-left: 10px;
+    }
+  }
+
+  .navLogo {
+    width: 40%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  
+  @media (max-width: 900px) {
+    .navLogo{
+      height: 70%;
+      width: 60%;
+      margin-right: 95px;
+    }
+  }
+  
+  .navMenu {
+    width: 95%;
+  }
+  
+  .navMenu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 15px 5px 10px;
+  }
+
+  @media (max-width: 900px) {
+    .navMenu li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+      }
+    }
+  
+.navMenu a, button {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #24727c;
+    cursor: pointer;
+  }
+
+
+  .home a {
+    color: #009D9A;
+  }
+  
+  .navMenu li a:hover{
+    color: white;
+    background-color: #009D9A;
+    border-radius: 5px;
+    padding: 8px 12px;
+    border: 2px white;
+  }
+  
+  .LogIn button{
+    color: white;
+    background-color: #3DDBD9;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+  }
+
+  .SignUp button{
+    color: #3DDBD9;
+    background-color: white;
+    padding: 6px 8px;
+    border: 1px solid #3DDBD9;
+    border-radius: 5px;
+  }
+
+  .LogIn button:hover,
+  .SignUp button:hover{
+    border: 2px solid  #438b8b;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+
+  .menuIcon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menuIcon.open .bar1 {
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
+  
+  .menuIcon.open .bar2 {
+    opacity: 0;
+  }
+  
+  .menuIcon.open .bar3 {
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  @media (max-width: 900px) {
+    .menuIcon {
+      display: block;
+      margin: 12px 10px 0 25vh;
+    }
+    
+    .navMenu {
+      display: none;
+    }
+    
+    .navMenu.open {
+      display: block;
+    }
+  }

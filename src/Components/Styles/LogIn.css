@@ -1,0 +1,105 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .eye-icon {
+    cursor: pointer;
+  }
+  
+  .remember {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .remember input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .form_btn {
+    background-color: #007d79;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .line {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .media-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .media-options .field {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .media-options .field.facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .media-options .field.google {
+    background-color: #dd4b39;
+    color: #fff;
+  }
+  
+  .medi-safe-container {
+    margin-left: 20px;
+  }
+  
+  .medi-safe-container p {
+    margin-bottom: 10px;
+  }
+  
+  .medi-safe-container h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman';
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }

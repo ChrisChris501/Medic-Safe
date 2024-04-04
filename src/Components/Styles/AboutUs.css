@@ -1,0 +1,96 @@
+ .AboutUs{
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    padding: 10px 5px;
+    margin: 80px 20px 40px 20px;
+  }
+
+
+  .AboutUsImages{
+    position: relative;
+   }
+
+.AboutUs1 img{
+    position: absolute;
+    height: 57vh;
+    width: 48vh;
+    left: 20vh;
+    border-radius: 15px;
+ }
+
+
+ .AboutUs2 img{
+   position: absolute;
+   height: 55vh;
+   width: 48vh;
+   border-radius: 15px;
+   top: 20vh;
+   left: 43vh;
+ }
+
+
+ @media (max-width: 1100px) {
+  .AboutUs{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 70vh 70vh;
+    grid-gap: 8vh;
+  }
+
+  .AboutUs1 img{
+    height: 57vh;
+    width: 48vh;
+    left: 3vw;
+    right: 1vw;
+    top: 10vh;
+    border-radius: 15px;
+ }
+
+ .AboutUs2 img{
+  height: 48vh;
+  width: 42vh;
+  border-radius: 15px;
+  top: 30vh;
+  right: 1vw;
+  left: 16vw;
+}
+}
+
+ .AboutUsButton button{
+  background-color: #3DDBD9;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-top: 15px;
+ }
+
+.AboutUsText{
+  margin-top: 40px;
+  margin-left: 40px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.AboutUsText h4{
+  color: #08BDBA;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.AboutUsText h3{
+  color: #007D79;
+  line-height: 28px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.AboutUsText h5{
+  margin-top: 10px;
+  color: #262626;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 400;
+}

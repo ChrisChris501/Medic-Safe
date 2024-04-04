@@ -1,0 +1,66 @@
+.Profile{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 60px;
+    padding: 30px 10px 10px 120px;
+}
+
+.ProfileText{
+    margin-top: 10px;
+}
+
+.ProfileText h3{
+    color: #08BDBA;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ProfileText h4{
+    color: #007D79;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.ProfileText h5{
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.ProfileText button{
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: 1px solid #3DDBD9;
+    border-radius: 8px;
+    color: #3DDBD9;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.ProfileImg img{
+    width: 30vw;
+    height: 65vh;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .Profile{
+      display: grid;
+      grid-template-columns: 85%;
+      grid-template-rows: 60% 60%;
+      gap: 30px;
+    }
+
+    .ProfileImg img{
+        width: 50vw;
+        height: 55vh;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+  }
