@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
-import '../Components/Styles/ContactUs.css';
-import ContactUsImg from '../assets/ContactUsImg.png';
+import './Styles/ContactUs.css';
+import ContactUsImg from '../../assets/ContactUsImg.png';
 
 const ContactUs = () => {
-  // State variables for form fields
   const [name, setName] = useState('Name');
   const [email, setEmail] = useState('Email');
   const [message, setMessage] = useState('Text your message');
 
-  // Form submission handler
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here, for example, sending form data to backend
     console.log('Form submitted:', { name, email, message });
-    // Clear form fields after submission
+
     setName('');
     setEmail('');
     setMessage('');
@@ -32,7 +29,7 @@ const ContactUs = () => {
             Whether you have questions about our platform, need technical assistance,
             or want to explore partnership opportunities, we are just a click away.
           </h5>
-        <form onSubmit={handleSubmit}>
+        <form id='ContactForm' onSubmit={handleSubmit}>
           <div className='Name'>
             <label></label>
             <input

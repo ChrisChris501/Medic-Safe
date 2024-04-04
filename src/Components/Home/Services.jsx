@@ -1,10 +1,10 @@
 import React from 'react';
-import ActivityHistory from '../assets/ActivityHistory.png';
-import HealthBook from '../assets/HealthBook.png';
-import Reading from '../assets/Reading.png';
-import Vector from '../assets/Vector.png';
-import { Link } from 'react-router-dom';
-import '../Components/Styles/Services.css';
+import ActivityHistory from '../../assets/ActivityHistory.png';
+import HealthBook from '../../assets/HealthBook.png';
+import Reading from '../../assets/Reading.png';
+import Vector from '../../assets/Vector.png';
+import { Link } from 'react-router-dom'; 
+import './Styles/Services.css';
 const Services = () => {
   return (
     <div className='LandingServices'>
@@ -47,8 +47,10 @@ const Services = () => {
           </h6>
         </div>
         </div>
-        <div className='ServicesMore'>
-          <button>Learn more<img className="EduImg"src={Vector} alt="Book logo"/></button>
+        <div className='ServicesButton'>
+          <Link to="/servicespage">
+            <button>Go to Services</button>
+          </Link>
         </div>
     </div>
   )

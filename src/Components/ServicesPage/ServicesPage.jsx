@@ -8,7 +8,7 @@ import ServicesSecurityImg from '../../assets/ServicesSecurityImg.png';
 import MobilePicture from '../../assets/MobilePicture.png';
 import ServicesPersonalizedImg from '../../assets/ServicesPersonalizedImg.png';
 import ServicesEducationalResources from '../../assets/ServicesEducationalResources.png';
-import '../../Components/Styles/ServicesPage.css';
+import './ServicesPage.css';
 
 // Card component
 const Card = ({ image, title, description }) => {
@@ -78,7 +78,6 @@ const ServicesPage = () => {
           />
         </div>
         <div>
-
         </div>
     </div>
   )

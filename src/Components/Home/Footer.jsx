@@ -1,10 +1,10 @@
 import React from 'react';
-import '../Components/Styles/Footer.css';
-import WhiteLogo from '../assets/WhiteLogo.png';
-import FooterFacebookLogo from '../assets/FooterFacebookLogo.png';
-import FooterInstaLogo from '../assets/FooterInstaLogo.png';
-import FooterTwitterLogo from '../assets/FooterTwitterLogo.png';
-import FooterWhatsAppLogo from '../assets/FooterWhatsAppLogo.png';
+import './Styles/Footer.css';
+import WhiteLogo from '../../assets/WhiteLogo.png';
+import FooterFacebookLogo from '../../assets/FooterFacebookLogo.png';
+import FooterInstaLogo from '../../assets/FooterInstaLogo.png';
+import FooterTwitterLogo from '../../assets/FooterTwitterLogo.png';
+import FooterWhatsAppLogo from '../../assets/FooterWhatsAppLogo.png';
 
 const Footer = () => {
   return (

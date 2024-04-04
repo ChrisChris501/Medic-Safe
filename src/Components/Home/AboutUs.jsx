@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Components/Styles/AboutUs.css';
-import AboutUsBackgroundPicture from '../assets/AboutUsBackgroundPicture.png';
-import AboutUsTopPicture from '../assets/AboutUsTopPicture.png';
+import './Styles/AboutUs.css';
+import AboutUsBackgroundPicture from '../../assets/AboutUsBackgroundPicture.png';
+import AboutUsTopPicture from '../../assets/AboutUsTopPicture.png';
 const AboutUs = () => {
   return (
     <div className='AboutUs'>

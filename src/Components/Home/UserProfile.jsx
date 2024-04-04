@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Components/Styles/UserProfile.css';
-import UserProfilePicture from '../assets/UserProfilePicture.png';
+import './Styles/UserProfile.css';
+import UserProfilePicture from '../../assets/UserProfilePicture.png';
 
 const UserProfile = () => {
   return (
