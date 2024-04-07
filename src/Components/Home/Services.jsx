@@ -49,7 +49,7 @@ const Services = () => {
         </div>
         <div className='ServicesButton'>
           <Link to="/servicespage">
-            <button>Go to Services</button>
+            <button>Go to Services <img src={Vector} alt="About Us" /></button>
           </Link>
         </div>
     </div>

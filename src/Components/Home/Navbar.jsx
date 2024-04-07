@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Styles/NavBar.css';
 import LOGO from '../../assets/LOGO.png';
+import SignUp from '../SignUpPatients/SignUpPatients';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -26,6 +28,9 @@ const Navbar = () => {
             <li className="About Us">
                 <a key="About" href="/about">About Us</a>
             </li>
+            <li className="Services">
+                <a key="About" href="/ServicesPage">Services</a>
+            </li>
             <li className="Blog">
                 <a key="Blog" href="/Blog">Blog</a>
             </li>
@@ -33,11 +38,15 @@ const Navbar = () => {
                 <a key="Profile" href="/Profile">Profile</a>
             </li>
             <li className="LogIn">
-                <button key="LogIn" onClick={() => { /* Add your sign in logic here */ }}>Log in</button>
+                <Link to="/LogIn">
+                    <button key="LogIn" onClick={() => {LogIn}}>Log in</button>
+                </Link>
             </li>
-            <li className="SignUp">
-                <button key="SignUp" onClick={() => { /* Add your sign up logic here */ }}>Sign up</button>
-            </li>
+            <li className='SignUp'>
+                <Link to="/SignUpDoctors">
+                    <button key="SignUp" onClick={() => {SignUpDoctors}}>Sign up</button>
+                </Link>
+             </li>
         </ul>
     </nav>
   )

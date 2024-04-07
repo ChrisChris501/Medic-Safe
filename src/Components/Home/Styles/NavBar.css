@@ -2,7 +2,7 @@
 
 .navigation {
     display: grid;
-    grid-template-columns: 42% 55%;
+    grid-template-columns: 35% 60%;
     grid-template-rows: 1fr;
     padding: 5px;
     margin: 5px 2px -5px 5px;
@@ -18,9 +18,9 @@
 
   .navLogo {
     width: 40%;
-    height: 70%;
+    height: 80%;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
   
   @media (max-width: 900px) {
@@ -53,7 +53,7 @@
 .navMenu a, button {
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     color: #24727c;
     cursor: pointer;
   }
@@ -64,36 +64,40 @@
   }
   
   .navMenu li a:hover{
-    color: white;
-    background-color: #009D9A;
+    color: #009D9A;
     border-radius: 5px;
-    padding: 8px 12px;
     border: 2px white;
   }
-  
+
   .LogIn button{
     color: white;
     background-color: #3DDBD9;
     border: none;
     border-radius: 5px;
     padding: 8px 10px;
+    width: 5vw;
+    height: 5vh;
   }
 
   .SignUp button{
     color: #3DDBD9;
     background-color: white;
-    padding: 6px 8px;
+    padding: 6px 10px;
     border: 1px solid #3DDBD9;
     border-radius: 5px;
+    width: 5vw;
+    height: 5vh;
   }
 
-  .LogIn button:hover,
+  .LogIn button:hover{
+    color: #3DDBD9;
+    background-color: white;
+  }
+
   .SignUp button:hover{
-    border: 2px solid  #438b8b;
-    border-radius: 5px;
-    padding: 8px 12px;
+    color: white;
+    background-color: #3DDBD9;
   }
-
   .menuIcon {
     display: none;
     cursor: pointer;

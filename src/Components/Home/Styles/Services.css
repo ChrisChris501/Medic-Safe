@@ -97,14 +97,15 @@
     border: none;
     border-radius: 5px;
     padding: 10px 10px ;
+    width: 12vw;
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 15px;
+    font-size: 11px;
 }
 
-.ServicesMore img{
+.ServicesButton img{
     width: 12px;
-    height: 10px;
+    height: 12px;
 }
 
 .ServicesMore{

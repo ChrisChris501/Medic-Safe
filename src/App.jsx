@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from './Components/Home/Navbar';
 import Home from './Components/Home/Home';
 import ServicesPage from './Components/ServicesPage/ServicesPage';
-import SignIn from './Components/SignIn/SignIn';
-import SignUp from './Components/SignUp/SignUp';
+import SignUpDoctors from './Components/SignUpDoctors/SignUpDoctors';
+import LogIn from './Components/LogIn/LogIn';
 import Footer from './Components/Home/Footer';
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/servicespage" element={<ServicesPage />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/LogIn" element={<LogIn />} />
+          <Route path="/SignUpDoctors" element={<SignUpDoctors />} />
         </Routes>
         <Footer />
       </Router>
