@@ -1,4 +1,6 @@
 import React from 'react'
+import LogInImage from '../../assets/LogInImage.png';
+import KnowledgeSharing from '../../assets/KnowledgeSharing.png';
 
 function LogIn() {
   return (
@@ -7,7 +9,7 @@ function LogIn() {
       <div className="container">
         <div className="login-container">
           <form>
-            <span style={{ color: '#007D79', fontWeight: '700', fontSize: 'large', fontFamily: 'Times New Roman', fontWeight: 'bolder', alignItems: 'center' }}>Welcome back, <br /> Login to account</span>
+            <h5>Welcome back, <br /> Login to account</h5>
             <input type="text" placeholder="Unique id" required />
             <input type="email" placeholder="Email Address" required />
             <input type="password" placeholder="Password" required />
@@ -34,11 +36,11 @@ function LogIn() {
           </form>
         </div>
         <div className="medi-safe-container">
-          <p>Go back to homepage</p>
+        <a href="./Home" className="field google">Go back to homepage</a>
           <i className="fa-solid fa-arrow-left"></i>
-          <img src="/images/Signup Screens.png" style={{ height: '250px', paddingLeft: '100px' }} alt="Signup Screens" />
+          <img className="LogInImg" src={LogInImage} alt="Picture of Doctor and patient"/>
           <h1>Medic-Safe</h1>
-          <img src="/images/Knowledge Sharing.png" style={{ height: '35px', paddingLeft: '240px', marginTop: '80px', transform: 'translateX(-50%)' }} alt="Knowledge Sharing" />
+          <img className="KnowledgeImg" src={KnowledgeSharing} alt="Knowledge logo"/>
         </div>
       </div>
     </div>

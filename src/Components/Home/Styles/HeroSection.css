@@ -32,11 +32,11 @@
   .Hero-button button{
     background-color: #009D9A;
     padding: 10px 15px;
-    width: 12vw;
+    width: 8vw;
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 25px;
   }
 

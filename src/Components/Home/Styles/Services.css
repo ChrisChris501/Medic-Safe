@@ -96,16 +96,16 @@
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
-    padding: 10px 10px ;
-    width: 12vw;
+    padding: 10px 8px ;
+    width: 8vw;
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .ServicesButton img{
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 8px;
 }
 
 .ServicesMore{

@@ -33,13 +33,13 @@
 }
 
 .ProfileText button{
-    padding: 8px 10px;
-    width: 13vw;
+    padding: 5px 10px;
+    width: 8vw;
     margin: 10px 0;
     border: 1px solid #3DDBD9;
     border-radius: 8px;
     color: #3DDBD9;
-    font-size: 15px;
+    font-size: 13px;
     background-color: #fff;
 }
 

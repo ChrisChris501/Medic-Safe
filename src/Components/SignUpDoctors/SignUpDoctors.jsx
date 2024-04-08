@@ -8,7 +8,7 @@ const SignUpDoctors = () => {
       <div className="container">
         <div className="login-container">
           <form>
-            <span style={{ color: '#007D79', fontWeight: '700', fontSize: 'large', fontFamily: 'Times New Roman', fontWeight: 'bolder', alignItems: 'center' }}>Create Account</span>
+            <span style={{ color: '#007D79', fontWeight: '700', fontSize: 'large', fontFamily: 'Times New Roman', alignItems: 'center' }}>Create Account</span>
             <input type="text" placeholder="First Name" required />
             <input type="text" placeholder="Last name" required />
             <input type="text" placeholder="Doctor's I.D" required />
