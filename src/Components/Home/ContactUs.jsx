@@ -3,9 +3,9 @@ import './Styles/ContactUs.css';
 import ContactUsImg from '../../assets/ContactUsImg.png';
 
 const ContactUs = () => {
-  const [name, setName] = useState('Name');
-  const [email, setEmail] = useState('Email');
-  const [message, setMessage] = useState('Text your message');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -34,6 +34,7 @@ const ContactUs = () => {
             <label></label>
             <input
               type="text"
+              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -43,6 +44,7 @@ const ContactUs = () => {
             <label></label>
             <input
               type="email"
+              placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -51,6 +53,7 @@ const ContactUs = () => {
           <div className='Message'>
             <label></label>
             <textarea
+              placeholder="Type your message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required

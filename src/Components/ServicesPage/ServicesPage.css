@@ -2,8 +2,8 @@
     text-align: center;
     color: #007D79;
     background-color: #D9FBFB;
-    height: 18vh;
-    padding: 20px;
+    height: 10vh;
+    padding: 100px 20px 80px 20px;
 }
 
 .ServicesLandingText h3{
@@ -25,9 +25,18 @@
 }
 
 @media (max-width: 900px) {
+
+  .ServicesLandingText {
+    text-align: center;
+    color: #007D79;
+    background-color: #D9FBFB;
+    height: 10vh;
+    padding: 150px 20px 80px 20px;
+}
+
     .ServicesLandingText h6 {
-        width: 80%; 
-    }
+        width: 80%;
+}
     
     .ServicesLanding img {
         height: auto; 

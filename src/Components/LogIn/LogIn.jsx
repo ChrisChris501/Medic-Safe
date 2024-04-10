@@ -1,51 +1,131 @@
-import React from 'react'
+import React, { useState } from 'react';
 import LogInImage from '../../assets/LogInImage.png';
-import KnowledgeSharing from '../../assets/KnowledgeSharing.png';
+import LOGO from '../../assets/LOGO.png';
+import Home from '../Home/Home';
+import './LogIn.css';
 
 function LogIn() {
+  const [uniqueId, setUniqueId] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
+
+  const handleUniqueIdChange = (event) => {
+    setUniqueId(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleRememberMeChange = (event) => {
+    setRememberMe(event.target.checked);
+  };
+
+  const handleSubmit = async (event) => { // make the function async
+    event.preventDefault();
+    try {
+      const response = await fetch('', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          uniqueId,
+          email,
+          password,
+          rememberMe,
+        }),
+      });
+
+      if (response.ok) {
+        // Login successful, handle accordingly (e.g., redirect to dashboard)
+        console.log('Login successful');
+        // Example: Redirect to dashboard
+        // history.push('/dashboard');
+      } else {
+        // Login failed, handle accordingly (e.g., display error message)
+        console.error('Login failed');
+        const errorData = await response.json();
+        console.error(errorData.message); // Assuming server sends error message
+      }
+    } catch (error) {
+      console.error('Error occurred during login:', error);
+      // Handle error, such as displaying an error message to the user
+    }
+  };
+
   return (
-    <div>
-      <div className="wrapper">
-      <div className="container">
-        <div className="login-container">
-          <form>
-            <h5>Welcome back, <br /> Login to account</h5>
-            <input type="text" placeholder="Unique id" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="password" placeholder="Password" required />
-            <i className='bx bx-hide eye-icon'></i>
-            <div className="checkbox">
-              <input type="checkbox" id="signupCheck" />
-              <label htmlFor="signupCheck">Remember me</label>
-            </div>
-
-            <button className="form_btn">Login</button>
-
-            <div className="line"></div>
-
-            <div className="media-options">
-              <a href="#" className="field facebook">
-                <i className="fa-brands fa-facebook" style={{ marginRight: '20px', fontSize: '20px' }}></i>
-                <span>Sign in with Facebook</span>
-              </a>
-              <a href="#" className="field google">
-                <i className="fab fa-google fa-3x" style={{ marginRight: '21px', fontSize: '20px' }}></i>
-                <span> Sign in with Google</span>
-              </a>
-            </div>
-          </form>
-        </div>
-        <div className="medi-safe-container">
-        <a href="./Home" className="field google">Go back to homepage</a>
+    <div className="LogInWrapper">
+        <div className="MediSafeLogIncontainer">
+        <div className='LogIn'>
           <i className="fa-solid fa-arrow-left"></i>
+          <h6><a key="Home" href="/Home">Go back to homepage</a></h6>
           <img className="LogInImg" src={LogInImage} alt="Picture of Doctor and patient"/>
-          <h1>Medic-Safe</h1>
-          <img className="KnowledgeImg" src={KnowledgeSharing} alt="Knowledge logo"/>
+        </div>
+        <div className='MediCurve'>
+          <img className="Medic-Logo" src={LOGO} alt="MediC logo"/>
+        </div>
+        </div>
+      <div className="LogIncontainer">
+        <h5>Welcome back, <br /> Login to account</h5>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Unique id"
+            value={uniqueId}
+            onChange={handleUniqueIdChange}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={handleEmailChange}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={handlePasswordChange}
+            required
+          />
+        </form>
+        <div className="CheckBox">
+            <input
+              type="checkbox"
+              id="signupCheck"
+              checked={rememberMe}
+              onChange={handleRememberMeChange}
+            />
+            <label htmlFor="signupCheck">Keep me signed in</label>
+          </div>
+          <div className='LogInButton'>
+            <button type="submit" className="form_btn">Log in</button>
+          </div>
+          <div className="LogInLine"></div>
+          <ul className="MediaOptions">
+            <li>
+                <a href="#" className="Google">
+                  <i className="fab fa-google fa-3x"></i>
+                  Sign in with Google
+                </a>
+            </li><br></br>
+            <li>
+                <a href="#" className="Facebook">
+                  <i className="fa-brands fa-facebook"></i>
+                  Sign in with Facebook
+                </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    </div>
-  )
+  );
 }
 
-export default LogIn
+export default LogIn;

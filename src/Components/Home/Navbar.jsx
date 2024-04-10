@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Styles/NavBar.css';
 import LOGO from '../../assets/LOGO.png';
-import SignUp from '../SignUpPatients/SignUpPatients';
+import LogIn from '../LogIn/LogIn';
+import DoctorsSignUp from '../SignUpPages/DoctorsSignUp';
 import { Link } from 'react-router-dom';
 
 
@@ -43,10 +44,10 @@ const Navbar = () => {
                 </Link>
             </li>
             <li className='SignUp'>
-                <Link to="/SignUpDoctors">
-                    <button key="SignUp" onClick={() => {SignUpDoctors}}>Sign up</button>
+                <Link to="/DoctorsSignUp">
+                    <button key="SignUp" onClick={() => {DoctorsSignUp}}>Sign up</button>
                 </Link>
-             </li>
+             </li> 
         </ul>
     </nav>
   )

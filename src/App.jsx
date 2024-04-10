@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from './Components/Home/Navbar';
 import Home from './Components/Home/Home';
 import ServicesPage from './Components/ServicesPage/ServicesPage';
-import SignUpDoctors from './Components/SignUpDoctors/SignUpDoctors';
 import LogIn from './Components/LogIn/LogIn';
+import DoctorsSignUp from './Components/SignUpPages/DoctorsSignUp';
 import Footer from './Components/Home/Footer';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/servicespage" element={<ServicesPage />} />
           <Route path="/LogIn" element={<LogIn />} />
-          <Route path="/SignUpDoctors" element={<SignUpDoctors />} />
+          <Route path="/SignUp" element={<DoctorsSignUp />} />
         </Routes>
         <Footer />
       </Router>
