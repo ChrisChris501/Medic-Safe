@@ -1,76 +1,181 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import SignUpPatients from '../../assets/SignUpPatients.png';
+import LOGO from '../../assets/LOGO.png';
+import './SignUp.css';
 
 function DoctorsSignUp() {
+  const [DoctorsId, setDoctorsId] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
+
+  const handleUniqueIdChange = (event) => {
+    setDoctorsId(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleFirstNameChange = (event) => {
+    setFirstName(event.target.value);
+  };
+
+  const handleLastNameChange = (event) => {
+    setLastName(event.target.value);
+  };
+
+  const handleRememberMeChange = (event) => {
+    setRememberMe(event.target.checked);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      // Simulate form submission logic (replace with actual logic)
+      const response = await fetch('https://example.com/api/signup', { // Replace URL with actual API endpoint
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          DoctorsId,
+          email,
+          password,
+          rememberMe,
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Sign up successful');
+        // Reset form fields
+        setFirstName('');
+        setLastName('');
+        setDoctorsId('');
+        setEmail('');
+        setPassword('');
+        setRememberMe(false);
+      } else {
+        console.error('Sign up failed');
+        const errorData = await response.json();
+        console.error(errorData.message);
+      }
+    } catch (error) {
+      console.error('Error occurred during sign up:', error);
+    }
+  };
+
   return (
-        <div className="wrapper">
-          <div className="container">
-            <div className="login-container">
-            <h2>Create Account</h2>
-              <form>
-                <input type="text" placeholder="First Name" required />
-                <input type="text" placeholder="Last name" required />
-                <input type="text" placeholder="Doctor's I.D" required />
-                <input type="email" placeholder="Email Address" required />
-                <input type="password" placeholder="Password" required />
-                <i class="bx bx-hide eye-icon"></i>
-                <input
-                  type="password"
-                  placeholder="Confirm password"
-                  required
-                />
-                <i class="bx bx-hide eye-icon"></i>
-                <div className="checkbox">
-                  <input type="checkbox" id="signupCheck" />
-                  <label for="signupCheck">Remember me</label>
-                </div>
-                <button className="form_btn">SignUp</button>
-                <div className="line"></div>
-                <div className="media-options">
-                  <a href="#" className="field facebook">
-                    <i
-                      className="fa-brands fa-facebook"
-                      style={{ marginRight: '20px', fontSize: '20px' }}
-                    ></i>
-                    <span>Sign in with Facebook</span>
-                  </a>
-                  <a href="#" className="field google">
-                    <i
-                      className="fab fa-google fa-3x"
-                      style={{ marginRight: '21px', fontSize: '20px' }}
-                    ></i>
-                    <span> Sign in with Google</span>
-                  </a>
-                </div>
-                <div className="sign-in">
-                  Already have an account?
-                  <a href="#">Sign In</a>
-                </div>
-                <div className="terms">
-                  By clicking the create account button, you agree to the
-                  <a href="#">Terms & Condition? Privacy policy</a>
-                </div>
-              </form>
-            </div>
-            <div className="medi-safe-container">
-              <p>Go back to homepage</p>
-              <i className="fa-solid fa-arrow-left"></i>
-              <img
-                src="./images/Signup Screens.png"
-                style={{ height: '250px', paddingLeft: '100px' }}
-              />
-              <h1>Medic-Safe</h1>
-              <img
-                src="/images/Knowledge Sharing.png"
-                style={{
-                  height: '35px',
-                  paddingLeft: '240px',
-                  marginTop: '80px',
-                  transform: 'translateX(-50%)',
-                }}
-              />
-            </div>
-          </div>
+    <div className="SignUpWrapper">
+      <div className="MediSafeSignUPcontainer">
+        <div className='SignUp'>
+          <i className="fa-solid fa-arrow-left"></i>
+          <h6><a key="Home" href="/Home">Go back to homepage</a></h6>
+          <img className="SignUpImg" src={SignUpPatients} alt="Picture of Doctor and patient"/>
         </div>
+        <div className='SignUpMediCurve'>
+          <img className="Medic-Logo" src={LOGO} alt="MediC logo"/>
+        </div>
+      </div>
+      <div className="SignUpContainer">
+        <h5>Create Account (Doctors)</h5>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="First Name"
+            value={firstName}
+            onChange={handleFirstNameChange}
+            required
+            className="TextInput"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            value={lastName}
+            onChange={handleLastNameChange}
+            required
+            className="TextInput"
+          />
+          <input
+            type="text"
+            placeholder="Doctor's I.D"
+            value={DoctorsId}
+            onChange={handleUniqueIdChange}
+            required
+            className="TextInput"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={handleEmailChange}
+            required
+            className="TextInput"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={handlePasswordChange}
+            required
+            className="TextInput"
+          />
+          <input
+            type="password"
+            placeholder="Confirm password"
+            required
+            className="TextInput"
+          />
+          <div className="CheckBox">
+            <input
+              type="checkbox"
+              id="signupCheck"
+              checked={rememberMe}
+              onChange={handleRememberMeChange}
+              className="CheckBoxInput"
+            />
+            <label htmlFor="SignUpCheck">Remember me</label>
+          </div>
+          <div className='SignUpButton'>
+            <button type="submit" className="form_btn">Sign up</button>
+          </div>
+          <div className="SignUpLine"></div>
+          <ul className="MediaOptions">
+            <li>
+              <a href="#" className="Google">
+                <i className="fab fa-google fa-3x"></i>
+                Sign up with Google
+              </a>
+            </li><br></br>
+            <li>
+              <a href="#" className="Facebook">
+                <i className="fa-brands fa-facebook"></i>
+                Sign up with Facebook
+              </a>
+            </li>
+          </ul>
+          <div className='SignUpFooter'>
+            <h5>Already have an account? <Link to="/LogIn" className="CustomLink">Sign in</Link></h5>
+            <h6>By clicking the create account button you agree to the
+              <a href="">Terms & Condition / Privacy policy</a></h6>
+          </div>
+          <div className='PatienceRedirection'>
+            <h6>
+              For patience to create account, pls click <Link to="/PatientsSignUp" className="CustomLink">here</Link> 
+            </h6>
+            </div>
+        </form>
+      </div>
+    </div>
   );
 }
 

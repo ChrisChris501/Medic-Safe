@@ -6,9 +6,9 @@
   left: 0;
   z-index: 1000; /* Ensure the navigation appears on top of other content */
   display: grid;
-  grid-template-columns: 35% 60%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 1fr;
-  padding: 5px;
+  padding: 15px 5px 5px 5px;
   margin: 0px 2px 15px 5px;
   height: 10%;
   background-color: white;

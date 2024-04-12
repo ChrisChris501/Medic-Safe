@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Styles/HeroSection.css';
 import HeroImg from '../../assets/HeroImg.png';
 import HeroImg2 from '../../assets/HeroImg2.png';
@@ -10,8 +11,8 @@ const HeroSection = () => {
           <h1>Medi-Safe; Your Personal Health Hub</h1>
           <h5>Your one-stop solution for organizing,
             accessing, and sharing your health information securely.</h5>
-          <div className='Hero-button'>
-            <button>Get Started</button>
+          <div className='HeroSectionLink'>
+          <Link to="/DoctorsSignUp" className="HeroLink">Get started</Link>
           </div>
         </div>
         <div className='HeroImg'>

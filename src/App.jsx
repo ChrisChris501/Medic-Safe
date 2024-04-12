@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import ServicesPage from './Components/ServicesPage/ServicesPage';
 import LogIn from './Components/LogIn/LogIn';
 import DoctorsSignUp from './Components/SignUpPages/DoctorsSignUp';
+import PatientsSignUp from './Components/SignUpPages/PatientsSignUp';
 import Footer from './Components/Home/Footer';
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/servicespage" element={<ServicesPage />} />
           <Route path="/LogIn" element={<LogIn />} />
-          <Route path="/SignUp" element={<DoctorsSignUp />} />
+          <Route path="/DoctorsSignUp" element={<DoctorsSignUp />} />
+          <Route path="/PatientsSignUp" element={<PatientsSignUp />} />
         </Routes>
         <Footer />
       </Router>
