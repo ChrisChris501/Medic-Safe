@@ -1,0 +1,95 @@
+.HealthEduLandingText {
+    text-align: center;
+    color: #007D79;
+    background-color: #D9FBFB;
+    height: 12vh;
+    padding: 100px 20px 80px 20px;
+}
+
+.HealthEduLandingText h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.HealthEduLandingText h6{
+    font-size: 14px;
+    font-weight: 300;
+    width: 35%;
+    margin: 0 auto;
+    line-height: 22px;
+}
+
+.HealthEduLanding img{
+    height: 65vh;
+    width: 100%;
+}
+
+.HealthEduCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin: 10px auto;
+  }
+
+  .HealthEduCard {
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: 1px 1px 1px 1px #D9FBFB;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+
+.HealthEduCard img {
+    width: 95%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+
+  .HealthEduCard h3 {
+    color: #007D79;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .HealthEduCard h5 {
+    color: #3DDBD9;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .HealthEduCard h6{
+    padding-left: 10px;
+    color: #262626;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+.HealthEduBar{
+    border: 5px solid #007D79;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    padding: auto;
+}
+
+
+
+
+
+
+
+
+

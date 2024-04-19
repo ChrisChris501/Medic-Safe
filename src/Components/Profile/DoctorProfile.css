@@ -1,0 +1,218 @@
+.TheDoctorProfile{
+    margin-top: 13vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 150vh;
+}
+
+.TheDoctorProfileLinks{
+    background-color: #007D79;
+    height: 110%;
+}
+
+.SearchDetails{
+    display: grid;
+    grid-template-columns: 25vw 25Vw;
+    gap: 10vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SearchDetails Input{
+    margin: 10px;
+    width: 25vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: 0.5px solid Grey;
+    padding: 10px;
+}
+
+.SearchDetails img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: 280px;
+    margin-top: 15px;
+}
+
+.TheProfileLogo img{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 12vw;
+    height: 8vh;
+}
+
+.TheDocotorFirstLinks{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.DoctorSeconLinks{
+    margin-top: 70vh;
+}
+
+.DoctorFirstLinks button, .DoctorSeconLinks button{
+    display: block;
+    margin: auto 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007D79;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.DoctorFirstLinks a, .DoctorSeconLinks a{
+    text-decoration: none;
+}
+
+.TheDoctorProfileDetails{
+    background-color: #D9FBFB;
+    width: 100%;
+}
+
+.TheDoctorProfileDetails h2{
+    color: #007D79;
+    font-size: 30px;
+}
+
+.TheDoctorProfileDetails h1,
+.TheDoctorProfileDetails h2 {
+    display: inline-block;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.DoctorDetails {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    gap: 20px;
+    padding: 15px;
+    height: 70vh;
+}
+
+.DoctorPrimaryDetails{
+    text-align: center;
+    margin-left: 80px;
+}
+
+.DoctorPrimaryDetails img{
+    border-radius: 100px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.DoctorPrimaryDetails h3{
+    font-size: 18px;
+}
+
+.DoctorPrimaryDetails h5{
+    font-size: 12px;
+    color: #004144;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.DoctorBio{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.DoctorBio h4{
+    text-align: center;
+    color: #007D79;
+    font-size: 15px;
+}
+
+.DoctorBio h6{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    line-height: 13px;
+}
+
+.PercentageCompletion{
+    background-color: #ECF9F9;
+    height: 8vh;
+    width: 18vw;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.PercentageCompletion h6{
+    text-align: left;
+    font-weight: 800;
+    font-size: 12px;
+    margin: 5px 10px;
+}
+.CompletionBar{
+    border: 5px solid #009D9A;
+    width: 30vh;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.DoctorLocation, .MoreDetails{
+    margin-left: 30px;
+    margin: 15px auto;
+}
+
+.MoreDetails{
+    margin-top: 24vh;
+}
+.DoctorLocation h3, .MoreDetails h3{
+    color: #A8A8A8;
+    font-size: 11px;
+    padding: auto 10px;
+}
+
+.DoctorLocation input, .MoreDetails input{
+    width: 17vw;
+    height: 15px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#DoctorSecondaryDetails{
+    background-color: #D9FBFB;
+    height: 60vh;
+}
+
+.SecondaryDetails{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 45px;
+    padding: 20px 50px;
+}
+
+.SecondaryDetails{
+    width: 70%;
+    height: 35vh;
+    background-color: #ffffff;
+    margin: 0 12%;
+}
+
+.SecondaryDetails h4{
+    font-size: 14px;
+    color: #007D79;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.SecondaryDetails li{
+    font-size: 12px;
+    color: #161616;
+    line-height: 17px;
+}
+
+.SecondaryDetails div{
+    margin-top: 10px;
+}
+

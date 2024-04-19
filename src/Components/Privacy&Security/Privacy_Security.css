@@ -1,0 +1,42 @@
+.PrivacySecurity{
+    margin-top: 15vh;
+    text-align: justify;
+}
+
+.PrivacyIntro{
+    background-color: #D9FBFB;
+    height: 20vh;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    line-height: 23px;
+    color: #007D79;
+    width: 100%;
+}
+
+.PrivacyIntro h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.PrivacyIntro h5{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.Privacy_Security {
+    margin-top: 15px;
+    line-height: 22px;
+    font-weight: 200;
+    font-size: 18px;
+    padding: 10px 80px;
+}
+
+.Privacy_Security h5{
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+

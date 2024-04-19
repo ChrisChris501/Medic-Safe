@@ -166,7 +166,8 @@ function DoctorsSignUp() {
           <div className='SignUpFooter'>
             <h5>Already have an account? <Link to="/LogIn" className="CustomLink">Sign in</Link></h5>
             <h6>By clicking the create account button you agree to the
-              <a href="">Terms & Condition / Privacy policy</a></h6>
+            <Link to="/Privacy_Security">Terms & Condition / Privacy policy</Link>
+            </h6>
           </div>
           <div className='PatienceRedirection'>
             <h6>

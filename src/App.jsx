@@ -7,6 +7,11 @@ import ServicesPage from './Components/ServicesPage/ServicesPage';
 import LogIn from './Components/LogIn/LogIn';
 import DoctorsSignUp from './Components/SignUpPages/DoctorsSignUp';
 import PatientsSignUp from './Components/SignUpPages/PatientsSignUp';
+import Privacy_Security from './Components/Privacy&Security/Privacy_Security';
+import Profile from './Components/Profile/Profile';
+import PatientProfile from './Components/Profile/PatientProfile';
+import DoctorProfile from './Components/Profile/DoctorProfile';
+import HealthEdu from './Components/HealthEducationPage/HealthEdu';
 import Footer from './Components/Home/Footer';
 
 function App() {
@@ -21,6 +26,11 @@ function App() {
           <Route path="/LogIn" element={<LogIn />} />
           <Route path="/DoctorsSignUp" element={<DoctorsSignUp />} />
           <Route path="/PatientsSignUp" element={<PatientsSignUp />} />
+          <Route path="/Privacy_Security" element={<Privacy_Security />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/PatientProfile" element={<PatientProfile />} />
+          <Route path="/DoctorProfile" element={<DoctorProfile />} />
+          <Route path="/HealthEdu" element={<HealthEdu />} />
         </Routes>
         <Footer />
       </Router>

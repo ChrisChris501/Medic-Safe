@@ -1,10 +1,11 @@
 import React from 'react';
 import './Styles/UserProfile.css';
+import { Link } from 'react-router-dom';
 import UserProfilePicture from '../../assets/UserProfilePicture.png';
 
 const UserProfile = () => {
   return (
-    <div className='Profile'>
+    <div className='TheProfile'>
         <div className='ProfileText'>
             <h3>User Profile</h3>
             <h4>We employ robust encryption and privacy measures to
@@ -24,7 +25,9 @@ const UserProfile = () => {
             managing your health information, we help you make informed decisions
             and achieve better health outcomes.
             </h5>
-            <button>Go to Profile</button>
+            <Link to="/Profile">
+              <button key="UserProfile" onClick={() => {Settings}}>Go to Profile</button><br></br>
+            </Link>
         </div>
         <div className='ProfileImg'>
         <img className="UserProfile"src={UserProfilePicture} alt="Smiling patient and doctor"/>

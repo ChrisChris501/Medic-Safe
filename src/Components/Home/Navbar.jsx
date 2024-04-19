@@ -14,8 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="navigation">
-        <img className="navLogo"src={LOGO} alt="My_HealthHubLogo"
-        />
+        <img className="navLogo"src={LOGO} alt="My_HealthHubLogo"/>
 
         <div className={`menuIcon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="bar1"></div>
@@ -27,7 +26,7 @@ const Navbar = () => {
                 <a key="Home" href="/">Home</a>
             </li>
             <li className="About Us">
-                <a key="About" href="/about">About Us</a>
+                <a key="About" href="/Privacy_Security">About Us</a>
             </li>
             <li className="Services">
                 <a key="About" href="/ServicesPage">Services</a>
@@ -47,7 +46,7 @@ const Navbar = () => {
                 <Link to="/DoctorsSignUp">
                     <button key="SignUp" onClick={() => {DoctorsSignUp}}>Sign up</button>
                 </Link>
-             </li> 
+             </li>
         </ul>
     </nav>
   )
