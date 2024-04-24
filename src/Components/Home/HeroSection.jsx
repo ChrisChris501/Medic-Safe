@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className='Hero'>
         <div className='HeroText'>
-          <h1>Medi-Safe; Your Personal Health Hub</h1>
+          <h1>Medic-Safe; Your Personal Health Hub</h1>
           <h5>Your one-stop solution for organizing,
             accessing, and sharing your health information securely.</h5>
           <div className='HeroSectionLink'>

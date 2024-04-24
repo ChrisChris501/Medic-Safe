@@ -1,0 +1,94 @@
+.NotifcationfulIdent {
+    margin: 18vh auto;
+    width: 30vw;
+    height: 60vh;
+    box-shadow: 10px 10px rgb(252, 247, 247);
+}
+
+.BlueHead {
+    background-color: #007D79;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center;
+    padding-right: 20px;
+}
+
+.BlueHead i{
+    text-align: right;
+}
+
+.Notification{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Notification h6{
+    color: #161616;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.NotificationHeader{
+    display: grid;
+    grid-template-columns: 20vh 20vh;
+    gap: 26vh;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #007D79;
+}
+
+.NotificationImg {
+ width: 30px;
+ height: 25px;
+ border-radius: 100%;
+ margin-left: 30px;
+}
+
+.Notification{
+    display: grid;
+    grid-template-columns: 10vh 60vh;
+    grid-template-rows: 6vh;
+}
+
+.Notification a{
+    text-decoration: none;
+}
+
+.NotificationButton{
+    display: flex;
+    margin: 0px;
+    margin-left: 190px;
+}
+
+.NotificationButton button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.Accepted{
+ background-color: #42BE65;
+}
+
+.Rejected{
+    background-color: #DB3D3D;
+}
+
+
+
+

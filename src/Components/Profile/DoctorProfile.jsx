@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './DoctorProfile.css';
 import WhiteLogo from '../../assets/WhiteLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBell, faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faSearch, faHandHoldingUsd, faCog, faQuestion } from "@fortawesome/free-solid-svg-icons";
 import DoctorProfileImage from '../../assets/DoctorProfileImage.png';
 
 const DoctorProfile = () => {
@@ -12,43 +14,46 @@ const DoctorProfile = () => {
             <img className="navLogo"src={WhiteLogo} alt="My_HealthHubLogo"/>
         </div>
       <div className='DoctorFirstLinks'>
-            <Link to="/Dashboard">
-              <button key="Dashboard" onClick={() => {Dashboard}}>Dashboard</button><br></br>
+            <Link to="/DoctorDashboard">
+              <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
-            <Link to="/Profile">
-              <button key="Profile" onClick={() => {Profile}}>Profile</button><br></br>
+            <Link to="/DoctorProfile">
+              <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
             </Link>
             <Link to="/MedicalHistory">
-              <button key="MedicslHistory" onClick={() => {MedicalHistory}}>Medical History</button><br></br>
+              <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
             </Link>
-            <Link to="/MedicalUpload">
-              <button key="Medical Upload" onClick={() => {MedicalUpload}}>Medical Upload</button><br></br>
+            <Link to="/DoctorMedicalUpload">
+              <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
             </Link>
             <Link to="/DocumentScanner">
-              <button key="Document Scanner" onClick={() => {MedicalUpload}}>Document Scanner</button><br></br>
+              <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
             </Link>
-            </div>
-            <div className='PatientSeconLinks'>
+           </div>
+          <div className='DoctorDashboardSecondLinks'>
             <Link to="/Privacy_Security">
-              <button key="PrivacyPolicy" onClick={() => {PrivacyPolicy}}>Privacy Policy</button><br></br>
+              <button key="PrivacyPolicy"><FontAwesomeIcon icon={faHandHoldingUsd} /> Privacy Policy</button><br />
             </Link>
             <Link to="/Settings">
-              <button key="Settings" onClick={() => {Settings}}>Settings</button><br></br>
+              <button key="Settings"><FontAwesomeIcon icon={faCog} /> Settings</button><br />
             </Link>
             <Link to="/LogOut">
-              <button key="Logout" onClick={() => {Logout}}>Logout</button><br></br>
+              <button key="Logout"><FontAwesomeIcon icon={faQuestion} /> Logout</button><br />
             </Link>
           </div>
         </div>
-    <div className="TheDoctorDetails">
-      <div className='SearchDetails'>
-      <input
+  <div className="TheDoctorDetails">
+    <div className='SearchDetails'>
+      <div>
+        <input
           type="text"
           placeholder="Search"
           className="TextInput"
           />
+        </div>
           <div className='SideBarImage'>
-            <img className="DoctorProfileImg"src={DoctorProfileImage} alt="Doctor Profile Image"/>
+            <FontAwesomeIcon icon={faBell} />
+            <img className="PatientProfileImg"src={DoctorProfileImage} alt="Patient Profile Image"/>
           </div>
         </div>
        <div className="TheDoctorProfileDetails">

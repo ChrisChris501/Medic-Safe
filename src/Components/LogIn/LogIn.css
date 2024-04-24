@@ -211,9 +211,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /* background-color: #FFF; */
-  color: #8b8b8b;
   padding: 0 0.2px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .MediaOptions li {
@@ -235,53 +235,28 @@
   text-decoration: none;
   color: #344054;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
+.MediaOptions img{
+  height: 15px;
+  width: 14px;
+  margin-bottom: -2px;
+  padding-right: 3px;
+}
 
-/*
-.fa {
-  display:flex;
-  padding-left: 20px;
-  font-size: 5px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
+.SignUpContainer .errorMessage {
+  background-color: #3DDBD9;
+  color: #e20404;
+  padding: 5px;
   border-radius: 5px;
+  width: 15vw;
+  font-size: 15px;
+  margin-bottom: 10px; /* Adjusted margin-top to match the spacing */
 }
 
-
-.fa-facebook {
-  background: white;
-  color: blue;
+.SignUpContainer .errorMessage::before {
+  content: "⚠ "; /* Adding a warning icon before the error message */
+  font-size: 16px;
+  margin-right: 5px;
 }
-
-.fa-google {
-  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
-a.facebook{
-  background-color: white;
-  margin-top: -70px;
-}
-
-a.facebook span{
-  font-size: 12px;
-  font-family: 'Times New Roman';
-  color: black;
-}
-a.google{
-  background-color: white;
-  margin-top: 20px;
-}
-a.google span{
-  font-size: 12px;
-  font-family: 'Times New Roman';
-  color: black;
-}
-
-*/

@@ -1,0 +1,355 @@
+.AuthenticationWrapper{
+  display: grid;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: 100vh;
+  width: 85vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: -5px -5px 10px #fff,
+              5px 5px 10px #038f49;
+  margin: auto;
+  margin-top: 20vh;
+
+}
+
+.MediSafeAuthenticationcontainer {
+background-color: #007D79;
+height: 100%;
+align-items: center;
+}
+
+.MediSafeAuthenticationcontainer a {
+color: #D9FBFB;
+text-decoration: none;
+}
+
+.AuthenticationForm p{
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.Auth h6 {
+padding-left: 35px;
+color: white;
+font-size: 12px;
+font-weight: 100;
+padding-top: 25px;
+}
+
+.AuthenticationContainer{
+background: #D9FBFB;
+justify-content: center;
+align-items: center;
+height: 100%;
+padding: 50px;
+}
+
+.AuthenticationContainer h5{
+color: #007D79;
+font-size: 30px;
+line-height: 38px;
+font-weight: 500px;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+.AuthImg {
+height: 50vh;
+width: 20vw;
+margin-top: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.AuthenticationContainer form{
+  text-align: center;
+}
+
+.AuthenticationContainer form input{
+  background: #ffffff;
+  padding: 10px;
+  padding-left:8px;
+  font-size: 12px;
+  font-weight:100;
+  font-family: 'Times New Roman';
+  margin: 10px 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 93%;
+  height: 10px;
+  border: 0.5px solid grey;
+  outline: none;
+  border-radius: 5px;
+  /* box-shadow: inset 7px 2px 10px #babebc,
+              inset -5px -5px 12px #fff; */
+}
+
+.AuthenticationForm {
+  margin-top: 70px;
+}
+
+.AuthenticationForm h6{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.AuthForm {
+  text-align: left;
+  margin: auto;
+  padding-left: 10px;
+}
+
+
+.AuthButton{
+text-align: center;
+}
+.AuthForm button{
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  height: 5vh;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: white;
+  background-color: #007D79;
+  margin-bottom: 50px;
+  transition: transform 80ms ease-in;
+}
+
+.AuthForm a{
+  text-decoration: none;
+  color: #007D79;
+}
+
+.AuthMediCurve {
+padding-top: 200px;
+position: absolute;
+color: #009D9A;
+font-family: 'Times New Roman';
+line-height: 100px;
+left: 42%;
+bottom: -10%;
+transform: translateX(-70%);
+width: calc(25% + 25%);
+padding: 10px;
+height: 30%;
+background: #EDF5FF;
+text-align: center;
+border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+}
+
+
+.AuthMediCurve img{
+height: 12vh;
+width: 30vw;
+margin-top: 35px;
+}
+
+/*.medi-safe-container i{
+padding-left: 35px;
+position: absolute;
+margin-top: -28px;
+height: 150%;
+color: white;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 110%;
+  top: -10%;
+  background-color: #9EF0F0;
+  color: #fff;
+  transition: all 0.5s;
+} */
+
+.AuthenticationForm span{
+color: #007D79;
+font-size: 22px;
+font-weight: 700;
+}
+
+.MediaOptions li {
+width: 70%;
+height: 10px;
+padding: 10px 20px;
+background-color: hsl(0, 0%, 100%);
+border: 0.5px solid grey;
+outline: none;
+border-radius: 5px;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+margin: auto;
+margin-top: 20px;
+list-style: none;
+}
+
+.MediaOptions li a{
+text-decoration: none;
+color: #344054;
+font-size: 12px;
+font-weight: 400;
+text-align: center;
+}
+
+
+/* Six Digits Details */
+
+.AuthDetails span{
+  color: #007D79;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -150px;
+  font-family: 'Times New Roman';
+}
+
+.AuthDetails p{
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+.SixDigitAuth{
+  margin-top: 50px;
+}
+
+.AuthenticationBox{
+  margin-top: 35px;
+}
+
+.AuthenticationBox h6{
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.AuthBox{
+  display: flex;
+}
+
+.AuthBox input{
+  width: 5px;
+  height: 5px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid #007D79;
+  background-color: #D9FBFB;
+  font-weight: 500;
+  color: black;
+  outline: none;
+  transition: all 0.1s;
+}
+
+.AuthBox input:focus{
+  border: 2px solid #D9FBFB;
+  box-shadow: 0 0 2px 2px #038f49;
+}
+
+.click-here{
+  /* margin: 30px 0 0 10px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #595959;
+  font-size: 18px;
+  text-align: left;
+  }
+  .click-here a{
+  color: #5da010;
+  text-decoration: none;
+  }
+
+  .click-here a:hover{
+  text-decoration: underline;
+  }
+
+  .click-here button{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    height: 5vh;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    background-color: #007D79;
+    margin-top: 30px;
+    transition: transform 80ms ease-in;
+  }
+
+
+/*
+.fa {
+display:flex;
+padding-left: 20px;
+font-size: 5px;
+width: 70px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+}
+
+
+.fa-facebook {
+background: white;
+color: blue;
+}
+
+.fa-google {
+background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+}
+
+a.facebook{
+background-color: white;
+margin-top: -70px;
+}
+
+a.facebook span{
+font-size: 12px;
+font-family: 'Times New Roman';
+color: black;
+}
+a.google{
+background-color: white;
+margin-top: 20px;
+}
+a.google span{
+font-size: 12px;
+font-family: 'Times New Roman';
+color: black;
+}
+
+*/

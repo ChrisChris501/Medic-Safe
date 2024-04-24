@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SignUpDoctors from '../../assets/SignUpDoctors.png';
 import LOGO from '../../assets/LOGO.png';
+import GoogleIcon from '../../assets/GoogleIcon.png';
 import './SignUp.css';
 
 function PatientsSignUp() {
   const [DoctorsId, setDoctorsId] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleUniqueIdChange = (event) => {
     setDoctorsId(event.target.value);
@@ -22,6 +25,10 @@ function PatientsSignUp() {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
+  };
+
+  const handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
   };
 
   const handleFirstNameChange = (event) => {
@@ -38,39 +45,22 @@ function PatientsSignUp() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    try {
-      // Simulate form submission logic (replace with actual logic)
-      const response = await fetch('', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          DoctorsId,
-          email,
-          password,
-          rememberMe,
-        }),
-      });
+    if (DoctorsId.length < 10) {
+      setErrorMessage('Doctor\'s ID must be at least 10 characters.');
+    } else if (password.length < 8) {
+      setErrorMessage('Password must be at least 8 characters.');
+    } else if (password !== confirmPassword) {
+      setErrorMessage('Passwords do not match.');
+    } else {
+      // Reset error message
+      setErrorMessage('');
 
-      if (response.ok) {
-        console.log('Sign up successful');
-        // Reset form fields
-        setFirstName('');
-        setLastName('');
-        setDoctorsId('');
-        setEmail('');
-        setPassword('');
-        setRememberMe(false);
-      } else {
-        console.error('Sign up failed');
-        const errorData = await response.json();
-        console.error(errorData.message);
+      try {
+        window.location.href = "/Authentication";
+      } catch (error) {
+        console.error('Error occurred during sign up:', error);
+        // Handle errors, if any
       }
-    } catch (error) {
-      console.error('Error occurred during sign up:', error);
     }
   };
 
@@ -132,6 +122,8 @@ function PatientsSignUp() {
           <input
             type="password"
             placeholder="Confirm password"
+            value={confirmPassword}
+            onChange={handleConfirmPasswordChange}
             required
             className="TextInput"
           />
@@ -145,35 +137,27 @@ function PatientsSignUp() {
             />
             <label htmlFor="SignUpCheck">Remember me</label>
           </div>
+          {errorMessage && <p className="errorMessage">{errorMessage}</p>}
           <div className='SignUpButton'>
-            <button type="submit" className="form_btn">Sign up</button>
+            <button type="submit">Sign up</button>
           </div>
           <div className="SignUpLine"></div>
           <ul className="MediaOptions">
             <li>
-              <a href="#" className="Google">
-                <i className="fab fa-google fa-3x"></i>
-                Sign up with Google
-              </a>
-            </li><br></br>
-            <li>
-              <a href="#" className="Facebook">
-                <i className="fa-brands fa-facebook"></i>
-                Sign up with Facebook
-              </a>
+              <a href="#" className="Google"><img src={GoogleIcon} alt="Google Logo" /> Sign in with Google</a>
             </li>
           </ul>
           <div className='SignUpFooter'>
             <h5>Already have an account? <Link to="/LogIn" className="CustomLink">Sign in</Link></h5>
             <h6>By clicking the create account button you agree to the
-              <Link to="Privacy_Security">Terms & Condition / Privacy policy</Link> 
-              </h6>
+            <Link to="Privacy_Security">Terms & Condition / Privacy policy</Link>
+            </h6>
           </div>
           <div className='PatienceRedirection'>
             <h6>
               For Doctors to create account, please click <Link to="/DoctorsSignUp" className="CustomLink">here</Link> 
             </h6>
-            </div>
+          </div>
         </form>
       </div>
     </div>

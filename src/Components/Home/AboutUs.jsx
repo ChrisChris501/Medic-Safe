@@ -40,9 +40,6 @@ const AboutUs = () => {
                   Unlock insights for enhancing your overall well-being.
                 </paragraph>
             </h5>
-            <div className='AboutUsButton'>
-        <button>Learn more</button>
-        </div>
         </div>
     </div>
   )

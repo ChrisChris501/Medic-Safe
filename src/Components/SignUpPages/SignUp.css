@@ -238,6 +238,29 @@
   text-align: center;
 }
 
+.MediaOptions img{
+  height: 15px;
+  width: 14px;
+  margin-bottom: -2px;
+  padding-right: 3px;
+}
+
+.LogIncontainer .errorMessage {
+  background-color: #3DDBD9;
+  color: #e20404;
+  padding: 5px;
+  border-radius: 5px;
+  width: 15vw;
+  font-size: 15px;
+  margin-bottom: 10px; /* Adjusted margin-top to match the spacing */
+}
+
+.LogIncontainer .errorMessage::before {
+  content: "⚠ "; /* Adding a warning icon before the error message */
+  font-size: 16px;
+  margin-right: 5px;
+}
+
 /*
 .fa {
   display:flex;

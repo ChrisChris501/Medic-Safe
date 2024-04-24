@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LogInImage from '../../assets/LogInImage.png';
 import LOGO from '../../assets/LOGO.png';
-import Home from '../Home/Home';
+import GoogleIcon from '../../assets/GoogleIcon.png';
 import './LogIn.css';
 
 function LogIn() {
@@ -9,6 +9,7 @@ function LogIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(''); // State to manage error message
 
   const handleUniqueIdChange = (event) => {
     setUniqueId(event.target.value);
@@ -26,51 +27,29 @@ function LogIn() {
     setRememberMe(event.target.checked);
   };
 
-  const handleSubmit = async (event) => { // make the function async
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    try {
-      const response = await fetch('', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          uniqueId,
-          email,
-          password,
-          rememberMe,
-        }),
-      });
-
-      if (response.ok) {
-        // Login successful, handle accordingly (e.g., redirect to dashboard)
-        console.log('Login successful');
-        // Example: Redirect to dashboard
-        // history.push('/dashboard');
-      } else {
-        // Login failed, handle accordingly (e.g., display error message)
-        console.error('Login failed');
-        const errorData = await response.json();
-        console.error(errorData.message); // Assuming server sends error message
-      }
-    } catch (error) {
-      console.error('Error occurred during login:', error);
-      // Handle error, such as displaying an error message to the user
+    if (uniqueId.length < 10) {
+      setErrorMessage('Unique ID must be at least 10 digits.');
+    } else if (password.length < 8) {
+      setErrorMessage('Password must be at least 8 characters.');
+    } else {
+      // Redirect to profile page if all details are valid
+      window.location.href = "/Profile";
     }
   };
 
   return (
     <div className="LogInWrapper">
-        <div className="MediSafeLogIncontainer">
+      <div className="MediSafeLogIncontainer">
         <div className='LogIn'>
-          <i className="fa-solid fa-arrow-left"></i>
           <h6><a key="Home" href="/Home">Go back to homepage</a></h6>
           <img className="LogInImg" src={LogInImage} alt="Picture of Doctor and patient"/>
         </div>
         <div className='MediCurve'>
           <img className="Medic-Logo" src={LOGO} alt="MediC logo"/>
         </div>
-        </div>
+      </div>
       <div className="LogIncontainer">
         <h5>Welcome back, <br /> Login to account</h5>
         <form onSubmit={handleSubmit}>
@@ -95,8 +74,7 @@ function LogIn() {
             onChange={handlePasswordChange}
             required
           />
-        </form>
-        <div className="CheckBox">
+          <div className="CheckBox">
             <input
               type="checkbox"
               id="signupCheck"
@@ -105,26 +83,19 @@ function LogIn() {
             />
             <label htmlFor="signupCheck">Keep me signed in</label>
           </div>
+          {errorMessage && <p className="errorMessage">{errorMessage}</p>}
           <div className='LogInButton'>
-            <button type="submit" className="form_btn">Log in</button>
+            <button type="submit">Log in</button>
           </div>
           <div className="LogInLine"></div>
           <ul className="MediaOptions">
             <li>
-                <a href="#" className="Google">
-                  <i className="fab fa-google fa-3x"></i>
-                  Sign in with Google
-                </a>
-            </li><br></br>
-            <li>
-                <a href="#" className="Facebook">
-                  <i className="fa-brands fa-facebook"></i>
-                  Sign in with Facebook
-                </a>
+              <a href="#" className="Google"><img src={GoogleIcon} alt="Google Logo" /> Sign in with Google</a>
             </li>
           </ul>
-        </div>
+        </form>
       </div>
+    </div>
   );
 }
 

@@ -25,14 +25,11 @@ const Navbar = () => {
             <li className="home">
                 <a key="Home" href="/">Home</a>
             </li>
-            <li className="About Us">
-                <a key="About" href="/Privacy_Security">About Us</a>
-            </li>
             <li className="Services">
                 <a key="About" href="/ServicesPage">Services</a>
             </li>
             <li className="Blog">
-                <a key="Blog" href="/Blog">Blog</a>
+                <a key="Blog" href="/HealthEdu">Health Education</a>
             </li>
             <li className="Profile">
                 <a key="Profile" href="/Profile">Profile</a>
