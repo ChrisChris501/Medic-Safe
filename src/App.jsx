@@ -19,6 +19,7 @@ import PatientDashboard from './Components/DashBoardPages/PatientDashboard';
 import AuthSuccessful from './Components/AuthenticationPages/AuthSuccessful';
 import NewCode from './Components/AuthenticationPages/NewCode';
 import DoctorMedicalUpload from './Components/MedicalUpload/DoctorMedicalUpload';
+import PatientMedicalUpload from './Components/MedicalUpload/PatientMedicalUpload';
 import Notification from './Components/AuthenticationPages/Notification/Notification';
 import ChoiceNotification from './Components/AuthenticationPages/Notification/ChoiceNotification';
 import RejectedNotification from './Components/AuthenticationPages/Notification/RejectedNotification';
@@ -50,6 +51,7 @@ function App() {
           <Route path="/AuthSuccessful" element={<AuthSuccessful />} />
           <Route path="/NewCode" element={<NewCode />} />
           <Route path="/DoctorMedicalUpload" element={<DoctorMedicalUpload />} />
+          <Route path="/PatientMedicalUpload" element={<PatientMedicalUpload />} />
           <Route path="/Notification" element={<Notification />} />
           <Route path="/ChoiceNotification" element={<ChoiceNotification />} />
           <Route path="/RejectedNotification" element={<RejectedNotification />} />

@@ -87,9 +87,7 @@ function LogIn() {
           </div>
           {errorMessage && <p className="errorMessage">{errorMessage}</p>}
           <div className='LogInButton'>
-              <Link to="/LogIn">
-                  <button type="submit">Log in</button>
-              </Link>
+            <button type="submit">Log in</button>
           </div>
           <div className="LogInLine"></div>
           <ul className="MediaOptions">

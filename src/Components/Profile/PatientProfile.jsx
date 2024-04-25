@@ -24,7 +24,7 @@ const PatientProfile = () => {
             <Link to="/MedicalHistory">
               <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
             </Link>
-            <Link to="/DoctorMedicalUpload">
+            <Link to="/PatientMedicalUpload">
               <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
             </Link>
             <Link to="/DocumentScanner">

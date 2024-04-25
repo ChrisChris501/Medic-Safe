@@ -132,9 +132,7 @@ function DoctorsSignUp() {
           </div>
           {errorMessage && <p className="errorMessage">{errorMessage}</p>}
           <div className='SignUpButton'>
-            <Link to="/SignUp">
-                <button type="submit">Sign up</button>
-            </Link>
+            <button type="submit">Sign up</button>
           </div>
           <div className="SignUpLine"></div>
           <ul className="MediaOptions">
