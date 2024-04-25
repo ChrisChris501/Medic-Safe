@@ -138,7 +138,9 @@ function PatientsSignUp() {
             <label htmlFor="SignUpCheck">Remember me</label>
           </div>
           {errorMessage && <p className="errorMessage">{errorMessage}</p>}
-          <Link to="/Authentication" className="CustomLink">Sign in</Link>
+          <div className='SignUpButton'>
+            <button type="submit">Sign up</button>
+          </div>
           <div className="SignUpLine"></div>
           <ul className="MediaOptions">
             <li>
