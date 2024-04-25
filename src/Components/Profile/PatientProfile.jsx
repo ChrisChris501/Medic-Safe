@@ -54,9 +54,8 @@ const PatientProfile = () => {
           />
         </div>
           <div className='SideBarImage'>
-            <Link to="/Notification">
-              <FontAwesomeIcon icon={faBell} />
-            </Link><img className="PatientProfileImg"src={PatientProfileImage} alt="Patient Profile Image"/>
+            <Link to="/Notification"><FontAwesomeIcon icon={faBell} /></Link>
+            <img className="PatientProfileImg"src={PatientProfileImage} alt="Patient Profile Image"/>
           </div>
         </div>
       <div className="ThePatientProfileDetails">

@@ -3,6 +3,7 @@ import LogInImage from '../../assets/LogInImage.png';
 import LOGO from '../../assets/LOGO.png';
 import GoogleIcon from '../../assets/GoogleIcon.png';
 import './LogIn.css';
+import { Link } from 'react-router-dom';
 
 function LogIn() {
   const [uniqueId, setUniqueId] = useState('');
@@ -42,10 +43,11 @@ function LogIn() {
   return (
     <div className="LogInWrapper">
       <div className="MediSafeLogIncontainer">
-        <div className='LogIn'>
-          <h6><a key="Home" href="/Home">Go back to homepage</a></h6>
-          <img className="LogInImg" src={LogInImage} alt="Picture of Doctor and patient"/>
-        </div>
+      <div className='LogIn'>
+        <h6><Link key="Home" to="/Home">Go back to homepage</Link></h6>
+        <img className="LogInImg" src={LogInImage} alt="Picture of Doctor and patient" />
+      </div>
+
         <div className='MediCurve'>
           <img className="Medic-Logo" src={LOGO} alt="MediC logo"/>
         </div>
@@ -85,7 +87,9 @@ function LogIn() {
           </div>
           {errorMessage && <p className="errorMessage">{errorMessage}</p>}
           <div className='LogInButton'>
-            <button type="submit">Log in</button>
+              <Link to="/LogIn">
+                  <button type="submit">Log in</button>
+              </Link>
           </div>
           <div className="LogInLine"></div>
           <ul className="MediaOptions">
