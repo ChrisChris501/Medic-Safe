@@ -22,18 +22,18 @@ const Navbar = () => {
             <div className="bar3"></div>
         </div>
        <ul className={`navMenu ${isMenuOpen ? 'open' : ''}`}>
-            <li className="home">
-                <a key="Home" href="/">Home</a>
-            </li>
-            <li className="Services">
-                <a key="About" href="/ServicesPage">Services</a>
-            </li>
-            <li className="Blog">
-                <a key="Blog" href="/HealthEdu">Health Education</a>
-            </li>
-            <li className="Profile">
-                <a key="Profile" href="/Profile">Profile</a>
-            </li>
+       <li className="home">
+            <Link key="Home" to="/">Home</Link>
+        </li>
+        <li className="Services">
+            <Link key="About" to="/ServicesPage">Services</Link>
+        </li>
+        <li className="Blog">
+            <Link key="Blog" to="/HealthEdu">Health Education</Link>
+        </li>
+        <li className="Profile">
+            <Link key="Profile" to="/Profile">Profile</Link>
+        </li>
             <li className="LogIn">
                 <Link to="/LogIn">
                     <button key="LogIn" onClick={() => {LogIn}}>Log in</button>
