@@ -6,10 +6,10 @@
   left: 0;
   z-index: 1000; /* Ensure the navigation appears on top of other content */
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
   grid-template-rows: 1fr;
-  padding: 15px 5px 5px 5px;
-  margin: 0px 2px 15px 5px;
+  padding: 15px 5px 5px 55px;
+  margin: 0px 2px 15px 0;
   height: 10%;
   background-color: white;
   width: 100vw;
@@ -17,8 +17,9 @@
   
   @media (max-width: 900px) {
     .navigation {
-      height: 20%;
-      margin-left: 10px;
+      height: 15%;
+      padding-left: 10px;
+      margin-left: 0px;
     }
   }
 
@@ -26,19 +27,20 @@
     width: 40%;
     height: 80%;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 40px;
   }
   
   @media (max-width: 900px) {
     .navLogo{
-      height: 70%;
-      width: 60%;
-      margin-right: 95px;
+      height: 60%;
+      width: 73%;
+      margin-right: 5px;
     }
   }
   
   .navMenu {
     width: 95%;
+    margin-left: 5px;
   }
   
   .navMenu li {
@@ -51,17 +53,21 @@
     .navMenu li {
         display: block;
         text-align: center;
-        padding: 10px;
-        margin: 0;
+        padding: 5px 8px;
+        margin: 5px;
+        background-color: #ecf5f7;
+        border-radius: 5px;
+        border: 1px solid #24727c;
       }
     }
   
-.navMenu a, button {
+.navMenu a, .navMenu button {
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
     color: #24727c;
     cursor: pointer;
+    border-radius: 5px;
   }
 
 
@@ -98,6 +104,26 @@
     width: 6vw;
     height: 5vh;
   }
+
+  @media (max-width: 900px) {
+    .LogIn button{
+      color: #24727c;
+      background-color: inherit;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+      height: 2px;
+    }
+  
+    .SignUp button{
+      width: 100%;
+      height: 2px;
+      border: none;
+      background-color: inherit;
+      color: #24727c;
+    }
+    }
 
   .LogIn button:hover{
     color: #3DDBD9;
