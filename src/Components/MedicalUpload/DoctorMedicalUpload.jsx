@@ -17,7 +17,7 @@ const DoctorMedicalUpload = () => {
     <div className='TheDoctorProfile'>
       <div className='TheDoctorProfileLinks'>
         <div className="TheProfileLogo">
-          <img className="navLogo" src={WhiteLogo} alt="My_HealthHubLogo" />
+          <img className="navLogo" src={WhiteLogo} alt="The Medic-Safe Logo" />
         </div>
         <div className='DoctorFirstLinks'>
           <Link to="/DoctorDashboard">
@@ -36,7 +36,7 @@ const DoctorMedicalUpload = () => {
             <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
           </Link>
         </div>
-        <div className='DoctorDashboardSecondLinks'>
+        <div className='DoctorProfileSecondLinks'>
           <Link to="/Privacy_Security">
             <button key="PrivacyPolicy"><FontAwesomeIcon icon={faHandHoldingUsd} /> Privacy Policy</button><br />
           </Link>
@@ -70,7 +70,7 @@ const DoctorMedicalUpload = () => {
                 <h4>Upload medical history here</h4>
                 <h5>Drag and drop <a href=''>here</a> in browser</h5>
                 <Link to="/PatientProfile">
-                  <button key="Profile" onClick={handleMedicalUpload}> Download file <FontAwesomeIcon icon={faDownload} /></button><br />
+                  <button key="FileUpload" onClick={handleMedicalUpload}> Upload file <FontAwesomeIcon icon={faDownload} /></button><br />
                 </Link>
               </div>
               <div className='UploadFooter'>
@@ -101,3 +101,4 @@ const DoctorMedicalUpload = () => {
 }
 
 export default DoctorMedicalUpload;
+

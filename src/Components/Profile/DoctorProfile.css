@@ -2,12 +2,8 @@
     margin-top: 13vh;
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 150vh;
-}
-
-.TheDoctorProfileLinks{
-    background-color: #007D79;
-    height: 110%;
+    height: 120vh;
+    margin-bottom: 55vh;
 }
 
 .SearchDetails{
@@ -44,16 +40,14 @@
     margin-top: 20px;
 }
 
-.TheDocotorFirstLinks{
+.DoctorFirstLinks{
     margin-top: 20px;
     text-align: center;
+    background-color: #007D79;
+    margin-bottom: 45vh;
 }
 
-.DoctorSeconLinks{
-    margin-top: 70vh;
-}
-
-.DoctorFirstLinks button, .DoctorSeconLinks button{
+.DoctorFirstLinks button, .DoctorProfileSecondLinks button{
     display: block;
     margin: auto 20px;
     padding: 5px 20px;
@@ -64,13 +58,14 @@
     font-size: 12px;
 }
 
-.DoctorFirstLinks a, .DoctorSeconLinks a{
+.DoctorFirstLinks a, .DoctorProfileSecondLinks a{
     text-decoration: none;
 }
 
 .TheDoctorProfileDetails{
     background-color: #D9FBFB;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .TheDoctorProfileDetails h2{
@@ -91,12 +86,12 @@
     grid-template-columns: 31% 31% 31%;
     gap: 20px;
     padding: 15px;
-    height: 70vh;
 }
 
 .DoctorPrimaryDetails{
     text-align: center;
     margin-left: 80px;
+    margin-bottom: 20px;
 }
 
 .DoctorPrimaryDetails img{

@@ -30,7 +30,7 @@ const DoctorProfile = () => {
               <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
             </Link>
            </div>
-          <div className='DoctorDashboardSecondLinks'>
+          <div className='DoctorProfileSecondLinks'>
             <Link to="/Privacy_Security">
               <button key="PrivacyPolicy"><FontAwesomeIcon icon={faHandHoldingUsd} /> Privacy Policy</button><br />
             </Link>
