@@ -7,14 +7,14 @@
   top: 0;
   left: 0; */
   z-index: 1000; /* Ensure the navigation appears on top of other content */
-  display: grid;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 1fr;
-  padding: 15px 5px 5px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
   margin: 0px 2px 15px 0;
-  height: 10%;
+  /* height: 10%; */
   background-color: white;
-  width: 100vw;
+  width: 100%;
   }
   
   @media (max-width: 900px) {
@@ -26,8 +26,8 @@
   }
 
   .navLogo {
-    width: 40%;
-    height: 80%;
+    width: 20%;
+    /* height: 80%; */
     margin-top: 10px;
     margin-left: 40px;
   }
@@ -38,11 +38,6 @@
       width: 73%;
       margin-right: 5px;
     }
-  }
-  
-  .navMenu {
-    width: 95%;
-    margin-left: 5px;
   }
   
   .navMenu li {
@@ -175,3 +170,9 @@
       display: block;
     }
   }
+
+  @media (max-width: 500px) {
+    .navLogo {
+      width: 40%;
+    }
+}

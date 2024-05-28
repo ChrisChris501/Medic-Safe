@@ -1,9 +1,17 @@
+.ServicePage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .ServicesLandingText {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
     text-align: center;
     color: #007D79;
     background-color: #D9FBFB;
-    height: 10vh;
-    padding: 100px 20px 80px 20px;
+    padding: 50px 0;
 }
 
 .ServicesLandingText h3{
@@ -24,36 +32,19 @@
     width: 100%;
 }
 
-@media (max-width: 900px) {
-
-  .ServicesLandingText {
-    text-align: center;
-    color: #007D79;
-    background-color: #D9FBFB;
-    height: 10vh;
-    padding: 150px 20px 80px 20px;
-}
-
-    .ServicesLandingText h6 {
-        width: 80%;
-}
-    
-    .ServicesLanding img {
-        height: auto; 
-        max-height: 300px;
-    }
-}
-
 .ServicesCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 20px;
+    gap: 50px;
     padding: 40px;
     margin: 0 auto; 
   }
   
   .Card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: 100%;
   }
 
@@ -68,15 +59,16 @@
 
   .Card h3 {
     color: #007D79;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 500;
+    line-height: 30px;
     margin-bottom: 10px;
     padding-left: 10px;
   }
 
   .Card h5 {
     color: #3DDBD9;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 5px;
     padding-left: 10px;
@@ -85,10 +77,29 @@
   .Card h6{
     padding-left: 10px;
     color: #262626;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 25px;
   }
+
+@media (max-width: 900px) {
+
+  .ServicesLandingText {
+    text-align: center;
+    color: #007D79;
+    background-color: #D9FBFB;
+}
+
+    .ServicesLandingText h6 {
+        width: 80%;
+}
+    
+    .ServicesLanding img {
+        height: auto; 
+        max-height: 300px;
+    }
+}
+
 
   @media (max-width: 900px) {
     .ServicesCards {
@@ -99,5 +110,11 @@
 
     .Card {
         width: 80%; 
+    }
+}
+
+@media (max-width: 500px) {
+    .ServicesLandingText {
+      padding: 50px;
     }
 }
