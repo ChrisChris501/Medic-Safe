@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Home/Navbar';
 import Home from './Components/Home/Home';
@@ -29,8 +29,8 @@ import Footer from './Components/Home/Footer';
 
 function App() {
   return (
-    <div className="App">
       <Router>
+    <div className="App">
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
@@ -58,8 +58,8 @@ function App() {
           <Route path="/AcceptedNotification" element={<AcceptedNotification />} />
         </Routes>
         <Footer />
-      </Router>
     </div>
+      </Router>
   );
 }
 

@@ -8,6 +8,9 @@
   }
 
   .HeroText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: 50px;
     margin-top: -340px;
   }
@@ -26,21 +29,25 @@
 
   .HeroText h5{
     color: #262626;
-    font-size: 12px;
-    font-size: 200;
-    line-height: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
     margin-bottom: 15px;
   }
 
   .HeroLink{
-    background-color: #009D9A;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 12px;
     text-decoration: none;
     text-align: center;
+  }
+  .HeroLink button {
+    border: none;
+    outline: none;
+    background-color: #009D9A;
+    color: white;
+    padding: 8px 12px;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
   .HeroLink:hover{
