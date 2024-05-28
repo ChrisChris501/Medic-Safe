@@ -20,25 +20,25 @@ const AboutUs = () => {
               the way you manage your health.
             </h3>
             <h5>
-                <paragraph>
+                <p>
                   We prioritize your well-being. Here's how we empower you:
-                </paragraph>
-                <paragraph>
+                </p>
+                <p>
                   <br></br>
                   By creating a secure profile tailored to your needs.
                   Input vital information such as age, gender, allergies, medical conditions, and medications.
                   Your profile forms the cornerstone for personalized health recommendations and medical records.
-                </paragraph>
+                </p>
                 <br></br>
-                <paragraph>
+                <p>
                   This comprehensive record ensures healthcare providers understand your health background thoroughly. <br></br>
                   We seamlessly document your medical journey, including past illnesses, surgeries, hospitalizations, and family medical history.
-                </paragraph>
+                </p>
                 <br></br>
-                <paragraph>
+                <p>
                   Benefit from tailored health recommendations based on your profile, medical history, and health metrics. 
                   Unlock insights for enhancing your overall well-being.
-                </paragraph>
+                </p>
             </h5>
         </div>
     </div>
