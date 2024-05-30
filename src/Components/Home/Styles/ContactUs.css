@@ -114,14 +114,14 @@
     .ContactImage img {
         width: 70vw;
         height: 55vh;
-        padding: 25px 10px 5px 0px;
+        padding: 30px 10px 5px 5px;
     }
 
     .ContactText {
         text-align: justify;
         margin-left: 10px;
         margin-top: 5px;
-        width: 65vw;
+        width: 6vw;
     }
 }
 
