@@ -37,7 +37,7 @@
     .ServicesLandingText h6 {
         width: 80%;
 }
-    
+
     .ServicesLanding img {
         height: auto; 
         max-height: 300px;
@@ -52,7 +52,7 @@
     padding: 40px;
     margin: 0 auto; 
   }
-  
+
   .Card {
     width: 100%;
   }
@@ -101,3 +101,4 @@
         width: 80%; 
     }
 }
+

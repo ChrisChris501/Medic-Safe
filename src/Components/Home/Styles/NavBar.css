@@ -6,7 +6,6 @@
   z-index: 1000; /* Ensure the navigation appears on top of other content */
   display: flex;
   padding: 10px 5px;
-  
   height: 10%;
   background-color: white;
   text-align: center;
@@ -219,8 +218,7 @@
 
   .menuIcon {
     display: block;
-    margin-right: 50px;
-    margin-left: 20px;
+    margin-right: 80px;
   }
 
   .navMenu {
@@ -229,6 +227,7 @@
 
   .navMenu.open {
     display: block;
+    margin-right: 50px;
   }
 }
 

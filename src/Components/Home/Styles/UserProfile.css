@@ -81,10 +81,13 @@
       display: grid;
       grid-template-columns: 1fr;
       margin: 10px;
+      width: 80vw;
+      padding: 30px 10px 0px 90px;
+      width: 80vw;
       gap: 25px;
     }
     .ProfileImg img{
-        width: 60vw;
+        width: 70vw;
         height: 58vh;
         border-radius: 10px;
         margin-top: 10px;
