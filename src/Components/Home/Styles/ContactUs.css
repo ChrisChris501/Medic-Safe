@@ -79,8 +79,8 @@
     .Contact {
         display: grid;
         grid-template-columns: 43% 43%;
-        gap: 40px;
-        margin-left: 90px;
+        gap: 30px;
+        margin-left: 30px;
         margin-top: 45px;
         margin-bottom: 15px;
     }
@@ -88,7 +88,7 @@
     .ContactImage img {
         width: 35vw;
         height: 65vh;
-        padding: 30px 20px 5px 50px;
+        padding: 30px 20px 5px 30px;
     }
 
     .ContactText {
@@ -106,7 +106,7 @@
 @media (max-width: 900px) {
     .Contact {
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: 80%;
         grid-template-rows: auto;
         gap: 35px;
     }
@@ -114,13 +114,14 @@
     .ContactImage img {
         width: 70vw;
         height: 55vh;
-        padding: 30px 20px 5px 15px;
+        padding: 25px 10px 5px 0px;
     }
 
     .ContactText {
         text-align: justify;
-        margin-left: 15px;
+        margin-left: 10px;
         margin-top: 5px;
-        width: 70vw;
+        width: 65vw;
     }
 }
+
