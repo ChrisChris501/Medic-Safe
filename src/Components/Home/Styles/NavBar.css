@@ -178,6 +178,7 @@
     .navLogo{
       height: 50%;
       width: 40%;
+      margin-right: 40px;
     }
 
     .LogIn button{
@@ -219,7 +220,7 @@
 
   .menuIcon {
     display: block;
-    margin-right: 100px;
+    margin-right: 70px;
   }
 
   .navMenu {
