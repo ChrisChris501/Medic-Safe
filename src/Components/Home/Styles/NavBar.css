@@ -4,35 +4,26 @@
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure the navigation appears on top of other content */
-  display: grid;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 1fr;
-  padding: 15px 5px 5px 55px;
-  margin: 0px 2px 15px 0;
+  display: flex;
+  padding: 10px 5px;
+  
   height: 10%;
   background-color: white;
-  width: 100vw;
-  }
-  
-  @media (max-width: 900px) {
-    .navigation {
-      height: 15%;
-      padding-left: 10px;
-      margin-left: 0px;
-    }
+  text-align: center;
+  width: 100%;
   }
 
   .navLogo {
-    width: 40%;
-    height: 80%;
+    width: 35%;
+    height: 75%;
     margin-top: 10px;
   }
-  
+
   .navMenu {
-    width: 95%;
+    width: 100%;
     margin-left: 5px;
   }
-  
+
   .navMenu li {
     display: inline-block;
     padding: 10px;
@@ -47,7 +38,6 @@
     cursor: pointer;
     border-radius: 5px;
   }
-
 
   .navMenu li a:active {
     color: #009D9A;
@@ -218,14 +208,27 @@
   }
   .navMenu li {
       display: block;
-      margin: 12px 10px 0 25vh;
+      text-align: center;
+      justify-content: center;
+      padding: 5px 8px;
+      margin: 5px;
+      background-color: #ecf5f7;
+      border-radius: 5px;
+      border: 1px solid #24727c;
     }
-    
-    .navMenu {
-      display: none;
-    }
-    
-    .navMenu.open {
-      display: block;
-    }
+
+  .menuIcon {
+    display: block;
+    margin-right: 50px;
+    margin-left: 20px;
   }
+
+  .navMenu {
+    display: none;
+  }
+
+  .navMenu.open {
+    display: block;
+  }
+}
+

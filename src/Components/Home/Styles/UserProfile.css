@@ -27,7 +27,7 @@
     color: #262626;
     font-size: 14px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 20px;
     text-align: justify;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -46,42 +46,68 @@
 
 .ProfileImg img{
     width: 30vw;
-    height: 65vh;
+    height: 55vh;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     object-fit: cover;
 }
 
+/* Tablets */
+@media (min-width: 901px) and (max-width: 1024px) {
+    .TheProfile{
+        padding: 30px 10px 0px 120px;
+        width: 80vw;
+    }
+
+    .ProfileImg img{
+        width: 32vw;
+        height: 65vh;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .ProfileText h4{
+        line-height: 25px;
+    }
+
+    .ProfileText h5{
+        line-height: 15px;
+    }
+}
+
+/* Phones */
 @media (max-width: 900px) {
     .TheProfile{
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 50% 50%;
-      gap: 80px;
+      margin: 10px;
+      gap: 25px;
     }
-
     .ProfileImg img{
-        width: 62vw;
+        width: 60vw;
         height: 58vh;
         border-radius: 10px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .ProfileText{
-        margin-right: 50px;
+        margin-right: 5px;
+        width: 83%;
     }
     .ProfileText h3{
         text-align: center;
+        margin-left: 10px;
     }
 
     .ProfileText button{
-        padding: 10px 5px;
+        padding: 8px 5px;
         width: 20vw;
         margin: 10px 0;
         border: 1px solid #3DDBD9;
         border-radius: 8px;
         color: #3DDBD9;
-        font-size: 13px;
+        font-size: 15px;
         background-color: #fff;
     }
   }
+
