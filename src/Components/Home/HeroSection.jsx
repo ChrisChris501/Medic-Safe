@@ -20,7 +20,6 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="HeroImg">
-        <div className="Background-color"></div>
         <img
           className="navLogo"
           src={HeroImg}
@@ -28,7 +27,6 @@ const HeroSection = () => {
         />
       </div>
       <div className="HeroImg2">
-        <div className="Background-color2"></div>
         <img className="navLogo" src={HeroImg2} alt="A Doctor at her Desk" />
       </div>
     </div>

@@ -1,5 +1,5 @@
 .LandingServices{
-    margin: -200px 10px 10px 10px;
+    margin:  10px;
     text-align: justify;
     color: #262626;
     font-weight: 400;
@@ -9,8 +9,7 @@
 
 .OurServices{
     padding: 5px 50px;
-    margin: 10px 75px;
-    margin-left: 40px;
+    margin: 10px 100px 10px 85px;
 }
 
 .OurServices h2{
@@ -22,10 +21,11 @@
 
 .MedicalOffers{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 40px;
+    grid-template-columns: 28% 30% 28%;
+    gap: 20px;
     padding: 5px 20px;
-    margin: 20px 80PX;
+    margin: 20px;
+    margin-left: 115px;
 }
 
 .MedicalHistory{
@@ -113,24 +113,34 @@
     text-align: center;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
+
+    .LandingServices{
+        margin: 20px;
+        text-align: justify;
+    }
 
     .OurServices{
-        margin: 20px 10px;
-        margin-left: 50px;
-        width: 70%;
-        text-align: justify;
+        width: 75%;
+        margin-left: 40px;
+    }
+
+    .OurServices h2{
+        text-align: center;
     }
     .MedicalOffers{
       display: grid;
-      grid-template-columns: 100%;
+      grid-template-columns: 1fr;
       grid-template-rows: 32% 32% 32%;
+      width: 75%;
+      margin-left: 70px;
     }
 
     .ServicesButton button{
         width: 18vw;
-        margin-top: 45px;
-        margin-bottom: 30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 80px;
         font-size: 12px;
     }
   }

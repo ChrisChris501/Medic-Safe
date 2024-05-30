@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './DoctorMedicalUpload.css';
 import WhiteLogo from '../../assets/WhiteLogo.png';
@@ -7,10 +7,45 @@ import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHolding
 import DoctorProfileImage from '../../assets/DoctorProfileImage.png';
 
 const DoctorMedicalUpload = () => {
-  // Function to handle medical upload
+  // Reference to the file input element
+  const fileInputRef = useRef(null);
+
+  // Function to handle medical upload button click
   const handleMedicalUpload = () => {
-    // Perform upload logic here
-    console.log("Medical upload initiated");
+    // Trigger the file input click event
+    fileInputRef.current.click();
+  };
+
+  // Function to handle file selection
+  const handleFileChange = async (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Perform upload logic here
+      console.log("Medical upload initiated with file:", file);
+
+      // Create a FormData object to hold the file
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        // Send the file to the server using fetch (replace 'your-upload-endpoint' with your actual endpoint)
+        const response = await fetch('your-upload-endpoint', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (response.ok) {
+          console.log("File uploaded successfully");
+          // Handle successful upload (e.g., show a success message, update state)
+        } else {
+          console.error("File upload failed");
+          // Handle upload failure (e.g., show an error message)
+        }
+      } catch (error) {
+        console.error("Error uploading file:", error);
+        // Handle error during upload
+      }
+    }
   };
 
   return (
@@ -69,9 +104,15 @@ const DoctorMedicalUpload = () => {
                 <FontAwesomeIcon icon={faCloudUpload} className="cloud-icon" />
                 <h4>Upload medical history here</h4>
                 <h5>Drag and drop <a href=''>here</a> in browser</h5>
-                <Link to="/PatientProfile">
-                  <button key="FileUpload" onClick={handleMedicalUpload}> Upload file <FontAwesomeIcon icon={faDownload} /></button><br />
-                </Link>
+                <button key="FileUpload" onClick={handleMedicalUpload}> 
+                  Upload file <FontAwesomeIcon icon={faDownload} />
+                </button><br />
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: 'none' }}
+                  onChange={handleFileChange}
+                />
               </div>
               <div className='UploadFooter'>
                 <h6>Use third party integration:<a href=''> Use third party integration:</a></h6>
@@ -101,4 +142,3 @@ const DoctorMedicalUpload = () => {
 }
 
 export default DoctorMedicalUpload;
-

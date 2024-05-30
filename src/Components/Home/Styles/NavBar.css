@@ -1,72 +1,37 @@
 /** The Navigation Menu**/
-
 .navigation {
   position: sticky;
   top: 0;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
+  left: 0;
   z-index: 1000; /* Ensure the navigation appears on top of other content */
-  display: grid;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 1fr;
-  padding: 15px 5px 5px 55px;
-  margin: 0px 2px 15px 0;
+  display: flex;
+  padding: 10px 5px;
   height: 10%;
   background-color: white;
-  width: 100vw;
-  }
-  
-  @media (max-width: 900px) {
-    .navigation {
-      height: 15%;
-      padding-left: 10px;
-      margin-left: 0px;
-    }
+  text-align: center;
   }
 
   .navLogo {
-    width: 40%;
-    height: 80%;
+    width: 35%;
+    height: 75%;
     margin-top: 10px;
-    margin-left: 40px;
   }
-  
-  @media (max-width: 900px) {
-    .navLogo{
-      height: 60%;
-      width: 73%;
-      margin-right: 5px;
-    }
-  }
-  
+
   .navMenu {
-    width: 95%;
+    width: 100%;
     margin-left: 5px;
   }
-  
+
   .navMenu li {
     display: inline-block;
     padding: 10px;
     margin: 0 15px 5px 10px;
   }
 
-  @media (max-width: 900px) {
-    .navMenu li {
-        display: block;
-        text-align: center;
-        padding: 5px 8px;
-        margin: 5px;
-        background-color: #ecf5f7;
-        border-radius: 5px;
-        border: 1px solid #24727c;
-      }
-    }
-  
 .navMenu a, .navMenu button {
     text-decoration: none;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     color: #24727c;
     cursor: pointer;
     border-radius: 5px;
@@ -76,7 +41,7 @@
   .navMenu li a:active {
     color: #009D9A;
   }
-  
+
   .navMenu li a:hover{
     color: #009D9A;
     border-radius: 5px;
@@ -92,9 +57,7 @@
     background-color: #3DDBD9;
     border: none;
     border-radius: 5px;
-    padding: 8px 10px;
-    width: 6vw;
-    height: 5vh;
+    padding: 8px 12px;
   }
 
   .SignUp button{
@@ -103,29 +66,7 @@
     padding: 6px 10px;
     border: 1px solid #3DDBD9;
     border-radius: 5px;
-    width: 6vw;
-    height: 5vh;
   }
-
-  @media (max-width: 900px) {
-    .LogIn button{
-      color: #24727c;
-      background-color: inherit;
-      border: none;
-      border-radius: 5px;
-      padding: 5px;
-      width: 100%;
-      height: 2px;
-    }
-  
-    .SignUp button{
-      width: 100%;
-      height: 2px;
-      border: none;
-      background-color: inherit;
-      color: #24727c;
-    }
-    }
 
   .LogIn button:hover{
     color: #3DDBD9;
@@ -140,19 +81,19 @@
     display: none;
     cursor: pointer;
   }
-  
+
   .menuIcon.open .bar1 {
     transform: rotate(-45deg) translate(-4px, 4px);
   }
-  
+
   .menuIcon.open .bar2 {
     opacity: 0;
   }
-  
+
   .menuIcon.open .bar3 {
     transform: rotate(45deg) translate(-4px, -4px);
   }
-  
+
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -160,18 +101,133 @@
     margin: 6px 0;
     transition: 0.4s;
   }
+
+
+  /* Tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .navMenu li {
+      display: inline-block;
+      padding: 3px;
+      margin: 4px;
+    }
+
+  .navMenu a, .navMenu button {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      color: #24727c;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .navMenu li a:active {
+      color: #009D9A;
+    }
   
-  @media (max-width: 900px) {
-    .menuIcon {
-      display: block;
-      margin: 12px 10px 0 25vh;
+    .navMenu li a:hover{
+      color: #009D9A;
+      border-radius: 5px;
+      border: 2px white;
     }
-    
-    .navMenu {
-      display: none;
+
+    .navMenu li a:active {
+      color: #009D9A;
     }
-    
-    .navMenu.open {
-      display: block;
+
+    .LogIn button{
+      color: white;
+      background-color: #3DDBD9;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
     }
+
+    .SignUp button{
+      color: #3DDBD9;
+      background-color: white;
+      padding: 5px;
+      border: 1px solid #3DDBD9;
+      border-radius: 5px;
+    }
+
+    .LogIn button:hover{
+      color: #3DDBD9;
+      background-color: white;
+    }
+
+    .SignUp button:hover{
+      color: white;
+      background-color: #3DDBD9;
+    }
+
+    .navLogo{
+      height: 70%;
+      width: 40%;
+    }
+}
+
+
+  /* Phones */
+
+  @media only screen and (max-width: 600px) {
+    .navigation {
+      height: 15%;
+      align-items: center;
+    }
+
+    .navLogo{
+      height: 50%;
+      width: 40%;
+    }
+
+    .LogIn button{
+      color: #24727c;
+      background-color: inherit;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
   }
+  
+  .SignUp button{
+    color: #24727c;
+    background-color: inherit;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .LogIn button:hover{
+    color: inherit;
+    background-color: inherit;
+  }
+
+  .SignUp button:hover{
+    color: inherit;
+    background-color: inherit;
+  }
+  .navMenu li {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      padding: 5px 8px;
+      margin: 5px;
+      background-color: #ecf5f7;
+      border-radius: 5px;
+      border: 1px solid #24727c;
+    }
+
+  .menuIcon {
+    display: block;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .navMenu.open {
+    display: block;
+  }
+}
+

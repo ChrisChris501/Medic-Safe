@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './DoctorMedicalUpload.css';
 import WhiteLogo from '../../assets/WhiteLogo.png';
@@ -6,47 +6,82 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHoldingUsd, faCog, faQuestion, faCloudUpload, faDownload, faSync } from "@fortawesome/free-solid-svg-icons";
 import DoctorProfileImage from '../../assets/DoctorProfileImage.png';
 
-const PatientMedicalUpload = () => {
-  // Function to handle medical upload
+const DoctorMedicalUpload = () => {
+  // Reference to the file input element
+  const fileInputRef = useRef(null);
+
+  // Function to handle medical upload button click
   const handleMedicalUpload = () => {
-    // Perform upload logic here
-    console.log("Medical upload initiated");
+    // Trigger the file input click event
+    fileInputRef.current.click();
+  };
+
+  // Function to handle file selection
+  const handleFileChange = async (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Perform upload logic here
+      console.log("Medical upload initiated with file:", file);
+
+      // Create a FormData object to hold the file
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        // Send the file to the server using fetch (replace 'your-upload-endpoint' with your actual endpoint)
+        const response = await fetch('your-upload-endpoint', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (response.ok) {
+          console.log("File uploaded successfully");
+          // Handle successful upload (e.g., show a success message, update state)
+        } else {
+          console.error("File upload failed");
+          // Handle upload failure (e.g., show an error message)
+        }
+      } catch (error) {
+        console.error("Error uploading file:", error);
+        // Handle error during upload
+      }
+    }
   };
 
   return (
     <div className='TheDoctorProfile'>
       <div className='TheDoctorProfileLinks'>
         <div className="TheProfileLogo">
-          <img className="navLogo" src={WhiteLogo} alt="My_HealthHubLogo" />
+          <img className="navLogo" src={WhiteLogo} alt="The Medic-Safe Logo" />
         </div>
-        <div className='PatientFirstLinks'>
-      <Link to="/PatientDashboard">
-        <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
-        </Link>
-        <Link to="/PatientProfile">
-        <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
-        </Link>
-        <Link to="/MedicalHistory">
-        <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
-        </Link>
-        <Link to="/DoctorMedicalUpload">
-        <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
-        </Link>
-        <Link to="/DocumentScanner">
-        <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
-        </Link>
-    </div>
-    <div className='PatientDashboardSecondLinks'>
-        <Link to="/Privacy_Security">
-        <button key="PrivacyPolicy"><FontAwesomeIcon icon={faHandHoldingUsd} /> Privacy Policy</button><br />
-        </Link>
-        <Link to="/Settings">
-        <button key="Settings"><FontAwesomeIcon icon={faCog} /> Settings</button><br />
-        </Link>
-        <Link to="/LogOut">
-        <button key="Logout"><FontAwesomeIcon icon={faQuestion} /> Logout</button><br />
-        </Link>
-    </div>
+        <div className='DoctorFirstLinks'>
+          <Link to="/DoctorDashboard">
+            <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
+          </Link>
+          <Link to="/DoctorProfile">
+            <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
+          </Link>
+          <Link to="/MedicalHistory">
+            <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
+          </Link>
+          <Link to="/DoctorMedicalUpload">
+            <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
+          </Link>
+          <Link to="/DocumentScanner">
+            <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
+          </Link>
+        </div>
+        <div className='DoctorProfileSecondLinks'>
+          <Link to="/Privacy_Security">
+            <button key="PrivacyPolicy"><FontAwesomeIcon icon={faHandHoldingUsd} /> Privacy Policy</button><br />
+          </Link>
+          <Link to="/Settings">
+            <button key="Settings"><FontAwesomeIcon icon={faCog} /> Settings</button><br />
+          </Link>
+          <Link to="/LogOut">
+            <button key="Logout"><FontAwesomeIcon icon={faQuestion} /> Logout</button><br />
+          </Link>
+        </div>
       </div>
       <div className="TheDoctorDetails">
         <div className='SearchDetails'>
@@ -69,9 +104,15 @@ const PatientMedicalUpload = () => {
                 <FontAwesomeIcon icon={faCloudUpload} className="cloud-icon" />
                 <h4>Upload medical history here</h4>
                 <h5>Drag and drop <a href=''>here</a> in browser</h5>
-                <Link to="/PatientProfile">
-                  <button key="Profile" onClick={handleMedicalUpload}> Download file <FontAwesomeIcon icon={faDownload} /></button><br />
-                </Link>
+                <button key="FileUpload" onClick={handleMedicalUpload}> 
+                  Upload file <FontAwesomeIcon icon={faDownload} />
+                </button><br />
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: 'none' }}
+                  onChange={handleFileChange}
+                />
               </div>
               <div className='UploadFooter'>
                 <h6>Use third party integration:<a href=''> Use third party integration:</a></h6>
@@ -100,4 +141,4 @@ const PatientMedicalUpload = () => {
   );
 }
 
-export default PatientMedicalUpload;
+export default DoctorMedicalUpload;

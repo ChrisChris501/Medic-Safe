@@ -1,103 +1,36 @@
-.AboutUs{
+ .AboutUs{
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 15px;
-    padding: 10px 5px;
-    margin: -360px 10px 40px 20px;
+    grid-template-columns: 38% 40%;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 20px;
   }
 
- .AboutUsImages{
-    position: relative;
-   }
-
-.AboutUs1 img{
-    position: relative;
-    height: 57vh;
-    width: 48vh;
-    left: 70px;
-    right: 0;
-    top: 5vh;
+.AboutUsImg1{
+    height: 65vh;
+    width: 62vh;
     border-radius: 15px;
  }
 
-
- .AboutUs2 img{
-   position: relative;
-   height: 55vh;
-   width: 48vh;
-   border-radius: 15px;
-   top: -35vh;
-   right: 0;
-   left: 180px;
- }
-
-
- @media (max-width: 1100px) {
-  .AboutUs{
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 40% 55%;
-    grid-gap: auto;
-    margin: -560px 10px 40px 80px;
-  }
-
-  .AboutUs1 img{
-    height: 57vh;
-    width: 48vh;
-    left: 30px;
-    right: 0;
-    top: 10vh;
-    border-radius: 15px;
- }
-
- .AboutUs2 img{
-  height: 48vh;
-  width: 42vh;
-  border-radius: 15px;
-  top: -30vh;
-  right: 0;
-  left: 120px;
-}
-
-.AboutUsText{
-  padding: 10px;
-  width: 85%;
+ .AboutUsText{
+  line-height: 15px;
   text-align: justify;
-}
-
-}
-
- .AboutUsButton button{
-  background-color: #3DDBD9;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 15px;
-  width: 8vw;
-  color: #FFFFFF;
-  font-size: 14px;
-  margin-top: 15px;
- }
-
-.AboutUsText{
-  margin-top: 60px;
-  margin-left: 20px;
-  line-height: 20px;
-  text-align: justify;
-  padding-right: 120px;
 }
 
 .AboutUsText h4{
   color: #08BDBA;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 400;
 }
 
 .AboutUsText h3{
   color: #007D79;
-  line-height: 28px;
-  font-size: 25px;
+  line-height: 24px;
+  font-size: 22px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .AboutUsText h5{
@@ -107,3 +40,36 @@
   font-size: 12px;
   font-weight: 400;
 }
+
+
+ @media (max-width: 1024px) {
+  .AboutUs{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .AboutUsImg1{
+    display: none;
+ }
+
+.AboutUsText {
+  width: 75%;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.AboutUsText h4{
+  text-align: center;
+  margin-left: 30px;
+}
+
+.AboutUsText h5 {
+  text-align: center;
+  width: 100%;
+}
+
+.AboutUsText h3{
+  text-align: center;
+}
+}
+

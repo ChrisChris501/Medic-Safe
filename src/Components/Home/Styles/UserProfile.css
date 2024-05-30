@@ -1,8 +1,8 @@
 .TheProfile{
     display: grid;
     grid-template-columns: 45% 45%;
-    gap: 130px;
-    padding: 30px 10px 10px 125px;
+    gap: 90px;
+    padding: 30px 10px 10px 140px;
 }
 
 .ProfileText{
@@ -11,15 +11,16 @@
 
 .ProfileText h3{
     color: #08BDBA;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
 }
 
 .ProfileText h4{
     color: #007D79;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     margin-top: 10px;
+    text-align: justify;
 }
 
 .ProfileText h5{
@@ -54,21 +55,28 @@
 @media (max-width: 900px) {
     .TheProfile{
       display: grid;
-      grid-template-columns: 80%;
+      grid-template-columns: 1fr;
       grid-template-rows: 50% 50%;
-      gap: 65px;
+      gap: 80px;
     }
 
     .ProfileImg img{
-        width: 60vw;
+        width: 62vw;
         height: 58vh;
         border-radius: 10px;
         margin-top: 20px;
     }
 
+    .ProfileText{
+        margin-right: 50px;
+    }
+    .ProfileText h3{
+        text-align: center;
+    }
+
     .ProfileText button{
-        padding: 5px;
-        width: 18vw;
+        padding: 10px 5px;
+        width: 20vw;
         margin: 10px 0;
         border: 1px solid #3DDBD9;
         border-radius: 8px;

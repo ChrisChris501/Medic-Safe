@@ -6,12 +6,7 @@ const AboutUs = () => {
   return (
     <div className='AboutUs'>
       <div className='AboutUsImages'>
-        <div className='AboutUs1'>
           <img className="AboutUsImg1"src={AboutUsBackgroundPicture} alt="What we do"/>
-        </div>
-        <div className='AboutUs2'>
-          <img className="AboutUsImg2"src={AboutUsTopPicture} alt="What we do"/>
-        </div>
       </div>
         <div className='AboutUsText'>
             <h4> About Us</h4>

@@ -19,7 +19,7 @@ const Services = () => {
                 and achieving better health outcomes. Your journey to optimal
                 health starts here. Explore our range of services below:</h6>
         </div>
-        <div className='MedicalOffers'>
+      <div className='MedicalOffers'>
         <div className='MedicalHistory'>
         <img className="MedImg"src={ActivityHistory} alt="A notebook logo"/>
             <h2>Medical History</h2>

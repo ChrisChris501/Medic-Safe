@@ -1,0 +1,46 @@
+.MedHistory{
+    background-color: #FFFFFF;
+    width: 55vh;
+    margin-left: 70px;
+    border-radius: 5px;
+    height: 76vh;
+}
+
+.MedHistory li{
+    display: grid;
+    grid-template-columns: 23vh 23vh;
+    gap: 80px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 45vh;
+    font-size: 12px;
+    margin-top: 13px;
+}
+
+.MedHistory h2{
+    height: 5vh;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 80px;
+    width: 75%;
+    margin-top: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.MedHistory :nth-child(1){
+    font-weight: 600;
+    padding-right: 10px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.SaveDoc {
+    text-align: right;
+    padding-right: 120px;
+    margin-top: 20px;
+    color: grey;
+    font-size: 14px;
+}

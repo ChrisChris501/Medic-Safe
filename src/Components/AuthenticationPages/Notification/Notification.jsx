@@ -10,11 +10,11 @@ import { faCheckCircle, faTimesCircle } from '@fortawesome/free-regular-svg-icon
 const Notification = () => {
   return (
     <div className='NotifcationfulIdent'>
-        <Link to="/Home">
+        <Link to="/PatientProfile">
             <div className='BlueHead'><FontAwesomeIcon icon={faTimesCircle} size="1.5x" style={{ color: 'white' }}/></div>
         </Link>
         <div className='NotificationHeader'>
-            <h5>Notifcations</h5>
+            <h5>Notifications</h5>
             <h5>View All</h5>
         </div>
         <div className='Notification'>

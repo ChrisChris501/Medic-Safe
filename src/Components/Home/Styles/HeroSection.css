@@ -1,27 +1,21 @@
 .Hero {
     display: grid;
     grid-template-columns:  30% 30% 30%;
-    gap: 50px;
+    gap: 3%;
     flex-direction: column;
     align-items: center;
-    margin: 80px 10px 10px 50px;
+    margin: 30px 30px 10px 30px;
   }
 
   .HeroText{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 50px;
-    margin-top: -340px;
+    margin-left: 105px;
   }
 
-  @media (max-width: 1100px) {
-    .HeroText{
-      margin-left: auto;
-    }
-  }
 
-  .HeroText h1{
+   .HeroText h1{
     font-weight: 500;
     font-size: 40px;
     color: #007D79;
@@ -44,83 +38,56 @@
     outline: none;
     background-color: #009D9A;
     color: white;
-    padding: 8px 12px;
-    font-size: 19px;
+    padding: 8px 10px;
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
   }
 
-  .HeroLink:hover{
+  .HeroLink button:hover{
     background-color: #77dddb;
   }
 
-  .HeroImg{
-    position: relative;
-  }
-
-  .HeroImg2{
-    position: relative;
-    margin-top: 15vh;
-  }
-
-  .HeroImg img{
-    position: relative;
-    width: 38vh;
-    height: 52vh;
-    top: -54vh;
-    right: 11px;
-    z-index: 2;
-  }
-
-  .HeroImg2 img{
-    position: relative;
-    width: 40vh;
-    height: 55vh;
-    top: -50vh;
-    right: 10px;
-    z-index: 2;
-  }
-
-
-  .Background-color {
-    position: relative;
-    height: 33vh;
-    width: 38vh;
+  .HeroImg, .HeroImg2{
     background-color: #3DDBD9;
-    border-radius: 15px;
-    z-index: 1;
-    margin-top: 70px;
-    margin-left: 32px;
+    width: 22vw;
+    border-radius: 10px;
   }
 
-  .Background-color2{
-    position: relative;
-    height: 32vh;
-    width: 40vh;
-    background-color:#009D9A;
-    border-radius: 20px;
-    z-index: 1;
-    margin-top: 30px;
-    margin-left: 31px;
+  .HeroImg img, .HeroImg2 img{
+    width: 22vw;
+    height: 45vh;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 950px) {
     .Hero {
-      display: grid;
-      grid-template-columns: 60%;
-      grid-template-rows: 20% 20% 20%;
-      flex-direction: row;
-      gap: 40px;
-      justify-content: center;
-      margin: 0;
-      margin-top: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
-    .HeroImg img{
-      right: 10px;
+
+    .HeroText{
+      margin-right: 40px;
     }
-  
-    .HeroImg2 img{
-      right: 10px;
+    .Hero > .HeroImg, .HeroImg2 {
+        width: 60vw;
+        margin-left: 50px;
+        border-radius: 10px;
+        margin-top: 15px; /* Adds spacing on top of each div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
     }
-  
-  }
+
+    .Hero > .HeroImg img, .HeroImg2 img{
+      width: 60vw;
+      height: 55vh;
+    }
+
+    .HeroText{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+}
+

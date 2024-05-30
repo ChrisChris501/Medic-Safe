@@ -14,8 +14,9 @@ const Navbar = () => {
 
   return (
     <nav className="navigation">
-        <img className="navLogo"src={LOGO} alt="My_HealthHubLogo"/>
-
+        <div className='NavLogo'>
+            <img className="navLogo"src={LOGO} alt="My_HealthHubLogo"/>
+        </div>
         <div className={`menuIcon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="bar1"></div>
             <div className="bar2"></div>
