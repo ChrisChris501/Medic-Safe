@@ -11,7 +11,7 @@ const MedicalHistory = () => {
               <img className="navLogo" src={WhiteLogo} alt="My_HealthHubLogo" />
             </div>
             <div className='PatientFirstLinks'>
-          <Link to="/PatientDashboard">
+            <Link to="/PatientDashboard">
             <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
             <Link to="/PatientProfile">
