@@ -4,18 +4,18 @@
     grid-template-columns: 20vw 20vw 20vw 20vw;
     gap: 30px;
     height: 40vh;
-    padding: 60px 30px 10px 80px;
+    padding: 80px 30px;
     margin-top: 50px;
 }
 
 .FooterLogo img{
-    width: 15vw;
-    height: 7vh;
+    width: 80%;
+    /* height: 7vh; */
     margin: 10px;
 }
 
 .SocialIcons img{
-    height: 3vh;
+    width: 10%;
     padding: 5px 5px 5px 10px;
 }
 
@@ -26,10 +26,13 @@
 
 .Footer h5, .Footer a{
     color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s linear;
     padding: 5px;
     font-weight: 100;
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
 }
 
 .Footer a{
@@ -46,20 +49,31 @@
     .Footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: auto;
-        gap: 45px;
+        /* grid-template-rows: auto; */
+        gap: 20px;
         padding: 40px;
-        height: 70vh;
-        padding-left: 120px;
+        height: 100%;
     }
 
     .FooterLogo img {
-        width: 100%;
+        width: 60%;
         margin: 0;
+    }
+
+    .SocialIcons img {
+        width: 7%;
     }
 
     .SocialIcons,
     .FooterText {
-        margin: 0;
+        margin: 0; 
+    }
+}
+
+@media (max-width: 500px) {
+    .Footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        text-align: center;
     }
 }
