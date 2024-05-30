@@ -24,26 +24,6 @@
     width: 100%;
 }
 
-@media (max-width: 900px) {
-
-  .ServicesLandingText {
-    text-align: center;
-    color: #007D79;
-    background-color: #D9FBFB;
-    height: 10vh;
-    padding: 15px 20px 60px 20px;
-}
-
-    .ServicesLandingText h6 {
-        width: 80%;
-}
-
-    .ServicesLanding img {
-        height: auto; 
-        max-height: 300px;
-    }
-}
-
 .ServicesCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -100,5 +80,22 @@
     .Card {
         width: 80%; 
     }
+
+    .ServicesLandingText {
+      text-align: center;
+      color: #007D79;
+      background-color: #D9FBFB;
+      height: 10vh;
+      padding: 15px 20px 80px 20px;
+  }
+
+      .ServicesLandingText h6 {
+          width: 80%;
+  }
+
+      .ServicesLanding img {
+          height: auto;
+          max-height: 300px;
+      }
 }
 

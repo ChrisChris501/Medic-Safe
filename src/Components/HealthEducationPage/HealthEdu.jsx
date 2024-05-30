@@ -13,7 +13,7 @@ const Card = ({ image, title, description }) => {
   return (
     <div className='HealthEduCard'>
       <img className="HealthEduCardImg" src={image} alt="What we do"/>
-      <h5>Medi-Safe 2024</h5>
+      <h5>Medic-Safe 2024</h5>
       <h3>{title}</h3>
       <h6>{description}</h6>
     </div>

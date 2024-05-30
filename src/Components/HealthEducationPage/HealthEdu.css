@@ -34,40 +34,45 @@
   }
 
 @media (max-width: 900px) {
-    .HealthEduCards {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        padding: 20px;
-    }
+
+  .HealthEduCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+.Card {
+    width: 70%; 
+}
+
+.HealthEduLandingText {
+  text-align: center;
+  color: #007D79;
+  background-color: #D9FBFB;
+  height: 10vh;
+  padding: 15px 20px 60px 20px;
+}
+
+  .HealthEduLandingText h6 {
+      width: 80%;
+}
+
+  .HealthEduLanding img {
+      height: auto;
+      max-height: 300px;
+  }
 
     .HealthEduCard img {
       width: 50%;
     }
-
-      .ServicesLandingText {
-        text-align: center;
-        color: #007D79;
-        background-color: #D9FBFB;
-        height: 10vh;
-        padding: 15px 20px 60px 20px;
-    }
-
-        .ServicesLandingText h6 {
-            width: 80%;
-    }
-
-        .ServicesLanding img {
-            height: auto;
-            max-height: 300px;
-        }
-          .ServicesCards {
-              grid-template-columns: 1fr;
-              grid-template-rows: auto;
-              padding: 20px;
+    .HealthEduCards {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 20px;
           }
-      
-          .Card {
-              width: 80%;
+
+    .Card {
+      width: 80%;
           }
       }
 
