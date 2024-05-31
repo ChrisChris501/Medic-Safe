@@ -33,49 +33,6 @@
     margin: 10px auto;
   }
 
-@media (max-width: 900px) {
-
-  .HealthEduCards {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    padding: 20px;
-}
-
-.Card {
-    width: 80%; 
-}
-
-.HealthEduLandingText {
-  text-align: center;
-  color: #007D79;
-  background-color: #D9FBFB;
-  height: 10vh;
-  padding: 15px 20px 60px 20px;
-}
-
-  .HealthEduLandingText h6 {
-      width: 80%;
-}
-
-  .HealthEduLanding img {
-      height: auto;
-      max-height: 300px;
-  }
-
-    .HealthEduCard img {
-      width: 50%;
-    }
-    .HealthEduCards {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      padding: 20px;
-          }
-
-    .Card {
-      width: 80%;
-          }
-      }
-
   .HealthEduCard {
     width: 100%;
     margin-top: 12px;
@@ -158,4 +115,45 @@
     padding: auto;
 }
 
+@media (max-width: 900px) {
 
+.HealthEduCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+.Card {
+    width: 80%;
+}
+
+.HealthEduLandingText {
+  text-align: center;
+  color: #007D79;
+  background-color: #D9FBFB;
+  height: 18%;
+  padding: 15px 20px 30px 20px;
+}
+
+  .HealthEduLandingText h6 {
+      width: 80%;
+}
+
+  .HealthEduLanding img {
+      height: auto;
+      max-height: 300px;
+  }
+
+    .HealthEduCard img {
+      width: 80%;
+    }
+    .HealthEduCards {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 20px;
+          }
+
+    .Card {
+      width: 80%;
+          }
+      }
