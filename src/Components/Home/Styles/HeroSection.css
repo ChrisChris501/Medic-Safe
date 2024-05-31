@@ -70,12 +70,16 @@
     .HeroText{
       margin-left: 20px;
     }
-    .Hero > .HeroImg, .HeroImg2 {
+    .Hero > .HeroImg {
         width: 60vw;
         margin-left: 20px;
         border-radius: 10px;
         margin-top: 15px; /* Adds spacing on top of each div */
         box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .HeroImg2{
+      display: none;
     }
 
     .Hero > .HeroImg img, .HeroImg2 img{

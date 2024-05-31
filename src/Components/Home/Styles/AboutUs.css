@@ -46,6 +46,7 @@
   .AboutUs{
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 20px;
   }
 
   .AboutUsImg1{
@@ -61,14 +62,6 @@
 .AboutUsText h4{
   text-align: center;
   margin-left: 10px;
-}
-
-.AboutUsText h5 {
-  text-align: center;
-}
-
-.AboutUsText h3{
-  text-align: center;
 }
 }
 
