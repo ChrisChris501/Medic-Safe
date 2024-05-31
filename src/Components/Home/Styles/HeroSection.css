@@ -59,7 +59,29 @@
     height: 45vh;
   }
 
-  @media (max-width: 950px) {
+  @media (min-width: 701px) and (max-width: 1024px) {
+    .Hero {
+      display: grid;
+      grid-template-columns:  50% 50%;
+      gap: 6%;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 30px 10px 10px;
+    }
+
+    .HeroImg2 img{
+      display: none;
+    }
+
+    .HeroImg img{
+      width: 32vw;
+      height: 45vh;
+    }
+    .HeroImg{
+      width: 32vw;
+    }
+  }
+  @media only screen and (max-width: 700px) {
     .Hero {
         display: flex;
         flex-direction: column;

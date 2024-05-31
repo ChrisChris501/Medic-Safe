@@ -152,11 +152,11 @@ function PatientsSignUp() {
             <h6>By clicking the create account button you agree to the
             <Link to="Privacy_Security">Terms & Condition / Privacy policy</Link>
             </h6>
-          </div>
-          <div className='PatienceRedirection'>
+            <div className='PatienceRedirection'>
             <h6>
               For Doctors to create account, please click <Link to="/DoctorsSignUp" className="CustomLink">here</Link> 
             </h6>
+          </div>
           </div>
         </form>
       </div>

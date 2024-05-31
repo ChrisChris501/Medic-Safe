@@ -1,16 +1,16 @@
 .SignUpWrapper{
     display: grid;
     grid-template-columns: 58% 42%;
-    grid-template-rows: 120vh;
+    grid-template-rows: 100%;
     width: 85vw;
-    height: 110vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     box-shadow: -5px -5px 10px #fff,
                 5px 5px 10px #038f49;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 10px;
+    height: 120vh;
 }
 
 .MediSafeSignUPcontainer {
@@ -30,7 +30,7 @@
   font-size: 12px;
   font-weight: 100;
   padding-top: 25px;
-} 
+}
 
 .SignUpContainer{
   background: #D9FBFB;
@@ -51,8 +51,8 @@
 }
 
 .SignUpImg {
-  height: 50vh;
-  width: 20vw;
+  height: 30%;
+  width: 40%;
   margin-top: 60px;
   display: block;
   margin-left: auto;
@@ -139,28 +139,28 @@
 }
 
 .SignUpMediCurve {
-  padding-top: 200px;
-  position: absolute;
+  padding-top: 300px;
+  position: sticky;
   color: #009D9A;
   font-family: 'Times New Roman';
   line-height: 100px;
-  left: 41.5%;
-  top: 96.8%;
-  transform: translateX(-69%);
-  width: calc(24.5% + 24.5%);
+  left: 40%;
+  transform: translateX(-1%);
+  width: calc(49% + 49%);
   padding: 10px;
   height: 30%;
   background: #EDF5FF;
   text-align: center;
+  margin-top: 40vh;
   border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
   border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
 }
 
 
 .SignUpMediCurve img{
-  height: 12vh;
-  width: 30vw;
-  margin-top: 45px;
+  height: 40%;
+  width: 70%;
+  margin-top: 65px;
 }
 
 .medi-safe-container i{
@@ -171,27 +171,6 @@
   color: white;
 }
 
-/*.SignUp {
-    display: flex;
-    flex-direction: column;
-    padding-left: 70px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 110%;
-    top: -10%;
-    background-color: #9EF0F0;
-    color: #fff;
-    transition: all 0.5s;
-}
-
-.form span{
-  color: #007D79;
-  font-size: large;
-  font-weight: 700;
-} */
 
 .SignUpLine{
   position: relative;
@@ -261,60 +240,12 @@
   margin-right: 5px;
 }
 
-/*
-.fa {
-  display:flex;
-  padding-left: 20px;
-  font-size: 5px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-
-.fa-facebook {
-  background: white;
-  color: blue;
-}
-
-.fa-google {
-  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
-a.facebook{
-  background-color: white;
-  margin-top: -70px;
-}
-
-a.facebook span{
-  font-size: 12px;
-  font-family: 'Times New Roman';
-  color: black;
-}
-a.google{
-  background-color: white;
-  margin-top: 20px;
-}
-a.google span{
-  font-size: 12px;
-  font-family: 'Times New Roman';
-  color: black;
-}
-
-*/
-
 .SignUpFooter h5, .SignUpFooter h6{
     color: #000;
     font-size: 12px;
     font-weight: 400;
-    margin-top: 15px;
-    text-align: left;
-    padding-left: 40px;
+    margin: 15px 20px 5px 20px;
+    text-align: center;
 }
 
 .SignUpFooter h5 a{
@@ -336,11 +267,64 @@ a.google span{
     font-size: 15px;
     font-weight: 500;
     margin-top: 10px;
-    text-align: left;
-    padding-left: 40px;
+    text-align: center;
 }
 
 .CustomLink{
     color: #007D79;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .SignUpWrapper{
+    margin-top: 10px;
+    display: block;
+    height: 100%;
+  }
+  .MediSafeSignUPcontainer{
+    display: none;
+  }
+  .SignUpMediCurve{
+    display: none;
+  }
+
+  .MediSafeLocontainer{
+    display: none;
+  }
+  .SignUpContainer h5{
+    margin-top: -20px;
+  }
+
+  .SignUpFooter{
+    margin: 40px 20px 10px 20px;
+  }
+
+  .PatienceRedirection{
+    text-align: center;
+    margin: 15px 20px 5px 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .SignUpMediCurve {
+    padding-top: 300px;
+    position: sticky;
+    color: #009D9A;
+    font-family: 'Times New Roman';
+    line-height: 100px;
+    left: 40%;
+    transform: translateX(-1%);
+    width: calc(49% + 49%);
+    padding: 10px;
+    height: 30%;
+    background: #EDF5FF;
+    text-align: center;
+    margin-top: 20vh;
+    border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+    border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+  }
+
+  .SignUpWrapper{
+    height: 90%;
+  }
 }

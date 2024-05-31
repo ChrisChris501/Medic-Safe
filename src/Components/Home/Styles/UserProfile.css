@@ -53,30 +53,42 @@
 }
 
 /* Tablets */
-@media (min-width: 901px) and (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1024px) {
     .TheProfile{
-        padding: 30px 10px 0px 120px;
+        padding: 30px 10px 0px 102px;
         width: 80vw;
     }
 
     .ProfileImg img{
-        width: 32vw;
-        height: 65vh;
+        width: 35vw;
+        height: 60vh;
         border-radius: 10px;
-        margin-top: 10px;
+        margin-top: 40px;
     }
 
     .ProfileText h4{
-        line-height: 25px;
+        line-height: 23px;
+        width: 110%;
     }
 
     .ProfileText h5{
-        line-height: 15px;
+        line-height: 17px;
+        width: 115%;
+    }
+    .ProfileText button{
+        padding: 8px 5px;
+        width: 12vw;
+        margin: 10px 0;
+        border: 1px solid #3DDBD9;
+        border-radius: 8px;
+        color: #3DDBD9;
+        font-size: 15px;
+        background-color: #fff;
     }
 }
 
 /* Phones */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .TheProfile{
       display: grid;
       grid-template-columns: 1fr;

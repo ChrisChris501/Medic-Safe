@@ -114,7 +114,25 @@
     text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 701px) and (max-width: 1024px) {
+    .LandingServices{
+        margin-left: -20px;
+        text-align: justify;
+    }
+    .OurServices h6{
+        width: 105%;
+    }
+    .ServicesButton button{
+        width: 12vw;
+        height: vh;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 700px) {
 
     .LandingServices{
         margin: 20px;

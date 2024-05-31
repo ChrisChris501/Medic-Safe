@@ -10,7 +10,6 @@
     box-shadow: -5px -5px 10px #fff,
                 5px 5px 10px #038f49;
     margin: auto;
-    margin-top: 20vh;
 
 }
 
@@ -96,12 +95,11 @@
 }
 
 .CheckBox {
-    margin-left: 44px;
+    
 }
 
 .CheckBox
   input[type="checkbox"] {
-  display: inline-block;
   height: 10px;
   width: 10px;
   margin-bottom: 30px;
@@ -140,14 +138,14 @@
 
 .MediCurve {
   padding-top: 200px;
-  position: absolute;
+  position: sticky;
   color: #009D9A;
   font-family: 'Times New Roman';
   line-height: 100px;
-  left: 42%;
+  left: 40%;
   bottom: -10%;
-  transform: translateX(-69%);
-  width: calc(25% + 25%);
+  transform: translateX(-1%);
+  width: calc(49% + 49%);
   padding: 10px;
   height: 30%;
   background: #EDF5FF;
@@ -162,30 +160,6 @@
   width: 30vw;
   margin-top: 35px;
 }
-
-/*.medi-safe-container i{
-  padding-left: 35px;
-  position: absolute;
-  margin-top: -28px;
-  height: 150%;
-  color: white;
-}
-
-.login-container{
-    display: flex;
-    flex-direction: column;
-    padding-left: 70px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 110%;
-    top: -10%;
-    background-color: #9EF0F0;
-    color: #fff;
-    transition: all 0.5s;
-} */
 
 .form span{
   color: #007D79;
@@ -260,3 +234,51 @@
   font-size: 16px;
   margin-right: 5px;
 }
+
+
+@media only screen and (max-width: 900px) {
+  .LogInWrapper{
+    margin-top: 10px;
+    display: block;
+    height: 80%;
+  }
+  .LogIn{
+    display: none;
+  }
+  .MediCurve{
+    display: none;
+  }
+
+  .MediSafeLogIncontainer{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .MediCurve {
+    padding-top: 300px;
+    position: sticky;
+    color: #009D9A;
+    font-family: 'Times New Roman';
+    line-height: 100px;
+    left: 40%;
+    transform: translateX(-1%);
+    width: calc(49% + 49%);
+    padding: 10px;
+    height: 36%;
+    background: #EDF5FF;
+    text-align: center;
+    margin-top: 30%;
+    border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+    border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+  }
+}
+
+
+
+
+
+
+
+
+
