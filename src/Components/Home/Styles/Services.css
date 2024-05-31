@@ -138,10 +138,11 @@
     }
 
     .ServicesButton button{
-        width: 18vw;
-        margin-top: 25px;
+        width: 20vw;
+        height: 7vh;
+        margin-top: 15px;
         margin-bottom: 10px;
-        margin-left: 40px;
+        margin-left: 20px;
         font-size: 12px;
     }
   }
