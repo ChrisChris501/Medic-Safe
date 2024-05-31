@@ -2,8 +2,7 @@
     display: grid;
     display: grid;
     grid-template-columns: 43% 43%;
-    grid-template-rows: 1fr;
-    gap: -10px;
+    gap: 10px;
     padding: 80px 30px 10px 140px;
   }
 
@@ -55,7 +54,7 @@
 
 .AboutUsText {
   width: 75%;
-  margin-left: 70px;
+  margin-left: 85px;
   margin-top: -20px;
 }
 
