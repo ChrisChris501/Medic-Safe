@@ -137,22 +137,23 @@ text-align: center;
 }
 
 .AuthMediCurve {
-padding-top: 200px;
-position: absolute;
-color: #009D9A;
-font-family: 'Times New Roman';
-line-height: 100px;
-left: 42%;
-bottom: -10%;
-transform: translateX(-70%);
-width: calc(25% + 25%);
-padding: 10px;
-height: 30%;
-background: #EDF5FF;
-text-align: center;
-border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
-border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
-}
+    padding-top: 200px;
+    position: sticky;
+    color: #009D9A;
+    font-family: 'Times New Roman';
+    line-height: 100px;
+    left: 40%;
+    bottom: -10%;
+    transform: translateX(-1%);
+    width: calc(49% + 49%);
+    padding: 10px;
+    height: 30%;
+    background: #EDF5FF;
+    text-align: center;
+    border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+    border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+  }
+
 
 
 .AuthMediCurve img{
@@ -160,30 +161,6 @@ height: 12vh;
 width: 30vw;
 margin-top: 35px;
 }
-
-/*.medi-safe-container i{
-padding-left: 35px;
-position: absolute;
-margin-top: -28px;
-height: 150%;
-color: white;
-}
-
-.login-container{
-  display: flex;
-  flex-direction: column;
-  padding-left: 70px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  width: 50%;
-  height: 110%;
-  top: -10%;
-  background-color: #9EF0F0;
-  color: #fff;
-  transition: all 0.5s;
-} */
 
 .AuthenticationForm span{
 color: #007D79;
@@ -306,50 +283,21 @@ text-align: center;
     transition: transform 80ms ease-in;
   }
 
-
-/*
-.fa {
-display:flex;
-padding-left: 20px;
-font-size: 5px;
-width: 70px;
-text-align: center;
-text-decoration: none;
-border-radius: 5px;
-}
-
-
-.fa-facebook {
-background: white;
-color: blue;
-}
-
-.fa-google {
-background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
--webkit-text-fill-color: transparent;
-}
-
-a.facebook{
-background-color: white;
-margin-top: -70px;
-}
-
-a.facebook span{
-font-size: 12px;
-font-family: 'Times New Roman';
-color: black;
-}
-a.google{
-background-color: white;
-margin-top: 20px;
-}
-a.google span{
-font-size: 12px;
-font-family: 'Times New Roman';
-color: black;
-}
-
-*/
+  @media only screen and (max-width: 900px) {
+    .AuthenticationWrapper{
+      margin-top: 10px;
+      display: block;
+      height: 80%;
+    }
+    .Auth{
+      display: none;
+    }
+    .AuthMediCurve{
+      display: none;
+    }
+  
+    .MediSafeAuthenticationcontainer{
+      display: none;
+    }
+  }
+  
