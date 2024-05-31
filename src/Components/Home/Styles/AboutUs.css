@@ -1,15 +1,14 @@
  .AboutUs{
     display: grid;
-    grid-template-columns: 40% 40%;
+    display: grid;
+    grid-template-columns: 43% 43%;
     grid-template-rows: 1fr;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 80px;
-    margin-right: 20px;
+    gap: -10px;
+    padding: 80px 30px 10px 140px;
   }
 
 .AboutUsImg1{
-    height: 65vh;
+    height: 63vh;
     width: 62vh;
     border-radius: 15px;
  }
@@ -46,7 +45,8 @@
   .AboutUs{
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 20px;
+    padding: 30px 20px 10px 10px;
+    margin-top: 40px;
   }
 
   .AboutUsImg1{
