@@ -83,12 +83,12 @@
       margin: 10px;
       margin-top: -30px;
       width: 80vw;
-      padding: 30px 10px 0px 75px;
-      width: 80vw;
+      padding: 30px 10px 0px 70px;
+      width: 85vw;
       gap: 25px;
     }
     .ProfileImg img{
-        width: 67vw;
+        width: 70vw;
         height: 58vh;
         border-radius: 10px;
         margin-top: 10px;
@@ -96,11 +96,10 @@
 
     .ProfileText{
         margin-right: 5px;
-        width: 83%;
+        width: 80%;
     }
     .ProfileText h3{
         text-align: center;
-        margin-left: 10px;
     }
 
     .ProfileText button{
