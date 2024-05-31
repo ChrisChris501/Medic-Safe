@@ -111,15 +111,19 @@
 
     .ContactImage img {
         width: 70vw;
-        height: 55vh;
-        padding: 25px 10px 5px 0px;
+        height: 50vh;
+        padding: 25px 0px 5px 0px;
     }
 
     .ContactText {
         text-align: justify;
-        margin-left: 10px;
+        margin-left: 5px;
         margin-top: 5px;
         width: 70vw;
+    }
+
+    .ContactText h4 {
+        margin: 10px 5px 0px 0px;
     }
 }
 
