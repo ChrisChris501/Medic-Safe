@@ -68,11 +68,11 @@
     }
 
     .HeroText{
-      margin-right: 30px;
+      margin-left: 20px;
     }
     .Hero > .HeroImg, .HeroImg2 {
         width: 60vw;
-        margin-left: 70px;
+        margin-left: 20px;
         border-radius: 10px;
         margin-top: 15px; /* Adds spacing on top of each div */
         box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
