@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 40% 40%;
     gap: 5%;
-    padding: 80px 30px 10px 130px;
+    padding: 80px 30px 10px 30px;
   }
 
 .AboutUsImg1{
@@ -38,22 +38,28 @@
   font-weight: 400;
 }
 
-@media (min-width: 701px) and (max-width: 1024px) {
+@media (min-width: 701px) {
   .AboutUs{
-    display: grid;
-    grid-template-columns: 45% 45%;
+    display: flex;
+    /* grid-template-columns: 45% 45%; */
     gap: 5%; 
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     padding: 60px 30px 10px 110px;
   }
   .AboutUsImg1{
-    height: 55vh;
-    width: 50vh;
+    flex-basis: 30%;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    /* height: 55vh;
+    width: 50vh; */
     border-radius: 15px;
  }
  .AboutUsText{
-  width: 80%;
+  flex-basis: 40%;
+  
+  /* width: 80%; */
  }
  .AboutUsText h3{
   line-height: 20px;
@@ -63,6 +69,14 @@
  .AboutUsText h5{
   line-height: 14px;
 }
+}
+
+@media (min-width: 1024px) {
+  .AboutUsImg1{
+    flex-basis: 50%;
+    width: 450px;
+    /* height: 400px; */
+ }
 }
 
  @media (max-width: 700px) {
@@ -88,4 +102,5 @@
   margin-left: 10px;
 }
 }
+
 
