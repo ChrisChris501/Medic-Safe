@@ -12,10 +12,11 @@ const PatientProfile = () => {
       <div>
       <div className='ThePatientProfileLinks'>
       <div className="TheProfileLogo">
-          <img className="navLogo"src={WhiteLogo} alt="My_HealthHubLogo"/>
+          <img className="ProfileLogo"src={WhiteLogo} alt="My_HealthHubLogo"/>
       </div>
-      <div className='PatientFirstLinks'>
-      <Link to="/PatientDashboard">
+      <div className='PatientLinks'>
+        <div className='PatientFirstLinks'>
+            <Link to="/PatientDashboard">
               <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
             <Link to="/PatientProfile">
@@ -27,11 +28,12 @@ const PatientProfile = () => {
             <Link to="/PatientMedicalUpload">
               <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
             </Link>
-            <Link to="/DocumentScanner">
-              <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
+            <Link to="/HealthEdu">
+              <button key="HealthEdu"><FontAwesomeIcon icon={faCalendar} /> Health Education</button><br />
             </Link>
            </div>
-          <div className='PatientDashboardSecondLinks'>
+           </div>
+          <div className='PatientSecondLinks'>
             <Link to="/Privacy_Security">
               <button key="PrivacyPolicy"><FontAwesomeIcon icon={faHandHoldingUsd} /> Privacy Policy</button><br />
             </Link>
@@ -44,7 +46,7 @@ const PatientProfile = () => {
           </div>
         </div>
       </div>
-      <div className="ThePatientDetails">
+    <div className="ThePatientDetails">
       <div className='SearchDetails'>
         <div>
         <input
@@ -53,11 +55,11 @@ const PatientProfile = () => {
           className="TextInput"
           />
         </div>
-          <div className='SideBarImage'>
-            <Link to="/Notification"><FontAwesomeIcon icon={faBell} /></Link>
-            <img className="PatientProfileImg"src={PatientProfileImage} alt="Patient Profile Image"/>
-          </div>
+        <div className='SideBarImage'>
+          <Link to="/Notification" className='NotificationBell'><FontAwesomeIcon icon={faBell} /></Link>
+          <img className="PatientProfileImg"src={PatientProfileImage} alt="Patient Profile Image"/>
         </div>
+       </div>
       <div className="ThePatientProfileDetails">
           <h1>Dashboard/<h2>Profile</h2></h1>
       </div>

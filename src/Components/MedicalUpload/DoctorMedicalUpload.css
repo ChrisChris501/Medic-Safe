@@ -2,7 +2,7 @@
     margin-top: 13vh;
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 100vh;
+    height: 55vh;
 }
 
 .TheDoctorProfileLinks{
@@ -12,7 +12,7 @@
 
 .SearchDetails{
     display: grid;
-    grid-template-columns: 25vw 25Vw;
+    grid-template-columns: 30% 30%;
     gap: 10vw;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -20,7 +20,7 @@
 
 .SearchDetails Input{
     margin: 10px;
-    width: 25vw;
+    width: 30%;
     height: 3vh;
     border-radius: 5px;
     border: 0.5px solid Grey;
@@ -51,7 +51,7 @@
     margin-top: 70vh;
 }
 
-.DoctorFirstLinks button, .DoctorSeconLinks button{
+.DoctorFirstLinks   button, .DoctorSeconLinks button{
     display: block;
     margin: auto 20px;
     padding: 5px 20px;
@@ -87,14 +87,14 @@
 
 .TheUploadWrapper{
     display: grid;
-    grid-template-columns:38vw 38vw;
+    grid-template-columns:50% 50%;
 }
 
 .History{
     background-color: #ffffff;
     margin-right: 20px;
     margin-left: 80px;
-    height: 74vh;
+    height: 75vh;
     width: 35vw;
     border-radius: 5px;
 }
@@ -111,7 +111,7 @@
 .UploadSection{
     text-align: center;
     background-color: #ECF9F9;
-    height: 53vh;
+    height: 55vh;
     margin: 15px 20px;
 }
 
@@ -173,7 +173,7 @@
     width: 55vh;
     margin-left: 70px;
     border-radius: 5px;
-    height: 74vh;
+    height: 75vh;
 }
 
 .DocUploads li{
@@ -200,9 +200,9 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Added box shadow */
 }
 
-.DocUploads :nth-child(2){
+.DocUploads :nth-child(1){
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 8px;
     box-shadow: none;
     font-size: 14px;
 }

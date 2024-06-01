@@ -4,7 +4,7 @@ import './DoctorMedicalUpload.css';
 import WhiteLogo from '../../assets/WhiteLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHoldingUsd, faCog, faQuestion, faCloudUpload, faDownload, faSync } from "@fortawesome/free-solid-svg-icons";
-import DoctorProfileImage from '../../assets/DoctorProfileImage.png';
+import PatientProfileImage from '../../assets/PatientProfileImage.png';
 
 const DoctorMedicalUpload = () => {
   // Reference to the file input element
@@ -91,7 +91,7 @@ const DoctorMedicalUpload = () => {
             className="TextInput"
           />
           <div className='SideBarImage'>
-            <img className="DoctorProfileImg" src={DoctorProfileImage} alt="Doctor Profile Image" />
+            <img className="PatientProfileImg" src={PatientProfileImage} alt="Doctor Profile Image" />
           </div>
         </div>
         <div className="TheUploadDetails">
