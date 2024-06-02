@@ -105,10 +105,11 @@
         height: 58vh;
         border-radius: 10px;
         margin-top: 10px;
+        margin-left: -20px;
     }
 
     .ProfileText{
-        margin-right: 5px;
+        margin-left: -10px;
         width: 80%;
     }
     .ProfileText h3{
