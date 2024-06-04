@@ -25,6 +25,9 @@ import ChoiceNotification from './Components/AuthenticationPages/Notification/Ch
 import RejectedNotification from './Components/AuthenticationPages/Notification/RejectedNotification';
 import AcceptedNotification from './Components/AuthenticationPages/Notification/AcceptedNotification';
 import Footer from './Components/Home/Footer';
+import ConnectWallet from './Components/ConnectWallet/ConnectWallet';
+import UploadAndMintNFT from './Components/NFTComponent/UploadAndMint'; // Adjust the path accordingly
+
 
 
 function App() {
@@ -37,7 +40,9 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/servicespage" element={<ServicesPage />} />
           <Route path="/LogIn" element={<LogIn />} />
-          <Route path="/DoctorsSignUp" element={<DoctorsSignUp />} />
+          <Route path="/ConnectWallet" element={<ConnectWallet />} /> {/* Connect Wallet Button */}
+          <Route path="/NFTComponent" component={UploadAndMintNFT} /> {/* Upload record and mint NFT */}
+          <Route path="/DoctorsSignUp" element={<DoctorsSignUp />} /> 
           <Route path="/PatientsSignUp" element={<PatientsSignUp />} />
           <Route path="/Privacy_Security" element={<Privacy_Security />} />
           <Route path="/Profile" element={<Profile />} />
@@ -56,6 +61,7 @@ function App() {
           <Route path="/ChoiceNotification" element={<ChoiceNotification />} />
           <Route path="/RejectedNotification" element={<RejectedNotification />} />
           <Route path="/AcceptedNotification" element={<AcceptedNotification />} />
+          
         </Routes>
         <Footer />
     </div>

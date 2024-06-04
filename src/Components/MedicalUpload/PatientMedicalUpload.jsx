@@ -1,10 +1,19 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import Web3 from 'web3';
 import './DoctorMedicalUpload.css';
 import WhiteLogo from '../../assets/WhiteLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHoldingUsd, faCog, faQuestion, faCloudUpload, faDownload, faSync } from "@fortawesome/free-solid-svg-icons";
 import PatientProfileImage from '../../assets/PatientProfileImage.png';
+
+// Initialize Web3
+const web3 = new Web3('https://rinkeby.infura.io/v3/YOUR_INFURA_PROJECT_ID');
+
+// Your smart contract ABI and address
+const contractABI = [/* Your contract ABI here */];
+const contractAddress = 'YOUR_SMART_CONTRACT_ADDRESS';
+const contract = new web3.eth.Contract(contractABI, contractAddress);
 
 const DoctorMedicalUpload = () => {
   // Reference to the file input element
@@ -16,7 +25,18 @@ const DoctorMedicalUpload = () => {
     fileInputRef.current.click();
   };
 
-  // Function to handle file selection
+  const mintNFT = async (fileMetadata) => {
+    const accounts = await web3.eth.getAccounts();
+    const account = accounts[0];
+    
+    try {
+      await contract.methods.mintNFT(account, fileMetadata).send({ from: account });
+      console.log('NFT minted successfully');
+    } catch (error) {
+      console.error('Error minting NFT:', error);
+    }
+  };
+
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -36,7 +56,10 @@ const DoctorMedicalUpload = () => {
 
         if (response.ok) {
           console.log("File uploaded successfully");
-          // Handle successful upload (e.g., show a success message, update state)
+          const fileMetadata = { name: file.name, size: file.size, type: file.type }; // Customize as needed
+          
+          // Mint NFT with file metadata
+          await mintNFT(JSON.stringify(fileMetadata));
         } else {
           console.error("File upload failed");
           // Handle upload failure (e.g., show an error message)
