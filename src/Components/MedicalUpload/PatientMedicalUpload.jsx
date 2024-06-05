@@ -20,13 +20,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import PatientProfileImage from "../../assets/PatientProfileImage.png";
 import MedicalNFT from "../../../artifacts/contracts/Test.sol/MedicalNFT.json"; // Adjust the path according to your project structure
-import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
-import './PatientMedicalUpload.css';
-import WhiteLogo from '../../assets/WhiteLogo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHoldingUsd, faCog, faQuestion, faCloudUpload, faDownload, faSync } from "@fortawesome/free-solid-svg-icons";
-import PatientProfileImage from '../../assets/PatientProfileImage.png';
 
 // Initialize Web3
 const web3 = new Web3(

@@ -29,9 +29,10 @@ import Notification from "./Components/AuthenticationPages/Notification/Notifica
 import ChoiceNotification from "./Components/AuthenticationPages/Notification/ChoiceNotification";
 import RejectedNotification from "./Components/AuthenticationPages/Notification/RejectedNotification";
 import AcceptedNotification from "./Components/AuthenticationPages/Notification/AcceptedNotification";
-import Footer from "./Components/Home/Footer";
 import ConnectWallet from "./Components/ConnectWallet/ConnectWallet";
 import UploadAndMintNFT from "./Components/NFTComponent/UploadAndMint"; // Adjust the path accordingly
+import Footer from "./Components/Home/Footer";
+
 
 function App() {
   return (
