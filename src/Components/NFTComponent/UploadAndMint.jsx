@@ -87,3 +87,4 @@ const UploadAndMintNFT = async () => {
 };
 
 export default UploadAndMintNFT;
+

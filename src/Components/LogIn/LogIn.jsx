@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import LogInImage from '../../assets/LogInImage.png';
 import LOGO from '../../assets/LOGO.png';
 import GoogleIcon from '../../assets/GoogleIcon.png';
 import './LogIn.css';
-import ConnectWallet from '../ConnectWallet/ConnectWallet.jsx';
+import { Link } from 'react-router-dom';
 
 function LogIn() {
   const [uniqueId, setUniqueId] = useState('');
@@ -97,7 +96,6 @@ function LogIn() {
             </li>
           </ul>
         </form>
-        <ConnectWallet /> {/* Added ConnectWallet component */}
       </div>
     </div>
   );
