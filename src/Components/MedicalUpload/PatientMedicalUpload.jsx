@@ -124,6 +124,15 @@ const PatientMedicalUpload = () => {
             </button>
             <br />
           </Link>
+<<<<<<< HEAD
+=======
+          <Link to="/DocumentScanner">
+            <button key="DocumentScanner">
+              <FontAwesomeIcon icon={faCalendar} /> Document Scanner
+            </button>
+            <br />
+          </Link>
+>>>>>>> parent of c25b2a0 (Added Blockchain Integrations)
         </div>
         <div className="DoctorProfileSecondLinks">
           <Link to="/Privacy_Security">
@@ -158,9 +167,44 @@ const PatientMedicalUpload = () => {
           </div>
         </div>
         <div className="TheUploadDetails">
+<<<<<<< HEAD
           <h1>Dashboard/<h2>Medical Upload</h2></h1>
           <div className='TheUploadWrapper'>
             <div className='DocUploads'>
+=======
+          <h1>
+            Dashboard/<h2>Medical Upload</h2>
+          </h1>
+          <div className="TheUploadWrapper">
+            <div className="History">
+              <h2>Upload History</h2>
+              <h2>Medical Data</h2>
+              <div className="UploadSection">
+                <FontAwesomeIcon icon={faCloudUpload} className="cloud-icon" />
+                <h4>Upload medical history here</h4>
+                <h5>
+                  Drag and drop <a href="">here</a> in browser
+                </h5>
+                <button key="FileUpload" onClick={handleMedicalUpload}>
+                  Upload file <FontAwesomeIcon icon={faDownload} />
+                </button>
+                <br />
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
+              </div>
+              <div className="UploadFooter">
+                <h6>
+                  Use third party integration:
+                  <a href=""> Use third party integration:</a>
+                </h6>
+              </div>
+            </div>
+            <div className="DocUploads">
+>>>>>>> parent of c25b2a0 (Added Blockchain Integrations)
               <h2>Uploaded documents</h2>
               <ul>
                 <li>

@@ -8,7 +8,7 @@ import DoctorProfileImage from '../../assets/DoctorProfileImage.png';
 
 const DoctorProfile = () => {
   return (
-    <div className='TheDoctorProfile'>
+    <div div className='TheDoctorProfile'>
       <div className='TheDoctorProfileLinks'>
         <div className="TheProfileLogo">
             <img className="navLogo"src={WhiteLogo} alt="My_HealthHubLogo"/>
@@ -57,7 +57,7 @@ const DoctorProfile = () => {
           </div>
         </div>
        <div className="TheDoctorProfileDetails">
-        <h1>Dashboard/<span>Doctor's Profile</span></h1>
+        <h1>Dashboard/<h2>Doctor's Profile</h2></h1>
         <div className='DoctorDetails'>
         <div className='DoctorPrimaryDetails'>
           <img className="DoctorProfileImg"src={DoctorProfileImage} alt="Doctor Profile Image"/>
