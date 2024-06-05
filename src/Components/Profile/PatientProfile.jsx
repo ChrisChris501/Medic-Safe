@@ -16,13 +16,13 @@ const PatientProfile = () => {
       </div>
       <div className='PatientLinks'>
         <div className='PatientFirstLinks'>
-            <Link to="/PatientDashboard">
+        <Link to="/PatientDashboard">
               <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
-            <Link to="/PatientMedicalUpload">
+            <Link to="/PatientProfile">
               <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
             </Link>
-            <Link to="/MedicalHistory">
+            <Link to="/PatientMedicalUpload">
               <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
             </Link>
             <Link to="/HealthEdu">

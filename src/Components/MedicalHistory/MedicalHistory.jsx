@@ -12,19 +12,16 @@ const MedicalHistory = () => {
             </div>
             <div className='PatientFirstLinks'>
             <Link to="/PatientDashboard">
-            <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
+              <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
             <Link to="/PatientProfile">
-            <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
+              <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
             </Link>
-            <Link to="/MedicalHistory">
-            <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical Upload</button><br />
-            </Link>
-            <Link to="/DoctorMedicalUpload">
-            <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical History</button><br />
+            <Link to="/PatientMedicalUpload">
+              <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
             </Link>
             <Link to="/HealthEdu">
-            <button key="HealthEdu"><FontAwesomeIcon icon={faCalendar} /> Health Education</button><br />
+              <button key="HealthEdu"><FontAwesomeIcon icon={faCalendar} /> Health Education</button><br />
             </Link>
         </div>
         <div className='PatientDashboardSecondLinks'>

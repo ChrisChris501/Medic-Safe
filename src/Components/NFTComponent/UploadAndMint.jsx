@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { ethers } from 'ethers';
 import { create } from 'ipfs-http-client';
 import MedicalNFT from '../../../artifacts/contracts/Test.sol/MedicalNFT.json'; // Adjust the path according to your project structure
@@ -81,3 +81,4 @@ function UploadAndMintNFT() {
 
 export default UploadAndMintNFT;
 
+*/

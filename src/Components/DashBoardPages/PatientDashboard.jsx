@@ -48,7 +48,7 @@ const PatientDashboard = () => {
             <img className="DashboardLogo" src={WhiteLogo} alt="My_HealthHubLogo"/>
         </div>
           <div className='PatientDashboardFirstLinks'>
-            <Link to="/PatientDashboard">
+          <Link to="/PatientDashboard">
               <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
             <Link to="/PatientProfile">

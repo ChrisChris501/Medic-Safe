@@ -13,16 +13,19 @@ const DoctorProfile = () => {
         <div className="TheProfileLogo">
             <img className="navLogo"src={WhiteLogo} alt="My_HealthHubLogo"/>
         </div>
-      <div className='DoctorFirstLinks'>
-            <Link to="/DoctorDashboard">
-              <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
-            </Link>
-            <Link to="/DoctorProfile">
-              <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
-            </Link>
-            <Link to="/DoctorMedicalUpload">
-              <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
-            </Link>
+        <div className='DoctorFirstLinks'>
+          <Link to="/DoctorDashboard">
+            <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
+          </Link>
+          <Link to="/DoctorProfile">
+            <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
+          </Link>
+          <Link to="/DoctorMedicalUpload">
+            <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
+          </Link>
+          <Link to="/DocumentScanner">
+            <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
+          </Link>
            </div>
           <div className='DoctorProfileSecondLinks'>
             <Link to="/Privacy_Security">
@@ -36,15 +39,15 @@ const DoctorProfile = () => {
             </Link>
           </div>
         </div>
-  <div className="TheDoctorDetails">
-    <div className='SearchDetails'>
-      <div>
-        <input
-          type="text"
-          placeholder="Search"
-          className="TextInput"
-          />
-        </div>
+      <div className="TheDoctorDetails">
+      <div className='SearchDetails'>
+        <div>
+          <input
+            type="text"
+            placeholder="Search"
+            className="TextInput"
+            />
+          </div>
           <div className='SideBarImage'>
             <FontAwesomeIcon icon={faBell} />
             <img className="PatientProfileImg"src={DoctorProfileImage} alt="Patient Profile Image"/>
