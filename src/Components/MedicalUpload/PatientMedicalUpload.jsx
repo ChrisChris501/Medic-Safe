@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import './DoctorMedicalUpload.css';
+import './PatientMedicalUpload.css';
 import WhiteLogo from '../../assets/WhiteLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHoldingUsd, faCog, faQuestion, faCloudUpload, faDownload, faSync } from "@fortawesome/free-solid-svg-icons";
@@ -66,9 +66,6 @@ const DoctorMedicalUpload = () => {
           </Link>
           <Link to="/DoctorMedicalUpload">
             <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
-          </Link>
-          <Link to="/DocumentScanner">
-            <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
           </Link>
         </div>
         <div className='DoctorProfileSecondLinks'>
