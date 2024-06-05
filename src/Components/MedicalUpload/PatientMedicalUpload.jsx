@@ -61,11 +61,8 @@ const DoctorMedicalUpload = () => {
           <Link to="/DoctorProfile">
             <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
           </Link>
-          <Link to="/MedicalHistory">
-            <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
-          </Link>
-          <Link to="/DoctorMedicalUpload">
-            <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
+          <Link to="/PatientMedicalUpload">
+            <button key="MedicalPatient"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
           </Link>
         </div>
         <div className='DoctorProfileSecondLinks'>
@@ -92,7 +89,7 @@ const DoctorMedicalUpload = () => {
           </div>
         </div>
         <div className="TheUploadDetails">
-          <h1>Dashboard/<h2>Medical Upload</h2></h1>
+          <h1>Dashboard/<h2>Medical History</h2></h1>
           <div className='TheUploadWrapper'>
             <div className='DocUploads'>
               <h2>Uploaded documents</h2>

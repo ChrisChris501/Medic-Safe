@@ -54,14 +54,11 @@ const PatientDashboard = () => {
             <Link to="/PatientProfile">
               <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
             </Link>
-            <Link to="/MedicalHistory">
+            <Link to="/PatientMedicalUpload">
               <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
             </Link>
-            <Link to="/MedicalUpload">
-              <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
-            </Link>
-            <Link to="/DocumentScanner">
-              <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
+            <Link to="/HealthEdu">
+              <button key="HealthEdu"><FontAwesomeIcon icon={faCalendar} /> Health Education</button><br />
             </Link>
            </div>
           <div className='PatientDashboardSecondLinks'>
