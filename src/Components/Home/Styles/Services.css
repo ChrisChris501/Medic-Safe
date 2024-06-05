@@ -142,7 +142,7 @@
 
     .OurServices{
         width: 75%;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .OurServices h2{
@@ -153,14 +153,14 @@
       grid-template-columns: 1fr;
       grid-template-rows: 32% 32% 32%;
       width: 75%;
-      margin-left: 40px;
+      margin-left: 35px;
     }
 
     .ServicesButton button{
         width: 20vw;
         height: 7vh;
         margin-top: 15px;
-        margin-left: 5px;
+        margin-left: 20px;
         font-size: 12px;
     }
   }

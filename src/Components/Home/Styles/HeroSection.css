@@ -74,11 +74,11 @@
     }
 
     .HeroImg img{
-      width: 40vw;
+      width: 32vw;
+      height: 45vh;
     }
-
     .HeroImg{
-      width: 40vw;
+      width: 32vw;
     }
   }
   @media only screen and (max-width: 700px) {
@@ -90,11 +90,11 @@
     }
 
     .HeroText{
-      margin-left: 10px;
+      margin-left: 20px;
     }
     .Hero > .HeroImg {
         width: 60vw;
-        margin-left: 10px;
+        margin-left: 20px;
         border-radius: 10px;
         margin-top: 15px; /* Adds spacing on top of each div */
         box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
@@ -106,6 +106,7 @@
 
     .Hero > .HeroImg img, .HeroImg2 img{
       width: 60vw;
+      height: 55vh;
     }
 
     .HeroText{
