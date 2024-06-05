@@ -100,34 +100,20 @@ const PatientMedicalUpload = () => {
           <img className="navLogo" src={WhiteLogo} alt="The Medic-Safe Logo" />
         </div>
         <div className="DoctorFirstLinks">
-          <Link to="/DoctorDashboard">
-            <button key="Dashboard">
-              <FontAwesomeIcon icon={faThLarge} /> Dashboard
-            </button>
-            <br />
-          </Link>
-          <Link to="/DoctorProfile">
-            <button key="Profile">
-              <FontAwesomeIcon icon={faUserGraduate} /> Profile
-            </button>
-            <br />
-          </Link>
-          <Link to="/MedicalHistory">
-            <button key="MedicalHistory">
-              <FontAwesomeIcon icon={faClock} /> Medical History
-            </button>
-            <br />
-          </Link>
-          <Link to="/DoctorMedicalUpload">
-            <button key="MedicalUpload">
-              <FontAwesomeIcon icon={faUpload} /> Medical Upload
-            </button>
-            <br />
-          </Link>
-          <Link to="/HealthEdu">
+        <div className='PatientDashboardFirstLinks'>
+            <Link to="/PatientDashboard">
+              <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
+            </Link>
+            <Link to="/PatientProfile">
+              <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
+            </Link>
+            <Link to="/PatientMedicalUpload">
+              <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
+            </Link>
+            <Link to="/HealthEdu">
               <button key="HealthEdu"><FontAwesomeIcon icon={faCalendar} /> Health Education</button><br />
-          </Link>
-        </div>
+            </Link>
+           </div>
         <div className="DoctorProfileSecondLinks">
           <Link to="/Privacy_Security">
             <button key="PrivacyPolicy">
@@ -200,6 +186,7 @@ const PatientMedicalUpload = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

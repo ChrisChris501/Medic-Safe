@@ -19,7 +19,7 @@ const PatientProfile = () => {
             <Link to="/PatientDashboard">
               <button key="Dashboard"><FontAwesomeIcon icon={faThLarge} /> Dashboard</button><br />
             </Link>
-            <Link to="/PatientProfile">
+            <Link to="/PatientMedicalUpload">
               <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
             </Link>
             <Link to="/MedicalHistory">
