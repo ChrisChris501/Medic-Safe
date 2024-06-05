@@ -18,8 +18,8 @@
   right: 10px;
 }
 
-#connect-wallet {
-  background-color: #007d79; /* Matching button color with theme */
+/* #connect-wallet {
+  background-color: #007d79; Matching button color with theme 
   border: none;
   color: white;
   padding: 8px 12px;
@@ -30,8 +30,8 @@
 }
 
 #connect-wallet:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
+  background-color: #0056b3; Darker blue on hover 
+} */
 
 .MediSafeLogIncontainer {
   background-color: #007d79;
