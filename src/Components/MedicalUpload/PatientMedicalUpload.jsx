@@ -124,6 +124,9 @@ const PatientMedicalUpload = () => {
             </button>
             <br />
           </Link>
+          <Link to="/HealthEdu">
+              <button key="HealthEdu"><FontAwesomeIcon icon={faCalendar} /> Health Education</button><br />
+          </Link>
         </div>
         <div className="DoctorProfileSecondLinks">
           <Link to="/Privacy_Security">

@@ -61,14 +61,8 @@ const DoctorMedicalUpload = () => {
           <Link to="/DoctorProfile">
             <button key="Profile"><FontAwesomeIcon icon={faUserGraduate} /> Profile</button><br />
           </Link>
-          <Link to="/MedicalHistory">
-            <button key="MedicalHistory"><FontAwesomeIcon icon={faClock} /> Medical History</button><br />
-          </Link>
           <Link to="/DoctorMedicalUpload">
             <button key="MedicalUpload"><FontAwesomeIcon icon={faUpload} /> Medical Upload</button><br />
-          </Link>
-          <Link to="/DocumentScanner">
-            <button key="DocumentScanner"><FontAwesomeIcon icon={faCalendar} /> Document Scanner</button><br />
           </Link>
         </div>
         <div className='DoctorProfileSecondLinks'>
