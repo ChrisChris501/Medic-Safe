@@ -72,6 +72,7 @@ const PatientProfile = () => {
           <h6>Your profile is 100% completed</h6>
       <div className='PercentageBar'></div>
       </div>
+      <div className='TopDetails'>
           <div>
             <h3>Email</h3>
             <input type="email" id="email" name="email" placeholder="user@example.com" />
@@ -83,6 +84,7 @@ const PatientProfile = () => {
           <div>
             <h3>Location</h3>
             <input type="text" id="location" name="location" placeholder="No 3, Cassandra Street, Natana Abuja." />
+          </div>
           </div>
         </div>
       </div>

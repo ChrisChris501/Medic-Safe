@@ -1,5 +1,4 @@
 .TheDoctorProfile{
-    margin-top: 13vh;
     display: grid;
     grid-template-columns: 20% 80%;
     height: 55vh;
@@ -51,7 +50,7 @@
     margin-top: 70vh;
 }
 
-.DoctorFirstLinks   button, .DoctorSeconLinks button{
+.DoctorFirstLinks button, .DoctorSeconLinks button{
     display: block;
     margin: auto 20px;
     padding: 5px 20px;
@@ -132,7 +131,6 @@
     margin-top: 5px;
     margin-bottom: 18px;
     font-weight: 500;
-    
 }
 
 .UploadSection a{
@@ -214,15 +212,6 @@
     color: grey;
     font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
