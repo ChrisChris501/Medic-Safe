@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { ethers } from 'ethers';
-import { create } from 'ipfs-http-client';
-import MedicalNFT from '../../../artifacts/contracts/Test.sol/MedicalNFT.json'; // Adjust the path according to your project structure
+import React, { useState } from "react";
+import { ethers } from "ethers";
+import { create } from "ipfs-http-client";
+import MedicalNFT from "../../../artifacts/contracts/Test.sol/MedicalNFT.json"; // Adjust the path according to your project structure
 
-const ipfs = create('https://ipfs.infura.io:5001/api/v0');
+const ipfs = create("https://ipfs.infura.io:5001/api/v0");
 
-const contractAddress = 'YOUR_DEPLOYED_CONTRACT_ADDRESS';
+const contractAddress = "0xCc1209d678c6EA4A28d7d5487159114F1698089b";
 
-function UploadAndMintNFT() {
+const UploadAndMintNFT = async () => {
   const [file, setFile] = useState(null);
-  const [patientData, setPatientData] = useState('');
-  const [status, setStatus] = useState('');
+  const [patientData, setPatientData] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
@@ -39,28 +39,35 @@ function UploadAndMintNFT() {
       // Mint NFT
       await mintNFT(metadataHash);
 
-      setStatus('Upload and mint successful!');
+      setStatus("Upload and mint successful!");
     } catch (error) {
-      console.error('Error uploading file: ', error);
-      setStatus('Error uploading file.');
+      console.error("Error uploading file: ", error);
+      setStatus("Error uploading file.");
     }
   };
 
   const mintNFT = async (metadataHash) => {
     if (!window.ethereum) {
-      console.error('MetaMask is not installed');
+      console.error("MetaMask is not installed");
       return;
     }
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
-    const contract = new ethers.Contract(contractAddress, MedicalNFT.abi, signer);
+    const contract = new ethers.Contract(
+      contractAddress,
+      MedicalNFT.abi,
+      signer
+    );
 
     try {
-      const transaction = await contract.createMedicalNFT(await signer.getAddress(), `ipfs://${metadataHash}`);
+      const transaction = await contract.createMedicalNFT(
+        await signer.getAddress(),
+        `ipfs://${metadataHash}`
+      );
       await transaction.wait();
     } catch (error) {
-      console.error('Error minting NFT: ', error);
+      console.error("Error minting NFT: ", error);
     }
   };
 
@@ -77,6 +84,6 @@ function UploadAndMintNFT() {
       <p>{status}</p>
     </div>
   );
-}
+};
 
 export default UploadAndMintNFT;
