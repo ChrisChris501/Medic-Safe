@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LogInImage from '../../assets/LogInImage.png';
 import LOGO from '../../assets/LOGO.png';
 import GoogleIcon from '../../assets/GoogleIcon.png';
+import { Link } from 'react-router-dom';
 import './LogIn.css';
 //import ConnectWallet from '../ConnectWallet/ConnectWallet.jsx';
 
