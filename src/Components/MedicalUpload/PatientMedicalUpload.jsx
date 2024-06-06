@@ -1,7 +1,7 @@
 //require("dotenv").config();
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import "./DoctorMedicalUpload.css";
+import "./PatientMedicalUpload.css";
 import WhiteLogo from "../../assets/WhiteLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHoldingUsd, faCog, faQuestion, faCloudUpload, faDownload, faSync,} from "@fortawesome/free-solid-svg-icons";
@@ -49,7 +49,7 @@ const DoctorMedicalUpload = () => {
   };
 
   return (
-    <div className='TheDoctorProfile'>
+    <div className='PatientHistory'>
       <div className='TheDoctorProfileLinks'>
         <div className="TheProfileLogo">
           <img className="navLogo" src={WhiteLogo} alt="The Medic-Safe Logo" />
@@ -96,7 +96,7 @@ const DoctorMedicalUpload = () => {
             Dashboard/<h2>Medical Upload</h2>
           </h1>
           <div className="TheUploadWrapper">
-            <div className="DocUploads">
+            <div className="HistoryUploads">
               <h2>Uploaded documents</h2>
               <ul>
                 <li>Documents <h3>Records</h3></li>

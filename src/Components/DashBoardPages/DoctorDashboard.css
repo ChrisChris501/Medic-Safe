@@ -13,7 +13,6 @@
     display: grid;
     grid-template-columns: 25vw 25Vw;
     gap: 10vw;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -161,7 +160,7 @@
 }
 
 .DashboardHeader h2{
-    margin: 30px;
+    margin: 40px 15px 20px 15px;
 }
 .main {
     position: absolute;

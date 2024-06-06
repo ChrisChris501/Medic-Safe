@@ -106,18 +106,12 @@ const DoctorDashboard = () => {
         </div>
         <div className="cards">
           <div className="card1">
-            <div className="icon-box">
-              <FontAwesomeIcon icon={faBell} />
-            </div>
             <div className="card-content">
               <div className="number">45</div>
               <div className="card-name">Patients Scan</div>
             </div>
           </div>
           <div className="card2">
-            <div className="icon-box">
-              <FontAwesomeIcon icon={faBell} />
-            </div>
             <div className="card-content">
               <div className="number">10</div>
               <div className="card-name">Surgeries</div>

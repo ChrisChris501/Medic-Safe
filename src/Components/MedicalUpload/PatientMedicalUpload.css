@@ -1,4 +1,4 @@
-.TheDoctorProfile{
+.PatientHistory{
     display: grid;
     grid-template-columns: 20% 80%;
     height: 55vh;
@@ -167,39 +167,38 @@
    text-decoration: none;
 }
 
-.DocUploads{
+.HistoryUploads{
     background-color: #FFFFFF;
-    width: 55vh;
-    margin-left: 70px;
+    width: 95%;
+    margin-left: 100px;
     border-radius: 5px;
     height: 75vh;
 }
 
-.DocUploads li{
+.HistoryUploads li{
     display: grid;
-    grid-template-columns: 23vh 23vh;
-    gap: 80px;
-    margin-left: 20px;
+    grid-template-columns: 55% 55%;
+    gap: 150px;
+    margin: 0 20px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 10px;
+    padding: 8px;
     margin-top: 10px;
-    width: 45vh;
+    width: 90%;
     font-size: 12px;
     margin-top: 10px;
 }
 
-.DocUploads h2{
-    height: 6vh;
+.HistoryUploads h2{
     font-weight: 500;
     font-size: 20px;
-    padding-left: 80px;
-    width: 75%;
-    margin-top: 10px;
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Added box shadow */
 }
 
-.DocUploads :nth-child(1){
+.HistoryUploads :nth-child(1){
     font-weight: 600;
     padding-right: 8px;
     box-shadow: none;

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     height: 55vh;
-    margin-bottom: 55vh;
+    margin-bottom: 48%;
 }
 
 .TheDoctorProfileLinks{
@@ -20,7 +20,7 @@
 
 .SearchDetails Input{
     margin: 10px;
-    width: 50%;
+    width: 8vw;
     height: 3vh;
     border-radius: 5px;
     border: 0.5px solid Grey;
