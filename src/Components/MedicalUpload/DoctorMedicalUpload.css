@@ -1,8 +1,8 @@
-.TheDoctorProfile{
+.DoctorMedicalUploads{
     display: grid;
     grid-template-columns: 20% 80%;
     height: 55vh;
-    margin-bottom: 48%;
+    margin-bottom: 25%;
 }
 
 .TheDoctorProfileLinks{

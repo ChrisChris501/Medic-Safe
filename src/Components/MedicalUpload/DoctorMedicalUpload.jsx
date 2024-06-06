@@ -49,7 +49,7 @@ const DoctorMedicalUpload = () => {
   };
 
   return (
-    <div className='TheDoctorProfile'>
+    <div className='DoctorMedicalUploads'>
       <div className='TheDoctorProfileLinks'>
         <div className="TheProfileLogo">
           <img className="navLogo" src={WhiteLogo} alt="The Medic-Safe Logo" />

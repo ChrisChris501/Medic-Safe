@@ -1,7 +1,8 @@
-.TheDoctorProfile{
+.TheDoctorProfilePage{
     display: grid;
     grid-template-columns: 20% 80%;
     height: 120vh;
+    margin-bottom: 20%;
 }
 
 .SearchDetails{
