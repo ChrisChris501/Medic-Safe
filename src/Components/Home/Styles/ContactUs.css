@@ -3,13 +3,14 @@
     grid-template-columns: 43% 43%;
     /* gap: 40px; */
     /* margin-left: 90px; */
-    margin: 45px 0 15px 0;
+    margin: 45px 80px 15px 0;
     padding: 0 50px;
 }
 
 .ContactImage img {
-    width: 35vw;
-    height: 100%;
+    width: 30vw;
+    height: 110%;
+    margin-top: 25px;
     /* height: 65vh; */
     /* padding: 30px 20px 5px 50px; */
 }
