@@ -7,43 +7,33 @@ import { faThLarge, faUserGraduate, faClock, faUpload, faCalendar, faHandHolding
 import DoctorProfileImage from '../../assets/DoctorProfileImage.png';
 
 const DoctorMedicalUpload = () => {
-  // Reference to the file input element
   const fileInputRef = useRef(null);
 
-  // Function to handle medical upload button click
   const handleMedicalUpload = () => {
-    // Trigger the file input click event
     fileInputRef.current.click();
   };
 
-  // Function to handle file selection
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     if (file) {
-      // Perform upload logic here
       console.log("Medical upload initiated with file:", file);
 
-      // Create a FormData object to hold the file
       const formData = new FormData();
       formData.append('file', file);
 
       try {
-        // Send the file to the server using fetch (replace 'your-upload-endpoint' with your actual endpoint)
-        const response = await fetch('your-upload-endpoint', {
+        const response = await fetch('endpoint', {
           method: 'POST',
           body: formData,
         });
 
         if (response.ok) {
           console.log("File uploaded successfully");
-          // Handle successful upload (e.g., show a success message, update state)
         } else {
           console.error("File upload failed");
-          // Handle upload failure (e.g., show an error message)
         }
       } catch (error) {
         console.error("Error uploading file:", error);
-        // Handle error during upload
       }
     }
   };

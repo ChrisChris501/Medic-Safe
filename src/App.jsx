@@ -29,7 +29,6 @@ import Footer from './Components/Home/Footer';
 //import UploadAndMintNFT from './Components/NFTComponent/UploadAndMint'; // Adjust the path accordingly
 
 
-
 function App() {
   return (
       <Router>

@@ -3,7 +3,7 @@
     color: #007D79;
     font-size: 15px;
     margin: 10px;
-    margin-top: 100px;
+    height: 100vh;
 }
 
 .GeneralProfile{
@@ -13,7 +13,6 @@
     align-items: center;
     text-align: center;
     margin: 0;
-    margin-top: 60px;
     margin-bottom: 15px;
 }
 
@@ -23,5 +22,6 @@
     background-color: #007D79;
     border: none;
     border-radius: 5px;
+    margin-top: -20px;
 }
 
