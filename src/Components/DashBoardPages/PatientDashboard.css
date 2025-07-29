@@ -1,0 +1,372 @@
+.PatientDashboardContainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 110vh;
+}
+
+.PatientDashboardLinks{
+    background-color: #007D79;
+    height: 110%;
+}
+
+.SearchDetails{
+    display: grid;
+    grid-template-columns: 25vw 25Vw;
+    gap: 10vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SearchDetails Input{
+    margin: 10px;
+    width: 25vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: 0.5px solid Grey;
+    padding: 10px;
+}
+
+.SearchDetails img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: 280px;
+    margin-top: 15px;
+}
+
+.SideBarImage img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: 280px;
+    margin-top: 15px;
+}
+
+.PatientDashboardLogo img{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    width: 12vw;
+    height: 8vh;
+}
+
+.PatientDashboardFirstLinks{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.PatientDashboardSecondLinks{
+    margin-top: 45vh;
+}
+
+.PatientDashboardFirstLinks button, .PatientDashboardSecondLinks button{
+    display: block;
+    margin: auto 40px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007D79;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.PatientDashboardFirstLinks a, .PatientDashboardSecondLinks a{
+    text-decoration: none;
+}
+
+.SearchDetails i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.fa-bell {
+    justify-self: right;
+}
+
+.user {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    justify-self: right;
+}
+
+
+/* main */
+
+.PatientDashboardMain {
+    width: 100%;
+    height: 120vh;
+    background: #f5f5f5;
+}
+
+.PatientWelcome{
+    margin-top:90px;
+    font-size: 50px;
+}
+
+.cards {
+    width: 90%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.cards .card1 {
+    padding: 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(118.05deg, #08BDBA 2.78%, #08B5B2 48.74%, #045756 153.16%);
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cards .card2 {
+    padding: 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(122.43deg, #B0CCFE -15.99%, #4486FA 45.02%, #3E7CE6 73.67%, #3365BC 104.95%, #295299 158.74%);
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cards .card3 {
+    padding: 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(127.67deg, #F1EAD9 -28.42%, #F9BD24 49.14%, #EFB622 66.9%, #E2AC20 91.2%, #957115 144.62%);
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.number {
+    font-size: 35px;
+    font-weight: 500;
+    color: #cfe0d8;
+}
+
+.card-name {
+    color: white;
+    font-weight: 400;
+}
+
+.icon-box i {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+
+/* charts */
+
+.charts {
+    display: flex;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    width: 95%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart {
+    background-color: #d4eeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 45%;
+    margin-left: -20px;
+}
+
+.side-chart-details .side-chart-details2{
+    padding: 20px;
+    font-size: 13px;
+}
+
+.side-chart-details .side-chart-details3{
+    padding: 20px;
+    font-size: 13px;
+}
+
+.side-chart-details .side-chart-details4{
+    padding: 20px;
+    font-size: 13px;
+}
+
+
+.side-chart-details .dot4{
+    height: 8px;
+    width: 8px;
+    margin-bottom: 5px;
+    background-color: orange;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.side-chart-details .dot5{
+    height: 8px;
+    width: 8px;
+    margin-bottom: 5px;
+    background-color: #484be9;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.side-chart-details .dot6{
+    height: 8px;
+    width: 8px;
+    margin-bottom: 5px;
+    background-color: #009D9A;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.side-chart-details .number{
+    color: black;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.side-chart-details .card-name{
+    color: black;
+}
+
+
+.piechart {
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #009D9A 70deg,
+        rgb(95, 98, 240) 0 235deg,
+        orange 0
+    );
+}
+
+.pie-chart h3{
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-top: -200px;
+}
+
+.piechart-details{
+    padding-top: 30px;
+    font-size: 15px;
+    margin-left: 45px;
+}
+
+.piechart-details ul{
+    list-style: none;
+}
+
+.piechart-details ul li{
+    width: 200px;
+    
+}
+
+.piechart-percentage{
+    font-size: 10px;
+    padding-left: 120px;
+}
+
+.pie-chart .dot1{
+    height: 10px;
+    width: 200px;
+    background-color: #484be9;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.pie-chart .dot2{
+    height: 10px;
+    width: 200px;
+    background-color: #e9ca1e;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.pie-chart .dot3{
+    height: 10px;
+    width: 200px;
+    background-color: #009D9A;
+    border-radius: 50px;
+    display: inline-block;
+}
+.chart h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+    text-align: center
+}
+
+@media (max-width:1115px) {
+    .sidebar {
+        width: 60px;
+    }
+    .main {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+}
+
+@media (max-width:880px) {
+    /* .topbar {
+        grid-template-columns: 1.6fr 6fr 0.4fr 1fr;
+    } */
+    .fa-bell {
+        justify-self: left;
+    }
+    .cards {
+        width: 100%;
+        padding: 35px 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .charts {
+        grid-template-columns: 1fr;
+    }
+    .doughnut-chart {
+        padding: 50px;
+    }
+    #doughnut {
+        padding: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .topbar {
+        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+    }
+    .logo h2 {
+        font-size: 20px;
+    }
+    .search {
+        width: 80%;
+    }
+    .search input {
+        padding: 0 20px;
+    }
+    .fa-bell {
+        margin-right: 5px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .doughnut-chart {
+        padding: 10px;
+    }
+    #doughnut {
+        padding: 0px;
+    }
+    .user {
+        width: 40px;
+        height: 40px;
+    }
+}

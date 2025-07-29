@@ -1,0 +1,118 @@
+.Hero {
+    display: grid;
+    grid-template-columns:  30% 30% 30%;
+    gap: 3%;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 30px 10px 30px;
+  }
+
+  .HeroText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 105px;
+  }
+
+
+   .HeroText h1{
+    font-weight: 500;
+    font-size: 40px;
+    color: #007D79;
+  }
+
+  .HeroText h5{
+    color: #262626;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  .HeroLink{
+    text-decoration: none;
+    text-align: center;
+  }
+  .HeroLink button {
+    border: none;
+    outline: none;
+    background-color: #009D9A;
+    color: white;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .HeroLink button:hover{
+    background-color: #77dddb;
+  }
+
+  .HeroImg, .HeroImg2{
+    background-color: #3DDBD9;
+    width: 22vw;
+    border-radius: 10px;
+  }
+
+  .HeroImg img, .HeroImg2 img{
+    width: 22vw;
+    height: 45vh;
+  }
+
+  @media (min-width: 701px) and (max-width: 1024px) {
+    .Hero {
+      display: grid;
+      grid-template-columns:  50% 50%;
+      gap: 6%;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 30px 10px 10px;
+    }
+
+    .HeroImg2 img{
+      display: none;
+    }
+
+    .HeroImg img{
+      width: 32vw;
+      height: 45vh;
+    }
+    .HeroImg{
+      width: 32vw;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .Hero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .HeroText{
+      margin-left: 20px;
+    }
+    .Hero > .HeroImg {
+        width: 60vw;
+        margin-left: 20px;
+        border-radius: 10px;
+        margin-top: 15px; /* Adds spacing on top of each div */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+    .HeroImg2{
+      display: none;
+    }
+
+    .Hero > .HeroImg img, .HeroImg2 img{
+      width: 60vw;
+      height: 55vh;
+    }
+
+    .HeroText{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+}

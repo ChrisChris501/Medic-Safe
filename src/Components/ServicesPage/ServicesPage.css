@@ -1,0 +1,101 @@
+.ServicesLandingText {
+    text-align: center;
+    color: #007D79;
+    background-color: #D9FBFB;
+    height: 10vh;
+    padding: 20px 20px 80px 20px;
+}
+
+.ServicesLandingText h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.ServicesLandingText h6{
+    font-size: 14px;
+    font-weight: 300;
+    width: 35%;
+    margin: 0 auto;
+    line-height: 22px;
+}
+
+.ServicesLanding img{
+    height: 60vh;
+    width: 100%;
+}
+
+.ServicesCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto; 
+  }
+
+  .Card {
+    width: 100%;
+  }
+
+
+.Card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .Card h3 {
+    color: #007D79;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .Card h5 {
+    color: #3DDBD9;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .Card h6{
+    padding-left: 10px;
+    color: #262626;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  @media (max-width: 900px) {
+    .ServicesCards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+
+    .Card {
+        width: 80%; 
+    }
+
+    .ServicesLandingText {
+      text-align: center;
+      color: #007D79;
+      background-color: #D9FBFB;
+      height: 10vh;
+      padding: 15px 20px 80px 20px;
+  }
+
+      .ServicesLandingText h6 {
+          width: 80%;
+  }
+
+      .ServicesLanding img {
+          height: auto;
+          max-height: 300px;
+      }
+}
+

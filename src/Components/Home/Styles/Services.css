@@ -1,0 +1,167 @@
+.LandingServices{
+    margin:  10px;
+    margin-top: 50px;
+    text-align: justify;
+    color: #262626;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.OurServices{
+    padding: 5px 50px;
+    margin: 10px 100px 10px 85px;
+}
+
+.OurServices h2{
+    color: #007D79;
+    font-size: 30px;
+    font-weight: 600px;
+    line-height: 40px;
+}
+
+.MedicalOffers{
+    display: grid;
+    grid-template-columns: 28% 30% 28%;
+    gap: 20px;
+    padding: 5px 20px;
+    margin: 20px;
+    margin-left: 115px;
+}
+
+.MedicalHistory{
+    background-color: #009D9A;
+    padding: 30px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.MedicalHistory img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.MedicalHistory h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.MedicalHistory h6{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.HealthRecord, .HealthEdu{
+    padding: 35px 30px;
+    border-radius: 10px;
+    border: 2px solid #007D79;
+    color: #262626;
+}
+
+.HealthRecord img, .HealthEdu img{
+    width: 40px;
+    height: 40px;
+    background-color: #009D9A;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.HealthRecord h2, .HealthEdu h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.HealthRecord h6 .HealthEdu h6{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.ServicesButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ServicesButton button{
+    background-color: #3DDBD9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 8px ;
+    width: 8vw;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.ServicesButton img{
+    width: 9px;
+    height: 8px;
+}
+
+.ServicesMore{
+    text-align: center;
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    .LandingServices{
+        margin-left: -20px;
+        text-align: justify;
+    }
+    .OurServices h6{
+        width: 105%;
+    }
+    .ServicesButton button{
+        width: 12vw;
+        height: vh;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .LandingServices{
+        margin: 20px;
+        margin-top: 60px;
+        text-align: justify;
+    }
+
+    .OurServices{
+        width: 75%;
+        margin-left: 5px;
+    }
+
+    .OurServices h2{
+        text-align: center;
+    }
+    .MedicalOffers{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 32% 32% 32%;
+      width: 75%;
+      margin-left: 35px;
+    }
+
+    .ServicesButton button{
+        width: 20vw;
+        height: 7vh;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+  }
+

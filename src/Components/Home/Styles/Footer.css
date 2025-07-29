@@ -1,0 +1,81 @@
+.Footer{
+    background-color: #007D79;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 30px;
+    height: 40vh;
+    padding: 80px 30px;
+    margin-top: 50px;
+}
+
+.FooterLogo img{
+    width: 80%;
+    /* height: 7vh; */
+    margin: 10px;
+}
+
+.SocialIcons img{
+    width: 10%;
+    padding: 5px 5px 5px 10px;
+}
+
+.FooterText{
+    font-weight: 100;
+    margin: 10px ;
+}
+
+.Footer h5, .Footer a{
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s linear;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.Footer a{
+    text-decoration: none;
+}
+
+.Footer a:hover{
+    background-color: white;
+    color: #000;
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .Footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        /* grid-template-rows: auto; */
+        gap: 40px;
+        padding: 40px;
+        height: 100%;
+        text-align: center;
+    }
+
+    .FooterLogo img {
+        width: 60%;
+        margin: 0;
+    }
+
+    .SocialIcons img {
+        width: 7%;
+    }
+
+    .SocialIcons,
+    .FooterText {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .Footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        text-align: center;
+    }
+}
+

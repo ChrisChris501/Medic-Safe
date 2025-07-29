@@ -1,0 +1,27 @@
+.ProfileOption{
+    text-align: center;
+    color: #007D79;
+    font-size: 15px;
+    margin: 10px;
+    height: 100vh;
+}
+
+.GeneralProfile{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.PatientLink button, .DoctorLink button{
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #007D79;
+    border: none;
+    border-radius: 5px;
+    margin-top: -20px;
+}
+

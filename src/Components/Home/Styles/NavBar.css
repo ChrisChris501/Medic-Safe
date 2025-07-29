@@ -1,0 +1,235 @@
+/** The Navigation Menu**/
+.navigation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the navigation appears on top of other content */
+  display: flex;
+  padding: 10px 5px;
+  height: 10%;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  }
+
+  .navLogo {
+    width: 35%;
+    height: 75%;
+    margin-top: 10px;
+  }
+
+  .navMenu {
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .navMenu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 15px 5px 10px;
+  }
+
+.navMenu a, .navMenu button {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #24727c;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .navMenu li a:active {
+    color: #009D9A;
+  }
+
+  .navMenu li a:hover{
+    color: #009D9A;
+    border-radius: 5px;
+    border: 2px white;
+  }
+
+  .navMenu li a:active {
+    color: #009D9A;
+  }
+
+  .LogIn button{
+    color: white;
+    background-color: #3DDBD9;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+
+  .SignUp button{
+    color: #3DDBD9;
+    background-color: white;
+    padding: 6px 10px;
+    border: 1px solid #3DDBD9;
+    border-radius: 5px;
+  }
+
+  .LogIn button:hover{
+    color: #3DDBD9;
+    background-color: white;
+  }
+
+  .SignUp button:hover{
+    color: white;
+    background-color: #3DDBD9;
+  }
+  .menuIcon {
+    display: none;
+    cursor: pointer;
+  }
+
+  .menuIcon.open .bar1 {
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
+
+  .menuIcon.open .bar2 {
+    opacity: 0;
+  }
+
+  .menuIcon.open .bar3 {
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+
+  /* Tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .navMenu li {
+      display: inline-block;
+      padding: 3px;
+      margin: 4px;
+    }
+
+  .navMenu a, .navMenu button {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      color: #24727c;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .navMenu li a:active {
+      color: #009D9A;
+    }
+  
+    .navMenu li a:hover{
+      color: #009D9A;
+      border-radius: 5px;
+      border: 2px white;
+    }
+
+    .navMenu li a:active {
+      color: #009D9A;
+    }
+
+    .LogIn button{
+      color: white;
+      background-color: #3DDBD9;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .SignUp button{
+      color: #3DDBD9;
+      background-color: white;
+      padding: 5px;
+      border: 1px solid #3DDBD9;
+      border-radius: 5px;
+    }
+
+    .LogIn button:hover{
+      color: #3DDBD9;
+      background-color: white;
+    }
+
+    .SignUp button:hover{
+      color: white;
+      background-color: #3DDBD9;
+    }
+
+    .navLogo{
+      height: 70%;
+      width: 40%;
+    }
+}
+
+
+  /* Phones */
+
+  @media only screen and (max-width: 600px) {
+    .navigation {
+      height: 15%;
+      align-items: center;
+    }
+
+    .navLogo{
+      height: 50%;
+      width: 40%;
+      margin-right: 43%;
+    }
+
+    .LogIn button{
+      color: #24727c;
+      background-color: inherit;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+  }
+  
+  .SignUp button{
+    color: #24727c;
+    background-color: inherit;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .LogIn button:hover{
+    color: inherit;
+    background-color: inherit;
+  }
+
+  .SignUp button:hover{
+    color: inherit;
+    background-color: inherit;
+  }
+
+  .navMenu li {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      padding: 5px 8px;
+      margin: 5px;
+      background-color: #ecf5f7;
+      border-radius: 5px;
+      border: 1px solid #24727c;
+    }
+
+  .menuIcon {
+    display: block;
+    margin-right: 60px;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .navMenu.open {
+    display: block;
+    margin-right: 50px;
+  }
+}
+

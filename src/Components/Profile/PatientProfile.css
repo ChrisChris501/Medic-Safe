@@ -1,0 +1,332 @@
+.ThePatientProfile{
+    display: grid;
+    grid-template-columns: 20% 30% 30%;
+    gap: 100px;
+    height: auto;
+}
+
+.ThePatientProfileLinks{
+    background-color: #007D79;
+    height: 106%;
+}
+
+.SearchDetails{
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SearchDetails Input{
+    margin: 10px;
+    width: 25%;
+    height: 3vh;
+    border-radius: 5px;
+    border: 0.5px solid Grey;
+    padding: 10px;
+}
+
+.SideBarImage{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.NotificationBell{
+    height: 35px;
+    width: 35px;
+    margin-left: 8vw;
+    margin-top: 15px;
+    color: rgb(14, 13, 13);
+}
+
+.SideBarImage img{
+    height: 35px;
+    width: 35px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+
+.TheProfileLogo img{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    width: 12vw;
+    height: 8vh;
+}
+
+.ThePatientFirstLinks{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.PatientSecondLinks{
+    margin-top: 90%;
+}
+
+.PatientFirstLinks button, .PatientSecondLinks button{
+    display: block;
+    text-align: center;
+    border: none;
+    background-color: #007D79;
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.PatientFirstLinks a, .PatientSecondLinks a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.ThePatientProfileDetails h2{
+    color: #007D79;
+    font-size: 30px;
+}
+
+.ThePatientProfileDetails h1,
+.ThePatientProfileDetails h2 {
+    display: inline-block;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.ThePatientProfileDetails{
+    background-color: #D9FBFB;
+    width: 220%;
+    height: 10vh;
+    left: 0;
+}
+
+.TheProfileHeading p{
+    padding: 20px;
+}
+
+.TheProfileHeading{
+    margin-top: 12vh;
+    padding: 20px 30px;
+    margin-left: 60px;
+}
+
+.CompletionPercentage{
+    background-color: #ECF9F9;
+    height: 10%;
+    width: 95%;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.CompletionPercentage h6{
+    text-align: left;
+    font-weight: 800;
+    font-size: 12px;
+    margin: 5px 10px;
+}
+.PercentageBar{
+    border: 5px solid #009D9A;
+    width: 70%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.TheProfileHeading h3{
+    margin-left: 20px;
+}
+
+.TheProfileHeading img{
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+
+.ThePersonalDetails{
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.ThePersonalDetails h3{
+    font-size: 12px;
+    color: grey;
+    padding: 10px 0px 3px 0px;
+    font-weight: 400;
+}
+
+.ThePersonalDetails input{
+    width: 20vw;
+    height: 4vh;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+.TheProfileDetails{
+    margin-top: 40%;
+}
+
+.TheOtherDetails, .TheMedicalDetails{
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    height: 55vh;
+    width: 27vw;
+    margin-top: 60px;
+}
+
+.TheMedicalDetails{
+    height: 70vh;
+    margin-top: 10px;
+}
+
+.TheOtherDetails h3, .TheMedicalDetails h3{
+    background-color: #ECF9F9;
+    padding: 15px;
+    border-bottom: 0.5px solid grey;
+    margin-bottom: 3px;
+}
+
+.TheOtherDetails input, .TheMedicalDetails input{
+    width: 24vw;
+    height: 5vh;
+    margin: 10px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+@media (min-width: 751px) and (max-width: 1024px) {
+    .NotificationBell{
+        height: 35px;
+        width: 35px;
+        margin-left: -30%;
+        margin-top: 15px;
+        color: rgb(0, 0, 0);
+    }
+
+    .TheProfileDetails{
+        margin-top: 55%;
+    }
+
+    .TheProfileHeading img{
+        border-radius: 100px;
+        text-align: center;
+        margin-right: 40px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* For mobile screens */
+@media (max-width: 750px) {
+    .ThePatientProfile {
+        display: block;
+        height: auto;
+        padding: 10px;
+    }
+
+    .ProfileLogo{
+        display: none;
+    }
+
+    .ThePatientDetails, .TheProfileDetails {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .PatientLinks{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    .PatientFirstLinks{
+        display: flex;
+        padding: 0;
+    }
+
+    .PatientSecondLinks{
+        margin-top: auto;
+        display: flex;
+    }
+
+    .PatientProfileLinks {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ThePatientProfileLinks a {
+        margin: 10px 0;
+    }
+
+    .SearchDetails {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .NotificationBell{
+        height: 35px;
+        width: 35px;
+        margin-left: 42vw;
+        margin-top: 15px;
+        color: rgb(14, 13, 13);
+    }
+
+    .SideBarImage {
+        display: flex;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .SideBarImage img {
+        margin: 0;
+    }
+
+    .ThePatientProfileDetails {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .TheProfileHeading {
+        text-align: center;
+    }
+
+    .TheProfileHeading img {
+        margin: 0 auto;
+    }
+
+    .ThePersonalDetails {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .ThePersonalDetails input {
+        width: 100%;
+    }
+
+    .TheOtherDetails, .TheMedicalDetails {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .TheOtherDetails input, .TheMedicalDetails input {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
+

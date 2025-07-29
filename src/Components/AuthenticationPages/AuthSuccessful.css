@@ -1,0 +1,49 @@
+.SuccessfulIdent {
+    text-align: center;
+    margin: 20vh auto;
+    width: 35vw;
+    height: 45vh;
+    box-shadow: 10px 10px rgb(252, 247, 247);
+}
+
+.BlueHead {
+    background-color: #007D79;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center;
+    padding-right: 20px;
+}
+
+.BlueHead i{
+    text-align: right;
+}
+
+.Successful{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.Successful h2{
+    color: #161616;
+    line-height: 28px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.Successful h6{
+    margin-top: 15px;
+    line-height: 19.1px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.Successful i{
+    height: 10vh;
+}
+

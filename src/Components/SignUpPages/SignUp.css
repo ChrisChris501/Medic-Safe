@@ -1,0 +1,334 @@
+.SignUpWrapper{
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 120%;
+    width: 85vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: -5px -5px 10px #fff,
+                5px 5px 10px #038f49;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.MediSafeSignUPcontainer {
+  background-color: #007D79;
+  height: 100%;
+  align-items: center;
+}
+
+.MediSafeSignUPcontainer a {
+  color: #D9FBFB;
+  text-decoration: none;
+}
+
+.SignUp h6 {
+  padding-left: 35px;
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  padding-top: 25px;
+}
+
+.SignUpContainer{
+  background: #D9FBFB;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.SignUpContainer h5{
+  color: #007D79;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.SignUpImg {
+  height: 30%;
+  width: 40%;
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SignUpContainer form{
+    text-align: center;
+}
+
+.SignUpContainer form input{
+    background: #ffffff;
+    padding: 10px;
+    padding-left:8px;
+    font-size: 12px;
+    font-weight:100;
+    font-family: 'Times New Roman';
+    margin: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 70%;
+    height: 10px;
+    border: 0.5px solid grey;
+    outline: none;
+    border-radius: 5px;
+    /* box-shadow: inset 7px 2px 10px #babebc,
+                inset -5px -5px 12px #fff; */
+}
+
+.eye-icon{
+  position: absolute;
+  top: 43%;
+  right: 40px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.CheckBox {
+    text-align: left;
+    margin-left: 48px;
+}
+
+.CheckBox
+  input[type="checkbox"] {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  /* margin-right: 40px; */
+  accent-color: #08BDBA;
+  cursor: pointer;
+}
+
+.CheckBox label{
+  color: #000;
+  font-size: 12px;
+  padding-left: 5px;
+  margin-right: 5px;
+}
+
+.SignUpButton{
+  text-align: center;
+}
+.SignUpButton button{
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    width: 78%;
+    height: 5vh;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    background-color: #007D79;
+    margin-bottom: 45px;
+    margin-top: -10px;
+    transition: transform 80ms ease-in;
+}
+
+.SignUpMediCurve {
+  padding-top: 200px;
+  position: sticky;
+  color: #009D9A;
+  font-family: 'Times New Roman';
+  line-height: 100px;
+  left: 40%;
+  transform: translateX(-2%);
+  width: calc(50% + 50%);
+  padding: 10px;
+  height: 33%;
+  background: #EDF5FF;
+  text-align: center;
+  border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+  border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+  margin-top: 25%;
+}
+
+.SignUpMediCurve img{
+  height: 35%;
+  width: 60%;
+  margin-top: 65px;
+}
+
+.medi-safe-container i{
+  padding-left: 35px;
+  position: absolute;
+  margin-top: -28px;
+  height: 150%;
+  color: white;
+}
+
+
+.SignUpLine{
+  position: relative;
+  height: 1px;
+  width: 75%;
+  margin: auto auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  background-color: #3DDBD9;
+  text-align: center;
+}
+
+.SignUpLine::before{
+  content: ' Or continue with ';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #FFF; */
+  color: #8b8b8b;
+  font-size: 10px;
+}
+
+.MediaOptions li {
+  width: 70%;
+  height: 10px;
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 100%);
+  border: 0.5px solid grey;
+  outline: none;
+  border-radius: 5px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: auto;
+  margin-top: 5px;
+  list-style: none;
+}
+
+.MediaOptions li a{
+  text-decoration: none;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.MediaOptions img{
+  height: 15px;
+  width: 14px;
+  margin-bottom: -2px;
+  padding-right: 3px;
+}
+
+.LogIncontainer .errorMessage {
+  background-color: #3DDBD9;
+  color: #e20404;
+  padding: 5px;
+  border-radius: 5px;
+  width: 15vw;
+  font-size: 15px;
+  margin-bottom: 10px; /* Adjusted margin-top to match the spacing */
+}
+
+.LogIncontainer .errorMessage::before {
+  content: "⚠ "; /* Adding a warning icon before the error message */
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.SignUpFooter h5, .SignUpFooter h6{
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 15px 20px 5px 20px;
+    text-align: center;
+}
+
+.SignUpFooter h5 a{
+    text-decoration: none;
+    color: #08BDBA;
+}
+
+.SignUpFooter h6{
+    margin-top: -8px;
+}
+
+.SignUpFooter h6 a{
+    text-decoration: none;
+    color: grey;
+}
+
+.PatienceRedirection h6{
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.CustomLink{
+    color: #007D79;
+    text-decoration: none;
+}
+
+@media (min-width: 951px) and (max-width: 1124px) {
+
+.SignUpMediCurve {
+  padding-top: 200px;
+  position: sticky;
+  color: #009D9A;
+  font-family: 'Times New Roman';
+  line-height: 100px;
+  left: 40%;
+  transform: translateX(-2%);
+  width: calc(50% + 50%);
+  padding: 10px;
+  height: 25%;
+  background: #EDF5FF;
+  text-align: center;
+  border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+  border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+  margin-top: 50%;
+}
+
+.SignUpMediCurve img{
+  height: 40%;
+  width: 60%;
+  margin-top: 35px;
+}
+
+}
+
+@media only screen and (max-width: 950px) {
+  .SignUpWrapper{
+    margin-top: 10px;
+    display: block;
+    height: 80%;
+  }
+  .MediSafeSignUPcontainer{
+    display: none;
+  }
+  .SignUpMediCurve{
+    display: none;
+  }
+
+  .MediSafeLocontainer{
+    display: none;
+  }
+  .SignUpContainer h5{
+    margin-top: -20px;
+  }
+
+  .SignUpFooter{
+    margin: 40px 20px 10px 20px;
+  }
+
+  .PatienceRedirection{
+    text-align: center;
+    margin: 15px 20px 5px 20px;
+  }
+}
+

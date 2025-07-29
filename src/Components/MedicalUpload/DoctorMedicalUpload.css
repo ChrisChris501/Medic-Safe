@@ -1,0 +1,221 @@
+.DoctorMedicalUploads{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 55vh;
+    margin-bottom: 25%;
+}
+
+.TheDoctorProfileLinks{
+    background-color: #007D79;
+    height: 110%;
+}
+
+.SearchDetails{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 10vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.SearchDetails Input{
+    margin: 10px;
+    width: 8vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: 0.5px solid Grey;
+    padding: 10px;
+}
+
+.SearchDetails img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: 280px;
+    margin-top: 15px;
+}
+
+.TheProfileLogo img{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 12vw;
+    height: 8vh;
+}
+
+.TheDocotorFirstLinks{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.DoctorSeconLinks{
+    margin-top: 70vh;
+}
+
+.DoctorFirstLinks   button, .DoctorSeconLinks button{
+    display: block;
+    margin: auto 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007D79;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.DoctorFirstLinks a, .DoctorSeconLinks a{
+    text-decoration: none;
+}
+
+.TheUploadDetails{
+    background-color: #D9FBFB;
+    width: 100%;
+    height: 95vh;
+}
+
+.TheUploadDetails h2{
+    color: black;
+    font-size: 25px;
+}
+
+.TheUploadDetails h1,
+.TheUploadDetails h2 {
+    display: inline-block;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.TheUploadWrapper{
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+.History{
+    background-color: #ffffff;
+    margin-right: 20px;
+    margin-left: 80px;
+    height: 75vh;
+    width: 35vw;
+    border-radius: 5px;
+}
+
+.History h2{
+    height: 6vh;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 85px;
+    margin-top: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.UploadSection{
+    text-align: center;
+    background-color: #ECF9F9;
+    height: 55vh;
+    margin: 15px 20px;
+}
+
+.UploadSection .cloud-icon {
+    color: #08BDBA;
+    margin-top: 70px;
+}
+
+.UploadSection h4{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.UploadSection h5{
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-weight: 500;
+    
+    
+}
+
+.UploadSection a{
+    color: #08BDBA;
+    text-decoration: none;
+}
+
+.UploadSection h6{
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.UploadSection button{
+    background-color: #08BDBA;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.UploadFooter h6{
+    font-size: 12px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.UploadFooter a{
+   color: #007D79;
+   text-decoration: none;
+}
+
+.DocUploads{
+    background-color: #FFFFFF;
+    width: 55vh;
+    margin-left: 70px;
+    border-radius: 5px;
+    height: 75vh;
+}
+
+.DocUploads li{
+    display: grid;
+    grid-template-columns: 23vh 23vh;
+    gap: 80px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 45vh;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.DocUploads h2{
+    height: 6vh;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 80px;
+    width: 75%;
+    margin-top: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.DocUploads :nth-child(1){
+    font-weight: 600;
+    padding-right: 8px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.SaveDoc {
+    text-align: right;
+    padding-right: 120px;
+    margin-top: 20px;
+    color: grey;
+    font-size: 14px;
+}
+
+
+
+

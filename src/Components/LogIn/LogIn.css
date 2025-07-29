@@ -1,0 +1,300 @@
+.LogInWrapper {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: 100vh;
+  width: 85vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: -5px -5px 10px #fff, 5px 5px 10px #038f49;
+  margin: auto;
+  position: relative; /* Added to position the Connect Wallet button */
+}
+
+#login-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* #connect-wallet {
+  background-color: #007d79; Matching button color with theme 
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#connect-wallet:hover {
+  background-color: #0056b3; Darker blue on hover 
+} */
+
+.MediSafeLogIncontainer {
+  background-color: #007D79;
+  height: 100%;
+  align-items: center;
+}
+
+.MediSafeLogIncontainer a {
+  color: #D9FBFB;
+  text-decoration: none;
+}
+
+.LogIn h6 {
+  padding-left: 35px;
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  padding-top: 25px;
+} 
+
+.LogIncontainer{
+  background: #D9FBFB;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.LogIncontainer h5{
+  color: #007D79;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 500px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.LogInImg {
+  height: 50vh;
+  width: 20vw;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.LogIncontainer form{
+    text-align: center;
+}
+
+.LogIncontainer form input{
+    background: #ffffff;
+    padding: 10px;
+    padding-left:8px;
+    font-size: 12px;
+    font-weight:100;
+    font-family: 'Times New Roman';
+    margin: 10px 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 70%;
+    height: 10px;
+    border: 0.5px solid grey;
+    outline: none;
+    border-radius: 5px;
+    /* box-shadow: inset 7px 2px 10px #babebc,
+                inset -5px -5px 12px #fff; */
+}
+
+.eye-icon{
+  position: absolute;
+  top: 43%;
+  right: 40px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.CheckBox
+  input[type="checkbox"] {
+  height: 10px;
+  width: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  /* margin-right: 40px; */
+  accent-color: #08BDBA;
+  cursor: pointer;
+}
+
+.CheckBox label{
+  color: #000;
+  font-size: 12px;
+  padding-left: 5px;
+  margin-right: 5px;
+}
+
+.LogInButton{
+  text-align: center;
+}
+.LogInButton button{
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    width: 78%;
+    height: 5vh;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    background-color: #007D79;
+    margin-bottom: 50px;
+    transition: transform 80ms ease-in;
+}
+
+.MediCurve {
+  padding-top: 200px;
+  position: sticky;
+  color: #009D9A;
+  font-family: 'Times New Roman';
+  line-height: 100px;
+  left: 40%;
+  bottom: -10%;
+  transform: translateX(-1%);
+  width: calc(49% + 49%);
+  padding: 10px;
+  height: 30%;
+  background: #EDF5FF;
+  text-align: center;
+  border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+  border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+}
+
+
+.MediCurve img{
+  height: 12vh;
+  width: 30vw;
+  margin-top: 35px;
+}
+
+.form span{
+  color: #007D79;
+  font-size: large;
+  font-weight: 700;
+}
+
+.LogInLine{
+  position: relative;
+  height: 1px;
+  width: 75%;
+  margin: auto auto;
+  margin-top: -20px;
+  margin-bottom: 25px;
+  background-color: #3DDBD9;
+  text-align: center;
+}
+
+.LogInLine::before{
+  content: ' Or continue with ';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #FFF; */
+  padding: 0 0.2px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.MediaOptions li {
+  width: 70%;
+  height: 10px;
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 100%);
+  border: 0.5px solid grey;
+  outline: none;
+  border-radius: 5px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: auto;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.MediaOptions li a{
+  text-decoration: none;
+  color: #344054;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.MediaOptions img{
+  height: 15px;
+  width: 14px;
+  margin-bottom: -2px;
+  padding-right: 3px;
+}
+
+.SignUpContainer .errorMessage {
+  background-color: #3DDBD9;
+  color: #e20404;
+  padding: 5px;
+  border-radius: 5px;
+  width: 15vw;
+  font-size: 15px;
+  margin-bottom: 10px; /* Adjusted margin-top to match the spacing */
+}
+
+.SignUpContainer .errorMessage::before {
+  content: "⚠ "; /* Adding a warning icon before the error message */
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .LogInWrapper{
+    margin-top: 10px;
+    display: block;
+    height: 80%;
+  }
+  .LogIn{
+    display: none;
+  }
+  .MediCurve{
+    display: none;
+  }
+
+  .MediSafeLogIncontainer{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .MediCurve {
+    padding-top: 300px;
+    position: sticky;
+    color: #009D9A;
+    font-family: 'Times New Roman';
+    line-height: 100px;
+    left: 40%;
+    transform: translateX(-1%);
+    width: calc(49% + 49%);
+    padding: 10px;
+    height: 36%;
+    background: #EDF5FF;
+    text-align: center;
+    margin-top: 30%;
+    border-top-left-radius: 50% 200px; /* Semi-circle top-left corner */
+    border-top-right-radius: 50% 200px; /* Semi-circle top-right corner */
+  }
+}
+
+
+
+
+
+
+
+
+
