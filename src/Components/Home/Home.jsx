@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSection from './HeroSection';
 import AboutUs from './AboutUs';
 import Services from './Services';

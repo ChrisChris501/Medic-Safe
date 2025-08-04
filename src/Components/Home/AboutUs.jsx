@@ -1,7 +1,6 @@
-import React from 'react';
 import './Styles/AboutUs.css';
 import AboutUsBackgroundPicture from '../../assets/AboutUsBackgroundPicture.png';
-import AboutUsTopPicture from '../../assets/AboutUsTopPicture.png';
+//import AboutUsTopPicture from '../../assets/AboutUsTopPicture.png';
 const AboutUs = () => {
   return (
     <div className='AboutUs'>
@@ -16,7 +15,7 @@ const AboutUs = () => {
             </h3>
             <h5>
                 <p>
-                  We prioritize your well-being. Here's how we empower you:
+                  We prioritize your well-being. Here is how we empower you:
                 </p>
                 <p>
                   <br></br>
