@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Styles/HeroSection.css';
 import HeroImg from '../../assets/HeroImg.png';
